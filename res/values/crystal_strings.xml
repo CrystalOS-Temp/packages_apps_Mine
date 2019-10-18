@@ -115,5 +115,11 @@
     <!-- Volume swap buttons -->
     <string name="swap_volume_buttons_title">Reorient</string>
     <string name="swap_volume_buttons_summary">Swap volume buttons when the screen is rotated</string>
+    <!-- Volume rocker cursor control -->
+    <string name="cursor_section_header">Cursor</string>
+    <string name="volume_key_cursor_control_title">Keyboard cursor control</string>
+    <string name="volume_key_cursor_control_off">Disabled</string>
+    <string name="volume_key_cursor_control_on">Volume Up/Down - Cursor Left/Right</string>
+    <string name="volume_key_cursor_control_on_reverse">Volume Up/Down - Cursor Right/Left</string>
 
 </resources>
