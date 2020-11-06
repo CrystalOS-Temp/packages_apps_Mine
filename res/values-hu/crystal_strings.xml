@@ -394,4 +394,8 @@
     <string name="force_background_freezer_title">Háttér alkalmazás fagyasztó</string>
     <string name="force_background_freezer_summary">A korlátozott akkumulátor használatú alkalmazásokat befagyasztja amikor azok háttérbe kerülnek majd kiolvasztja amikor visszakerülnek előtérbe. Ez javíthat az akkumulátoridőn de összemolásokhoz és nem válaszoló alkalmazásokhoz vezethet.</string>
 
+    <!-- Lockscreen battery info indicator  -->
+    <string name="lockscreen_battery_info_title">Zárképernyő töltés infó</string>
+    <string name="lockscreen_battery_info_summary">Mutassa a töltő áramot, feszültséget, wattot és akkumulátor hőmérsékletet a zárképernyőn</string>
+
 </resources>
