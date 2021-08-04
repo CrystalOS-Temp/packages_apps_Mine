@@ -13,8 +13,16 @@
      limitations under the License.
 -->
 <PreferenceScreen
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-    android:title="@string/crystal_dashboard_title" >
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+     android:title="@string/crystal_dashboard_title" >
+
+     <!-- Statusbar -->
+     <Preference
+          android:id="@+id/statusbar"
+          android:title="@string/category_statusbar_title"
+          android:fragment="com.crystal.mine.Statusbar"
+          android:layout="@layout/preference_category_statusbar"
+          />
 
 </PreferenceScreen>
