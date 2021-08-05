@@ -41,4 +41,12 @@
           android:layout="@layout/preference_category_buttons"
           />
 
+     <!-- Lockscreen -->
+     <Preference
+          android:key="lockscreen_settings"
+          android:title="@string/category_lockscreen_title"
+          android:fragment="com.crystal.mine.LockScreen"
+          android:layout="@layout/preference_category_lockscreen"
+          />
+
 </PreferenceScreen>
