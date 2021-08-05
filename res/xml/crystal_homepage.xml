@@ -21,7 +21,7 @@
      <Preference
           android:id="@+id/statusbar"
           android:title="@string/category_statusbar_title"
-          android:fragment="com.crystal.mine.Statusbar"
+          android:fragment="com.crystal.mine.StatusBar"
           android:layout="@layout/preference_category_statusbar"
           />
 

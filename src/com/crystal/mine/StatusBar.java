@@ -42,7 +42,7 @@ import java.util.Arrays;
 import java.util.List;
 
 @SearchIndexable
-public class Statusbar extends SettingsPreferenceFragment {
+public class StatusBar extends SettingsPreferenceFragment {
 
     @Override
     public void onCreate(Bundle icicle) {
