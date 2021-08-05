@@ -32,5 +32,6 @@
     <string name="category_statusbar_title">Értesítési sáv</string>
     <string name="category_quicksettings_title">Gyors Beállítások</string>
     <string name="category_buttons_title">Gombok</string>
+    <string name="category_lockscreen_title">Zárképernyő</string>
 
 </resources> 

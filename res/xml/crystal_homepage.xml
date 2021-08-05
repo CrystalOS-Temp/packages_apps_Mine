@@ -26,6 +26,13 @@
         android:fragment="com.crystal.mine.fragments.Buttons"
         android:layout="@layout/preference_category_buttons" />
 
+    <!-- Lockscreen -->
+    <Preference
+        android:key="lockscreen"
+        android:title="@string/category_lockscreen_title"
+        android:fragment="com.crystal.mine.fragments.LockScreen"
+        android:layout="@layout/preference_category_lockscreen" />
+
     <!-- Quick Settings -->
     <Preference
         android:key="quicksettings"
