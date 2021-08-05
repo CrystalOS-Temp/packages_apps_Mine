@@ -19,6 +19,13 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/crystal_homepage_title" >
 
+    <!-- Quick Settings -->
+    <Preference
+        android:key="quicksettings"
+        android:title="@string/category_quicksettings_title"
+        android:fragment="com.crystal.mine.fragments.QuickSettings"
+        android:layout="@layout/preference_category_quicksettings" />
+
     <!-- Statusbar -->
     <Preference
         android:key="statusbar"
@@ -26,4 +33,4 @@
         android:fragment="com.crystal.mine.fragments.Statusbar"
         android:layout="@layout/preference_category_statusbar" />
 
-</PreferenceScreen> 
+</PreferenceScreen>
