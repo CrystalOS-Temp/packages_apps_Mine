@@ -16,9 +16,21 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+    <!-- General -->
+    <string name="ok">Oké</string>
+    <string name="default_string">Alapértelmezett</string>
+    <string name="add">Hozzáadás</string>
+    <string name="enabled">Bekapcsolva</string>
+    <string name="choose_app">Válasszon alkalmazást</string>
+    <string name="help">Segítség</string>
+    <string name="reset_message">Minden pont álljon vissza az eredetire?</string>
+    <string name="attention">Figyelem</string>
+    <string name="reset">Visszaállítás</string>
+
     <!-- Crystal Mine -->
     <string name="crystal_homepage_title">Crystal Mine</string>
     <string name="category_statusbar_title">Értesítési sáv</string>
     <string name="category_quicksettings_title">Gyors Beállítások</string>
+    <string name="category_buttons_title">Gombok</string>
 
 </resources> 
