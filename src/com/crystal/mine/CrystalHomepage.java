@@ -35,12 +35,12 @@ import java.util.Arrays;
 import java.util.List;
 
 @SearchIndexable
-public class CrystalDashboard extends SettingsPreferenceFragment { 
+public class CrystalHomepage extends SettingsPreferenceFragment { 
 
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
-        addPreferencesFromResource(R.xml.crystal_dashboard);
+        addPreferencesFromResource(R.xml.crystal_homepage);
     }
 
     @Override
@@ -54,7 +54,7 @@ public class CrystalDashboard extends SettingsPreferenceFragment {
                 public List<SearchIndexableResource> getXmlResourcesToIndex(
                         Context context, boolean enabled) {
                     final SearchIndexableResource sir = new SearchIndexableResource(context);
-                    sir.xmlResId = R.xml.crystal_dashboard;
+                    sir.xmlResId = R.xml.crystal_homepage;
                     return Arrays.asList(sir);
                 }
 

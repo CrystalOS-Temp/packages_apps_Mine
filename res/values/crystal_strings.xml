@@ -15,7 +15,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- Crystal Mine -->
-    <string name="crystal_dashboard_title">Mine</string>
+    <string name="crystal_homepage_title">Mine</string>
     <string name="category_statusbar_title">Statusbar</string>
 
 </resources>
