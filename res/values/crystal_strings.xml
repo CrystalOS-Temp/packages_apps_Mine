@@ -26,10 +26,18 @@
     <string name="reset">Reset</string>
 
     <!-- Crystal Mine -->
-    <string name="crystal_homepage_title">Mine</string>
+    <string name="crystal_homepage_title">Crystal Mine</string>
+    <string name="category_aboutcrystal_title">About CrystalOS</string>
     <string name="category_statusbar_title">Statusbar</string>
     <string name="category_quicksettings_title">Quick Settings</string>
     <string name="category_buttons_title">Buttons</string>
     <string name="category_lockscreen_title">Lockscreen</string>
+    <string name="category_animations_title">Animations</string>
+    <string name="category_crystalgoodies_title">Crystal Goodies</string>
+    <string name="category_designcorner_title">Design Corner</string>
+    <string name="category_gestures_title">Gestures</string>
+    <string name="category_navigation_title">Navigation</string>
+    <string name="category_notifications_title">Notifications</string>
+    <string name="category_powermenu_title">Power Menu</string>
 
 </resources>
