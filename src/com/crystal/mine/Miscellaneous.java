@@ -18,6 +18,7 @@ package com.crystal.mine;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.content.ContentResolver;
 import android.os.Bundle;
 import android.os.UserHandle;
 import android.provider.SearchIndexableResource;
@@ -44,12 +45,12 @@ import java.util.List;
 //Imports for SELinux Switch
 import android.content.SharedPreferences;
 import android.os.SELinux;
-import android.util.log;
+import android.util.Log;
 import com.crystal.utils.SuShell;
 import com.crystal.utils.SuTask;
 
 @SearchIndexable
-public class Miscellaneous extends SettingsPreferenceFragment {
+public class Miscellaneous extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
     private static final String TAG = "Miscellaneous";
 
