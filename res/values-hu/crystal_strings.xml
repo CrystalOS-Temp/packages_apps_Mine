@@ -63,4 +63,8 @@
     <string name="category_quicksettings_title">Gyors Beállítások</string>
     <string name="category_statusbar_title">Értesítési sáv</string>
 
+    <!-- Fingerprint unlock -->
+    <string name="fp_unlock_keystore_title">Közvetlen ujjlenyomatos feloldás</string>
+    <string name="fp_unlock_keystore_summary">Eszköz feloldása ujjlenyomattal újraindítás vagy zárolás után</string>
+
 </resources> 
