@@ -36,7 +36,10 @@ import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settingslib.search.SearchIndexable;
 
+import com.android.internal.widget.LockPatternUtils;
 import com.android.internal.logging.nano.MetricsProto;
+
+import com.crystal.mine.preferences.SystemSettingSwitchPreference;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -45,6 +48,10 @@ import java.util.List;
 @SearchIndexable
 public class LockScreen extends SettingsPreferenceFragment {
 
+    private static final String FP_KEYSTORE = "fp_unlock_keystore";
+
+    private SystemSettingSwitchPreference mFingerprintUnlock;
+
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
@@ -52,6 +59,18 @@ public class LockScreen extends SettingsPreferenceFragment {
         PreferenceScreen prefSet = getPreferenceScreen();
         final Resources res = getResources();
         final PreferenceScreen prefScreen = getPreferenceScreen();
+
+        mFingerprintUnlock = (SystemSettingSwitchPreference) findPreference(FP_KEYSTORE);
+
+        if (mFingerprintUnlock != null) {
+           if (LockPatternUtils.isDeviceEncryptionEnabled()) {
+               mFingerprintUnlock.setEnabled(false);
+               mFingerprintUnlock.setSummary(R.string.fp_encrypt_warning);
+            } else {
+               mFingerprintUnlock.setEnabled(true);
+               mFingerprintUnlock.setSummary(R.string.fp_unlock_keystore_summary);
+            }
+        }
     }
 
     @Override

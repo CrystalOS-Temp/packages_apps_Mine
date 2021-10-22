@@ -66,5 +66,6 @@
     <!-- Fingerprint unlock -->
     <string name="fp_unlock_keystore_title">Közvetlen ujjlenyomatos feloldás</string>
     <string name="fp_unlock_keystore_summary">Eszköz feloldása ujjlenyomattal újraindítás vagy zárolás után</string>
+    <string name="fp_encrypt_warning">Oldja fel az eszközt újraindítás után PIN/Jelszó/Minta használata nélkül\nMegjegyzés: Az ön eszköze titkosított, ezért nem tudja használni ezt a funkciót.</string>
 
 </resources> 
