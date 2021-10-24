@@ -66,7 +66,7 @@
      <string name="selinux_persistence_summary">Restore the above set sepolicy mode on each boot</string>
      <string name="selinux_permissive_toast_title">Selinux set to permissive!</string>
      <string name="selinux_enforcing_toast_title">Selinux set to enforcing!</string>
-     <string name="cannot_get_su">Action failed because of missing superuser access</string>
+     <string name="cannot_get_su">Action failed because of missing Root permission</string>
 
      <!-- Lockscreen unlock category -->
      <string name="lock_screen_unlock_category_title">Lock screen unlocking</string>
