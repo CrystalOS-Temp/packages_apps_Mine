@@ -103,4 +103,7 @@
     <string name="disable_usercard_title">Beállítások Felhasználó kártya</string>
     <string name="disable_usercard_summary">Ki-Bekapcsolja a felhasználó kártyát a Beállítások kezdőoldalán</string>
 
+    <string name="aosp_gestures_title">AOSP Gesztus beállítások</string>
+    <string name="aosp_gestures_summary">AOSP-ben alapból megtalálható gesztus beállítások</string>
+
 </resources> 

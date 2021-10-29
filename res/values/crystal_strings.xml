@@ -103,4 +103,7 @@
     <string name="disable_usercard_title">Settings UserCard</string>
     <string name="disable_usercard_summary">Toggle in order not to show the usercard on main settings page</string>
 
+    <string name="aosp_gestures_title">AOSP Gesture settings</string>
+    <string name="aosp_gestures_summary">Gesture settings found in AOSP by default</string>
+
 </resources>
