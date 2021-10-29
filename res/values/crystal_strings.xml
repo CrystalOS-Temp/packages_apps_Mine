@@ -91,4 +91,7 @@
 
      <string name="sleep_gestures_title">Sleep related gestures</string>
 
+     <string name="aosp_gestures_title">AOSP Gesture settings</string>
+     <string name="aosp_gestures_summary">Gesture settings found in AOSP by default</string>
+
 </resources>
