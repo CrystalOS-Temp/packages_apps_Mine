@@ -34,4 +34,16 @@
 
      </PreferenceCategory>
 
+     <PreferenceCategory
+          android:key="gestures_category"
+          android:title="@string/gestures_category" >
+
+     <com.crystal.support.preference.SystemSettingSwitchPreference
+          android:key="swipe_to_screenshot"
+          android:title="@string/swipe_to_screenshot_title"
+          android:summary="@string/swipe_to_screenshot_summary"
+          android:defaultValue="false" />
+
+     </PreferenceCategory>
+
 </PreferenceScreen>
