@@ -98,4 +98,8 @@
      <string name="swipe_to_screenshot_title">Three finger gesture</string>
      <string name="swipe_to_screenshot_summary">Swipe three finger to screenshot</string>
 
+     <!-- 4G icon -->
+     <string name="show_fourg_icon_title">4G icon</string>
+     <string name="show_fourg_icon_summary">Display 4G icon in signal icon instead LTE</string>
+
 </resources>
