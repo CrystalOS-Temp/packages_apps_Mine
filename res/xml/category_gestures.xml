@@ -34,4 +34,16 @@
 
      </PreferenceCategory>
 
+     <PreferenceCategory
+          android:key="gestures_category"
+          android:title="@string/gestures_category" >
+
+     <com.crystal.support.preference.SystemSettingSwitchPreference
+          android:key="three_finger_gesture"
+          android:title="@string/three_finger_gesture"
+          android:summary="@string/three_finger_gesture_summary"
+          android:defaultValue="false" />
+
+     </PreferenceCategory>
+
 </PreferenceScreen>
