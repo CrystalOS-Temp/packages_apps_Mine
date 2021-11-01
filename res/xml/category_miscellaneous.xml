@@ -20,7 +20,7 @@
 
      <PreferenceCategory
           android:key="selinux"
-          android:title="@string/selinux_category_title">
+          android:title="@string/selinux_pref_title">
 
           <Preference
                android:summary="@string/selinux_explanation_summary"
@@ -41,8 +41,7 @@
      </PreferenceCategory>
 
      <PreferenceCategory
-          android:key="wakeonplug"
-          android:title="@string/wakeonplug_category_title">
+          android:title="@string/wakeonplug_pref_title">
 
           <com.crystal.support.preferences.GlobalSettingSwitchPreference
             android:key="wake_when_plugged_or_unplugged"

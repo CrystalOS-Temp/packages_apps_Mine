@@ -18,7 +18,7 @@
     android:title="@string/category_gestures_title" >
 
      <PreferenceCategory
-          android:title="@string/sleep_gestures_title">
+          android:title="@string/sleep_gestures_pref_title">
 
           <com.crystal.support.preferences.SystemSettingSwitchPreference
                android:key="double_tap_sleep_gesture"
@@ -35,10 +35,9 @@
      </PreferenceCategory>
 
      <PreferenceCategory
-          android:key="gestures_category"
-          android:title="@string/gestures_category" >
+          android:title="@string/screenshot_gestures_pref_title" >
 
-     <com.crystal.support.preference.SystemSettingSwitchPreference
+     <com.crystal.support.preferences.SystemSettingSwitchPreference
           android:key="three_finger_gesture"
           android:title="@string/three_finger_gesture"
           android:summary="@string/three_finger_gesture_summary"
