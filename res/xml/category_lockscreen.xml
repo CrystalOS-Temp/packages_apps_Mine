@@ -18,7 +18,7 @@
 	
     <PreferenceCategory
 
-        android:title="@string/lock_screen_unlock_category_title">
+        android:title="@string/ls_unlock_pref_title">
 
         <com.crystal.support.preferences.SystemSettingSwitchPreference
             android:key="fp_unlock_keystore"

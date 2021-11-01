@@ -41,8 +41,17 @@
      <string name="category_miscellaneous_title">Miscellaneous</string>
      <string name="category_powermenu_title">Power Menu</string>
 
+     <!-- Pref Category Titles -->
+     <string name="sleep_gestures_pref_title">Sleep related gestures</string>
+     <string name="screenshot_gestures_pref_title">Screenshot gestures</string>
+     <string name="ls_unlock_pref_title">Lock screen unlocking</string>
+     <string name="selinux_pref_title">SELinux</string>
+     <string name="wakeonplug_pref_title">Wake On Plug</string>
+     <string name="aosp_gestures_pref_title">AOSP Gestures</string>
+     <string name="powermenu_pref_title">Advanced Reboot options</string>
+     <string name="sb_icons_pref_title">Statusbar icon customizations</string>
+
      <!-- SELinux related -->
-     <string name="selinux_category_title">SELinux</string>
      <string name="selinux_explanation_summary">SELinux is a set of kernel modifications and user-space tools. Changing modes can cause unwanted effects. Use at your own risk.</string>
      <string name="selinux_mode_title">SELinux mode</string>
      <string name="selinux_permissive_summary">Permissive</string>
@@ -53,9 +62,6 @@
      <string name="selinux_enforcing_toast_title">Selinux set to enforcing!</string>
      <string name="cannot_get_su">Action failed because of missing Root permission</string>
 
-     <!-- Lockscreen unlock category -->
-     <string name="lock_screen_unlock_category_title">Lock screen unlocking</string>
-
      <!-- Fingerprint unlock -->
      <string name="fp_unlock_keystore_title">Force FP authentication</string>
      <string name="fp_unlock_keystore_summary">Unlock device with fingerprint after reboot or lockdown</string>
@@ -64,7 +70,6 @@
      <!-- Wakeup options -->
      <string name="wakeup_when_plugged_unplugged_title">Wake up on charge</string>
      <string name="wakeup_when_plugged_unplugged_summary">Wake up device if charger is plugged/unplugged</string>
-     <string name="wakeonplug_category_title">Wake On Plug</string>
 
      <!-- Power Menu -->
      <string name="power_menu_title">Power menu</string>
@@ -88,8 +93,6 @@
      <!-- Double Tap Statusbar to Sleep -->
      <string name="double_tap_to_sleep_statusbar_title">Double tap to sleep on Statusbar</string>
      <string name="double_tap_to_sleep_statusbar_summary">Double tap on statusbar to put the device to sleep</string>
-
-     <string name="sleep_gestures_title">Sleep related gestures</string>
 
      <string name="aosp_gestures_title">AOSP Gesture settings</string>
      <string name="aosp_gestures_summary">Gesture settings found in AOSP by default</string>

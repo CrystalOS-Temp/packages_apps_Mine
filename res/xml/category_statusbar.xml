@@ -17,8 +17,7 @@
      android:title="@string/category_statusbar_title" >
 
      <PreferenceCategory
-          android:key="misc_extensions_icons_category"
-          android:title="@string/icons_category">
+          android:title="@string/sb_icons_pref_title">
 
           <com.crystal.support.preferences.SystemSettingSwitchPreference
                android:key="show_fourg_icon"
