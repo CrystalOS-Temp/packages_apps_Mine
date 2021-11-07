@@ -57,7 +57,7 @@
      <string name="selinux_mode_title">SELinux mód</string>
      <string name="selinux_permissive_summary">Permissive</string>
      <string name="selinux_enforcing_summary">Enforcing</string>
-     <string name="selinux_persistence_title">Beállítás megtarása újraindítások között</string> 
+     <string name="selinux_persistence_title">Beállítás megtartása újraindítások között</string> 
      <string name="selinux_persistence_summary">Állítsa vissza a fentebb beállított módot minden bekapcsolásnál.</string>
      <string name="selinux_permissive_toast_title">Selinux átállítva permissive-re!</string>
      <string name="selinux_enforcing_toast_title">Selinux átállítva enforcing-ra!</string>
@@ -69,7 +69,7 @@
      <string name="fp_encrypt_warning">Eszköz feloldása ujjlenyomattal újraindítás után PIN/Jelszó/Minta nélkül\nMegjegyzés: Az eszközöd titkosítva van, ezért nálad ez a funkció nem használható.</string>
 
      <!-- Wakeup options -->
-     <string name="wakeup_when_plugged_unplugged_title">Eszköz felkeltése töltő csatéakoztatáskor</string>
+     <string name="wakeup_when_plugged_unplugged_title">Eszköz felkeltése töltő csatlakoztatáskor</string>
      <string name="wakeup_when_plugged_unplugged_summary">Keltse fel az eszközt amikor töltőre kerül, illetve lekerül a töltőről</string>
 
      <!-- Power Menu -->
@@ -93,14 +93,14 @@
 
      <!-- Double Tap Statusbar to Sleep -->
      <string name="double_tap_to_sleep_statusbar_title">Dupla koppintásos altatás az értesítésisávon</string>
-     <string name="double_tap_to_sleep_statusbar_summary">Koppints duplán azértesítésisávon, hogy elaltasd az eszközt</string>
+     <string name="double_tap_to_sleep_statusbar_summary">Koppints duplán az értesítésisávon, hogy elaltasd az eszközt</string>
 
      <string name="aosp_gestures_title">AOSP gesztus beállítások</string>
      <string name="aosp_gestures_summary">Az AOSP-ben alapból megtalálható gesztus beállítások</string>
 
      <!--3-Finger screenshot-->
      <string name="three_finger_gesture">Három ujjas gesztus</string>
-     <string name="three_finger_gesture_summary">Húzd le három ujjad képernyőn a képernyőkép készítéséhez</string>
+     <string name="three_finger_gesture_summary">Húzd le három ujjad a képernyőn a képernyőkép készítéséhez</string>
 
      <!-- 4G icon -->
      <string name="show_fourg_icon_title">4G ikon</string>
