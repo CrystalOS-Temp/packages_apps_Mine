@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2020 Project-Awaken
+     Copyright (C) 2021 CrystalOS-Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+     <!-- General -->
+     <string name="ok">Oké</string>
+     <string name="default_string">Alapértelmezett</string>
+     <string name="add">Hozzáad</string>
+     <string name="enabled">Engedélyezve</string>
+     <string name="choose_app">Válassz alkamazást</string>
+     <string name="help">Segítség</string>
+     <string name="reset_message">Visszaállítsak minden bejegyzést az alapértékre?</string>
+     <string name="attention">Figyelem</string>
+     <string name="reset">Visszaállítás</string>
+
+     <!-- Crystal Mine -->
+     <string name="crystal_homepage_title">Crystal Mine</string>
+     <string name="category_aboutcrystal_title">CrystalOS-ről</string>
+     <string name="category_statusbar_title">Értesítésisáv</string>
+     <string name="category_quicksettings_title">Gyors Beállítások</string>
+     <string name="category_buttons_title">Gombok</string>
+     <string name="category_lockscreen_title">Zárképernyő</string>
+     <string name="category_animations_title">Animációk</string>
+     <string name="category_crystalgoodies_title">Crystal Extrák</string>
+     <string name="category_designcorner_title">Dizájn Sarok</string>
+     <string name="category_gestures_title">Gesztusok</string>
+     <string name="category_navigation_title">Navigáció</string>
+     <string name="category_notifications_title">Értesítések</string>
+     <string name="category_miscellaneous_title">Vegyes</string>
+     <string name="category_powermenu_title">Bekapcsolási Menü</string>
+
+     <!-- Pref Category Titles -->
+     <string name="sleep_gestures_pref_title">Alvással kapcsolatos gesztusok</string>
+     <string name="screenshot_gestures_pref_title">Képernyőkép gesztusok</string>
+     <string name="ls_unlock_pref_title">Zárképernyő feloldás</string>
+     <string name="selinux_pref_title">SELinux</string>
+     <string name="wakeonplug_pref_title">Felkelés töltő csatlakoztatáskor</string>
+     <string name="aosp_gestures_pref_title">AOSP Gesztusok</string>
+     <string name="powermenu_pref_title">Fejlett újraindítási lehetőségek</string>
+     <string name="sb_icons_pref_title">Értesítésisáv ikon testreszabások</string>
+     <string name="qs_pref_title">Gyors beállítások testreszabásai</string>
+
+     <!-- SELinux related -->
+     <string name="selinux_explanation_summary">A SELinux egy kernel módosításokból és felhasználói eszközökből álló gyűjtemény. A mód változtatása nem várt eredményekkel járhat. Saját felelősségre használd!</string>
+     <string name="selinux_mode_title">SELinux mód</string>
+     <string name="selinux_permissive_summary">Permissive</string>
+     <string name="selinux_enforcing_summary">Enforcing</string>
+     <string name="selinux_persistence_title">Beállítás megtarása újraindítások között</string> 
+     <string name="selinux_persistence_summary">Állítsa vissza a fentebb beállított módot minden bekapcsolásnál.</string>
+     <string name="selinux_permissive_toast_title">Selinux átállítva permissive-re!</string>
+     <string name="selinux_enforcing_toast_title">Selinux átállítva enforcing-ra!</string>
+     <string name="cannot_get_su">A kért művelet nem hajtható végre hiányzó Root hozzáférés miatt</string>
+
+     <!-- Fingerprint unlock -->
+     <string name="fp_unlock_keystore_title">Ujjlenyomatos hitelesítés kényszerítése</string>
+     <string name="fp_unlock_keystore_summary">Az eszköz feloldása ujjlenyomattal újraindítás vagy lezárás után</string>
+     <string name="fp_encrypt_warning">Eszköz feloldása ujjlenyomattal újraindítás után PIN/Jelszó/Minta nélkül\nMegjegyzés: Az eszközöd titkosítva van, ezért nálad ez a funkció nem használható.</string>
+
+     <!-- Wakeup options -->
+     <string name="wakeup_when_plugged_unplugged_title">Eszköz felkeltése töltő csatéakoztatáskor</string>
+     <string name="wakeup_when_plugged_unplugged_summary">Keltse fel az eszközt amikor töltőre kerül, illetve lekerül a töltőről</string>
+
+     <!-- Power Menu -->
+     <string name="power_menu_title">Bekapcsolási Menü</string>
+     <string name="power_menu_title_summary">Nézd meg vagy változtasd meg a bekapcsolási menüben megjelenő elemeket</string>
+     <string name="powermenu_screenshot">Képernyőkép</string>
+     <string name="powermenu_power">Kikapcsolás</string>
+     <string name="powermenu_advanced">Fejlett újraindítás</string>
+     <string name="powermenu_restart">Újraindítás</string>
+     <string name="powermenu_airplane">Repülőmód</string>
+     <string name="powermenu_settings">Beállítások</string>
+     <string name="powermenu_lockdown">Lezárás</string>
+     <string name="powermenu_soundpanel">Hangerő Panel</string>
+     <string name="powermenu_users">Felhasználók</string>
+     <string name="powermenu_logout">Kijelentkezés</string>
+     <string name="powermenu_emergency">Segélyhívás</string>
+
+     <!-- Double Tap Lockscreen to Sleep -->
+     <string name="double_tap_to_sleep_lockscreen_title">Dupla koppintásos altatás a zárképernyőn</string>
+     <string name="double_tap_to_sleep_lockscreen_summary">Koppints duplán a zárképernyőn, hogy elaltasd az eszközt</string>
+
+     <!-- Double Tap Statusbar to Sleep -->
+     <string name="double_tap_to_sleep_statusbar_title">Dupla koppintásos altatás az értesítésisávon</string>
+     <string name="double_tap_to_sleep_statusbar_summary">Koppints duplán azértesítésisávon, hogy elaltasd az eszközt</string>
+
+     <string name="aosp_gestures_title">AOSP gesztus beállítások</string>
+     <string name="aosp_gestures_summary">Az AOSP-ben alapból megtalálható gesztus beállítások</string>
+
+     <!--3-Finger screenshot-->
+     <string name="three_finger_gesture">Három ujjas gesztus</string>
+     <string name="three_finger_gesture_summary">Húzd le három ujjad képernyőn a képernyőkép készítéséhez</string>
+
+     <!-- 4G icon -->
+     <string name="show_fourg_icon_title">4G ikon</string>
+     <string name="show_fourg_icon_summary">4G ikon jelenjen meg LTE helyett</string>
+
+     <!-- Quick QS pulldown -->
+     <string name="status_bar_quick_qs_pulldown">Gyors Beállítások könnyű elérése </string>
+     <string name="quick_pulldown_none">Letiltva</string>
+     <string name="quick_pulldown_right">Jobb oldali</string>
+     <string name="quick_pulldown_left">Bal oldali</string>
+
+</resources>
