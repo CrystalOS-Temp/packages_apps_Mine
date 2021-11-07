@@ -53,18 +53,18 @@
      <string name="qs_pref_title">QuickSettings customizations</string>
 
      <!-- SELinux related -->
-     <string name="selinux_explanation_summary">SELinux is a set of kernel modifications and user-space tools. Changing modes can cause unwanted effects. Use at your own risk.</string>
+     <string name="selinux_explanation_summary">SELinux is a set of kernel modifications and user-space tools. Changing modes can cause unwanted effects. Use at your own risk!</string>
      <string name="selinux_mode_title">SELinux mode</string>
      <string name="selinux_permissive_summary">Permissive</string>
      <string name="selinux_enforcing_summary">Enforcing</string>
      <string name="selinux_persistence_title">Persist across reboots</string> 
-     <string name="selinux_persistence_summary">Restore the above set sepolicy mode on each boot</string>
+     <string name="selinux_persistence_summary">Restore the above set mode on each boot</string>
      <string name="selinux_permissive_toast_title">Selinux set to permissive!</string>
      <string name="selinux_enforcing_toast_title">Selinux set to enforcing!</string>
      <string name="cannot_get_su">Action failed because of missing Root permission</string>
 
      <!-- Fingerprint unlock -->
-     <string name="fp_unlock_keystore_title">Force FP authentication</string>
+     <string name="fp_unlock_keystore_title">Force fingerprint authentication</string>
      <string name="fp_unlock_keystore_summary">Unlock device with fingerprint after reboot or lockdown</string>
      <string name="fp_encrypt_warning">Unlock device with fingerprint after reboot without PIN/Password/Pattern\nNote: You are encrypted so you can\'t use this feature.</string>
 
