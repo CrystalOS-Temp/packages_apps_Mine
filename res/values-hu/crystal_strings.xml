@@ -112,4 +112,8 @@
      <string name="quick_pulldown_right">Jobb oldali</string>
      <string name="quick_pulldown_left">Bal oldali</string>
 
+     <!-- QS footer warnings -->
+     <string name="qs_footer_warnings_title">Gyorsbeállítások lábléc figyelmeztetés</string>
+     <string name="qs_footer_warnings_summary">Jelenjen meg figyelmeztetés a gyorsbeállítások panel alján arról, hogy a hálózatot lehet hogy megfigyelik külső alkalmazások vagy a VPN</string>
+
 </resources>
