@@ -17,6 +17,7 @@ package com.crystal.mine;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.ContentResolver;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.UserHandle;
