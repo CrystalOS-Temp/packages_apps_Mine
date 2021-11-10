@@ -16,7 +16,7 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/category_quicksettings_title" >
 
-     <PreferenceScreen
+     <PreferenceCategory
           android:title="@string/qs_pref_title">
 
           <ListPreference
@@ -32,6 +32,6 @@
                android:summary="@string/qs_footer_warnings_summary"
                android:defaultValue="true" />
 
-     </PreferenceScreen>
+     </PreferenceCategory>
 
 </PreferenceScreen>
