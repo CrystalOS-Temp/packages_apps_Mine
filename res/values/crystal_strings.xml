@@ -127,4 +127,8 @@
      <string name="charging_animation_title">Charging animation</string>
      <string name="charging_animation_summary">Display an animation when the device is plugged in</string>
 
+     <!-- Call strength icons in QS -->
+     <string name="show_qs_call_strength_icon_title">Show call strength icon(s)</string>
+     <string name="show_qs_call_strength_icon_summary">Show call strength icons in QuickSettings panel when available</string>
+
 </resources>

@@ -32,6 +32,12 @@
                android:summary="@string/qs_footer_warnings_summary"
                android:defaultValue="true" />
 
+          <com.crystal.support.preferences.SecureSettingSwitchPreference
+               android:key="hide_qs_call_strength"
+               android:title="@string/show_qs_call_strength_icon_title"
+               android:summary="@string/show_qs_call_strength_icon_summary"
+               android:defaultValue="true" />
+
      </PreferenceCategory>
 
 </PreferenceScreen>
