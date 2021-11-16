@@ -52,6 +52,7 @@
      <string name="sb_icons_pref_title">Statusbar icon customizations</string>
      <string name="qs_pref_title">QuickSettings customizations</string>
      <string name="anims_pref_title">Animation customizations</string>
+     <string name="design_pref_title">Design customizations</string>
 
      <!-- SELinux related -->
      <string name="selinux_explanation_summary">SELinux is a set of kernel modifications and user-space tools. Changing modes can cause unwanted effects. Use at your own risk!</string>
@@ -130,5 +131,9 @@
      <!-- Call strength icons in QS -->
      <string name="show_qs_call_strength_icon_title">Show call strength icon(s)</string>
      <string name="show_qs_call_strength_icon_summary">Show call strength icons in QuickSettings panel when available</string>
+
+     <!-- Toast app icon -->
+     <string name="toast_icon_title">Toast app icon</string>
+     <string name="toast_icon_summary">Display the app\'s icon corresponding with the toast</string>
 
 </resources>
