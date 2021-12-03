@@ -53,6 +53,7 @@
      <string name="qs_pref_title">QuickSettings customizations</string>
      <string name="anims_pref_title">Animation customizations</string>
      <string name="design_pref_title">Design customizations</string>
+     <string name="notif_pref_title">Notification customizations</string>
 
      <!-- SELinux related -->
      <string name="selinux_explanation_summary">SELinux is a set of kernel modifications and user-space tools. Changing modes can cause unwanted effects. Use at your own risk!</string>
@@ -135,5 +136,9 @@
      <!-- Toast app icon -->
      <string name="toast_icon_title">Toast app icon</string>
      <string name="toast_icon_summary">Display the app\'s icon corresponding with the toast</string>
+
+     <!-- Annoying Notifications -->
+     <string name="notification_sound_vib_screen_on_title">Annoying Notifications</string>
+     <string name="notification_sound_vib_screen_on_summary">Play sound and vibration for notifications when screen is on</string>
 
 </resources>
