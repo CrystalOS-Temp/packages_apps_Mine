@@ -26,6 +26,14 @@
                android:summary="@string/toast_icon_summary"
                android:defaultValue="false" />
 
+
+          <PreferenceScreen
+               android:key="monet_engine"
+               android:icon="@drawable/ic_themes"
+               android:title="@string/monet_title"
+               android:summary="@string/monet_summary"
+               android:fragment="com.crystal.utils.MonetSettings" />
+
      </PreferenceCategory>
 
 </PreferenceScreen>
