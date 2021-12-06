@@ -158,4 +158,8 @@
      <string name="monet_engine_chroma_factor_title">Chroma factor</string>
      <string name="monet_engine_linear_lightness_title">Use linear lightness</string>
 
+     <!-- Tiles on secure keyguard -->
+     <string name="use_tiles_on_secure_keyguard_title">Require unlocking to use sensitive tiles</string>
+     <string name="use_tiles_on_secure_keyguard_summary">Ask to unlock lock screen when using sensitive tiles</string>
+
 </resources>
