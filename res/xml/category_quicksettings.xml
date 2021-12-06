@@ -38,6 +38,12 @@
                android:summary="@string/show_qs_call_strength_icon_summary"
                android:defaultValue="true" />
 
+          <com.crystal.support.preferences.SystemSettingSwitchPreference
+               android:key="use_tiles_on_secure_keyguard"
+               android:title="@string/use_tiles_on_secure_keyguard_title"
+               android:summary="@string/use_tiles_on_secure_keyguard_summary"
+               android:defaultValue="true" />
+
      </PreferenceCategory>
 
 </PreferenceScreen>
