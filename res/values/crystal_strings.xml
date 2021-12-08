@@ -51,6 +51,9 @@
      <string name="powermenu_pref_title">Advanced Reboot options</string>
      <string name="sb_icons_pref_title">Statusbar icon customizations</string>
      <string name="qs_pref_title">QuickSettings customizations</string>
+     <string name="anims_pref_title">Animation customizations</string>
+     <string name="design_pref_title">Design customizations</string>
+     <string name="notif_pref_title">Notification customizations</string>
 
      <!-- SELinux related -->
      <string name="selinux_explanation_summary">SELinux is a set of kernel modifications and user-space tools. Changing modes can cause unwanted effects. Use at your own risk!</string>
@@ -111,9 +114,43 @@
      <string name="quick_pulldown_none">Disabled</string>
      <string name="quick_pulldown_right">Pulldown statusbar from right side</string>
      <string name="quick_pulldown_left">Pulldown statusbar from left side</string>
+  
+     <!-- QS footer warnings -->
+     <string name="qs_footer_warnings_title">QS footer warnings</string>
+     <string name="qs_footer_warnings_summary">Display a warning at bottom of QS panel when network is monitored by external apps or vpn</string>
 
-    <!-- Volume swap buttons -->
-    <string name="swap_volume_buttons_title">Reorient</string>
-    <string name="swap_volume_buttons_summary">Swap volume buttons when the screen is rotated</string>
+     <!-- Fingerprint authentication vibration -->
+     <string name="fprint_sucess_vib_title">Fingerprint success vibration</string>
+     <string name="fprint_sucess_vib_summary">Vibrate on successful fingerprint authentication</string>
+     <string name="fprint_error_vib_title">Fingerprint error vibration</string>
+     <string name="fprint_error_vib_summary">Vibrate on failed fingerprint authentication</string>
+
+     <!-- Old mobile type icons -->
+     <string name="use_old_mobiletype_title">Small mobile type icon</string>
+     <string name="use_old_mobiletype_summary">Show mobile type icon on top of the signal indicator</string>
+
+     <!-- Charging animation -->
+     <string name="charging_animation_title">Charging animation</string>
+     <string name="charging_animation_summary">Display an animation when the device is plugged in</string>
+
+     <!-- Call strength icons in QS -->
+     <string name="show_qs_call_strength_icon_title">Show call strength icon(s)</string>
+     <string name="show_qs_call_strength_icon_summary">Show call strength icons in QuickSettings panel when available</string>
+
+     <!-- Toast app icon -->
+     <string name="toast_icon_title">Toast app icon</string>
+     <string name="toast_icon_summary">Display the app\'s icon corresponding with the toast</string>
+
+     <!-- Annoying Notifications -->
+     <string name="notification_sound_vib_screen_on_title">Annoying Notifications</string>
+     <string name="notification_sound_vib_screen_on_summary">Play sound and vibration for notifications when screen is on</string>
+
+     <!-- Less boring heads up -->
+     <string name="less_boring_heads_up_title">Saner Heads-Up</string>
+     <string name="less_boring_heads_up_summary">Quickly disable heads up for all apps but keep them enabled for dialer and messaging apps</string>
+  
+     <!-- Volume swap buttons -->
+     <string name="swap_volume_buttons_title">Reorient</string>
+     <string name="swap_volume_buttons_summary">Swap volume buttons when the screen is rotated</string>
 
 </resources>

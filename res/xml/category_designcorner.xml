@@ -13,8 +13,19 @@
      limitations under the License.
 -->
 <PreferenceScreen
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-    android:title="@string/category_designcorner_title" >
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+     android:title="@string/category_designcorner_title" >
+
+     <PreferenceCategory
+          android:title="@string/design_pref_title">
+
+          <com.crystal.support.preferences.SystemSettingSwitchPreference
+               android:key="toast_icon"
+               android:title="@string/toast_icon_title"
+               android:summary="@string/toast_icon_summary"
+               android:defaultValue="false" />
+
+     </PreferenceCategory>
 
 </PreferenceScreen>
