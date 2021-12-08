@@ -26,7 +26,6 @@
                android:summary="@string/toast_icon_summary"
                android:defaultValue="false" />
 
-
           <PreferenceScreen
                android:key="monet_engine"
                android:icon="@drawable/ic_themes"
