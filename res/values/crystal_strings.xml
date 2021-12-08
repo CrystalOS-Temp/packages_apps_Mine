@@ -114,7 +114,7 @@
      <string name="quick_pulldown_none">Disabled</string>
      <string name="quick_pulldown_right">Pulldown statusbar from right side</string>
      <string name="quick_pulldown_left">Pulldown statusbar from left side</string>
-
+  
      <!-- QS footer warnings -->
      <string name="qs_footer_warnings_title">QS footer warnings</string>
      <string name="qs_footer_warnings_summary">Display a warning at bottom of QS panel when network is monitored by external apps or vpn</string>
@@ -148,5 +148,9 @@
      <!-- Less boring heads up -->
      <string name="less_boring_heads_up_title">Saner Heads-Up</string>
      <string name="less_boring_heads_up_summary">Quickly disable heads up for all apps but keep them enabled for dialer and messaging apps</string>
+  
+     <!-- Volume swap buttons -->
+     <string name="swap_volume_buttons_title">Reorient</string>
+     <string name="swap_volume_buttons_summary">Swap volume buttons when the screen is rotated</string>
 
 </resources>
