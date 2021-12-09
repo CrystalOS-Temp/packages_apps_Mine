@@ -22,7 +22,7 @@
         android:summary="@string/swap_volume_buttons_summary"
         android:defaultValue="false" />
     
-    <com.crystal.support.preferences.SystemSettingList        
+    <com.crystal.support.preferences.SystemSettingListPreference        
         android:key="volume_key_cursor_control"
         android:summary="%s"
         android:title="@string/volume_key_cursor_control_title"
