@@ -12,8 +12,22 @@
      limitations under the License.
 -->
 <PreferenceScreen
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-    android:title="@string/category_buttons_title" >
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+     android:title="@string/category_buttons_title" >
+
+     <PreferenceCategory
+          android:title="@string/btns_pref_title">
+
+     <com.crystal.support.preferences.SystemSettingListPreference
+          android:key="volume_key_cursor_control"
+          android:summary="%s"
+          android:title="@string/volume_key_cursor_control_title"
+          android:dialogTitle="@string/volume_key_cursor_control_title"
+          android:entries="@array/volume_key_cursor_control_entries"
+          android:entryValues="@array/volume_key_cursor_control_values"
+          android:defaultValue="0" />
+
+     </PreferenceCategory>
 
 </PreferenceScreen>

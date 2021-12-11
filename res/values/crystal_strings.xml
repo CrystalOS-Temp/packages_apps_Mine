@@ -54,6 +54,7 @@
      <string name="anims_pref_title">Animation customizations</string>
      <string name="design_pref_title">Design customizations</string>
      <string name="notif_pref_title">Notification customizations</string>
+     <string name="btns_pref_title">Button customizations</string>
 
      <!-- SELinux related -->
      <string name="selinux_explanation_summary">SELinux is a set of kernel modifications and user-space tools. Changing modes can cause unwanted effects. Use at your own risk!</string>
@@ -162,5 +163,12 @@
      <!-- Tiles on secure keyguard -->
      <string name="use_tiles_on_secure_keyguard_title">Require unlocking to use sensitive tiles</string>
      <string name="use_tiles_on_secure_keyguard_summary">Ask to unlock lock screen when using sensitive tiles</string>
+
+     <!-- Volume rocker cursor control -->
+     <string name="cursor_section_header">Cursor</string>
+     <string name="volume_key_cursor_control_title">Keyboard cursor control</string>
+     <string name="volume_key_cursor_control_off">Disabled</string>
+     <string name="volume_key_cursor_control_on">Volume Up/Down - Cursor Left/Right</string>
+     <string name="volume_key_cursor_control_on_reverse">Volume Up/Down - Cursor Right/Left</string>
 
 </resources>
