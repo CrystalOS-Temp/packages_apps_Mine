@@ -175,8 +175,12 @@
      <string name="volume_rocker_wake_title">Volume rocker wake</string>
      <string name="volume_rocker_wake_summary">Pressing the volume keys will wake your device</string>
 
-    <!-- Volume swap buttons -->
-    <string name="swap_volume_buttons_title">Reorient</string>
-    <string name="swap_volume_buttons_summary">Swap volume buttons when the screen is rotated</string>
+     <!-- Volume swap buttons -->
+     <string name="swap_volume_buttons_title">Reorient</string>
+     <string name="swap_volume_buttons_summary">Swap volume buttons when the screen is rotated</string>
+
+     <!-- Show VoLTE icon on statusbar -->
+     <string name="volte_icon_title">VoLTE icon</string>
+     <string name="volte_icon_summary">Display VoLTE icon</string>
 
 </resources>
