@@ -39,6 +39,8 @@ import com.android.settingslib.search.SearchIndexable;
 
 import com.android.internal.logging.nano.MetricsProto;
 
+import com.android.internal.util.crystal.CrystalUtils;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -54,6 +56,12 @@ public class DesignCorner extends SettingsPreferenceFragment {
     private static final String PREF_ACCURATE_SHADES = "monet_engine_accurate_shades";
     private static final String PREF_LINEAR_LIGHTNESS = "monet_engine_linear_lightness";
     private static final String PREF_WHITE_LUMINANCE = "monet_engine_white_luminance_user";
+    boolean udfpsResPkgInstalled = CrystalUtils.isPackageInstalled(getContext(),
+                "com.crystal.udfps.resources");
+        PreferenceCategory udfps = (PreferenceCategory) screen.findPreference("udfps_category");
+        if (!udfpsResPkgInstalled) {
+            screen.removePreference(udfps);
+        }
 
     @Override
     public void onCreate(Bundle icicle) {

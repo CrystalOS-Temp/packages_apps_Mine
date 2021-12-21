@@ -18,4 +18,7 @@
 
     <color name="disabled_text_color">#66000000</color>
 	
-</resources>
+
+    <color name="option_border_default">#ffffff</color>
+
+</resources
