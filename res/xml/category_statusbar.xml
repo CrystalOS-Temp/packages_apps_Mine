@@ -25,6 +25,13 @@
                android:summary="@string/show_fourg_icon_summary"
                android:defaultValue="false"/>
 
+          <Preference
+               android:key="networktraffic"
+               android:order="-10"
+               android:fragment="com.crystal.mine.NetworkTraffic"
+               android:icon="@drawable/ic_network_traffic"
+               android:title="@string/traffic_title"
+               android:summary="@string/network_traffic_state_summary" />
 
           <com.crystal.support.preferences.SystemSettingSwitchPreference
                android:key="use_old_mobiletype"
