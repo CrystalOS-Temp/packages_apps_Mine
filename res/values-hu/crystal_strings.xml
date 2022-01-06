@@ -51,6 +51,7 @@
     <string name="powermenu_pref_title">Fejlett újraindítási lehetőségek</string>
     <string name="sb_icons_pref_title">Értesítésisáv ikon testreszabások</string>
     <string name="qs_pref_title">Gyors beállítások testreszabásai</string>
+    <string name="qs_brightness_pref_title">Fényerő csúszka</string>
 
     <!-- SELinux related -->
     <string name="selinux_explanation_summary">A SELinux egy kernel módosításokból és felhasználói eszközökből álló gyűjtemény. A mód változtatása nem várt eredményekkel járhat. Saját felelősségre használd!</string>
@@ -140,5 +141,19 @@
     <!-- BasePreferenceController -->
     <string name="search">Keresés</string>
     <string name="search_apps">Alkalmazások keresése</string>
+
+    <!-- Quick Settings brightness slider -->
+    <string name="qs_show_brightness_slider_title">Fényerő csúszka</string>
+    <string name="qs_show_brightness_slider_never">Soha ne mutassa</string>
+    <string name="qs_show_brightness_slider_expanded">Csak kinyitott állapotban</string>
+    <string name="qs_show_brightness_slider_always">Mindig mutassa</string>
+    <string name="qs_show_brightness_slider_not_expanded">Csak becsukott állapotban</string>
+    <string name="qs_brightness_slider_position_title">Pozíció</string>
+    <string name="qs_brightness_slider_position_top">Felül</string>
+    <string name="qs_brightness_slider_position_bottom">Alul</string>
+
+    <!-- Quick Settings brightness icon -->
+    <string name="qs_show_auto_brightness_title">Automatikus fényerő ikon</string>
+    <string name="qs_show_auto_brightness_summary">Mutassa a kapcsolót a fényerő csúszka mellett</string>
 
 </resources>
