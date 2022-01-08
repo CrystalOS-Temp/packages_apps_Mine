@@ -1,4 +1,4 @@
-package com.crystal.utils;
+package com.crystal.mine.utils;
 
 import android.app.ActivityManager;
 import android.content.BroadcastReceiver;

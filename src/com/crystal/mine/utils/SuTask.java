@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.crystal.utils;
+package com.crystal.mine.utils;
 
 import android.content.Context;
 import android.os.AsyncTask;

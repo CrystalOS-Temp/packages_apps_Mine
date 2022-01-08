@@ -22,7 +22,7 @@
           <Preference
                android:key="networktraffic"
                android:order="-10"
-               android:fragment="com.crystal.mine.NetworkTraffic"
+               android:fragment="com.crystal.mine.fragments.NetworkTraffic"
                android:icon="@drawable/ic_network_traffic"
                android:title="@string/traffic_title"
                android:summary="@string/network_traffic_state_summary" />

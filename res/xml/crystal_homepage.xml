@@ -22,7 +22,7 @@
           android:id="@+id/aboutcrystal"
           android:icon="@drawable/ic_category_aboutcrystal"
           android:title="@string/category_aboutcrystal_title"
-          android:fragment="com.crystal.mine.AboutCrystal"
+          android:fragment="com.crystal.mine.fragments.AboutCrystal"
           android:layout="@layout/preference_category_aboutcrystal"
           />
 
@@ -31,7 +31,7 @@
           android:id="@+id/animations"
           android:icon="@drawable/ic_category_animations"
           android:title="@string/category_animations_title"
-          android:fragment="com.crystal.mine.Animations"
+          android:fragment="com.crystal.mine.fragments.Animations"
           android:layout="@layout/preference_category_animations"
           />
 
@@ -40,7 +40,7 @@
           android:id="@+id/buttons"
           android:icon="@drawable/ic_category_buttons"
           android:title="@string/category_buttons_title"
-          android:fragment="com.crystal.mine.Buttons"
+          android:fragment="com.crystal.mine.fragments.Buttons"
           android:layout="@layout/preference_category_buttons"
           />
 
@@ -49,7 +49,7 @@
           android:id="@+id/crystalgoodies"
           android:icon="@drawable/ic_category_crystalgoodies"
           android:title="@string/category_crystalgoodies_title"
-          android:fragment="com.crystal.mine.CrystalGoodies"
+          android:fragment="com.crystal.mine.fragments.CrystalGoodies"
           android:layout="@layout/preference_category_crystalgoodies"
           />
 
@@ -58,7 +58,7 @@
           android:id="@+id/designcorner"
           android:icon="@drawable/ic_category_designcorner"
           android:title="@string/category_designcorner_title"
-          android:fragment="com.crystal.mine.DesignCorner"
+          android:fragment="com.crystal.mine.fragments.DesignCorner"
           android:layout="@layout/preference_category_designcorner"
           />
 
@@ -67,7 +67,7 @@
           android:id="@+id/gestures"
           android:icon="@drawable/ic_category_gestures"
           android:title="@string/category_gestures_title"
-          android:fragment="com.crystal.mine.Gestures"
+          android:fragment="com.crystal.mine.fragments.Gestures"
           android:layout="@layout/preference_category_gestures"
           />
 
@@ -76,7 +76,7 @@
           android:id="@+id/lockscreen"
           android:icon="@drawable/ic_category_lockscreen"
           android:title="@string/category_lockscreen_title"
-          android:fragment="com.crystal.mine.LockScreen"
+          android:fragment="com.crystal.mine.fragments.LockScreen"
           android:layout="@layout/preference_category_lockscreen"
           />
 
@@ -85,7 +85,7 @@
           android:id="@+id/miscellaneous"
           android:icon="@drawable/ic_category_miscellaneous"
           android:title="@string/category_miscellaneous_title"
-          android:fragment="com.crystal.mine.Miscellaneous"
+          android:fragment="com.crystal.mine.fragments.Miscellaneous"
           android:layout="@layout/preference_category_miscellaneous"
           />
 
@@ -94,7 +94,7 @@
           android:id="@+id/navigation"
           android:icon="@drawable/ic_category_navigation"
           android:title="@string/category_navigation_title"
-          android:fragment="com.crystal.mine.Navigation"
+          android:fragment="com.crystal.mine.fragments.Navigation"
           android:layout="@layout/preference_category_navigation"
           />
 
@@ -103,7 +103,7 @@
           android:id="@+id/notifications"
           android:icon="@drawable/ic_category_notifications"
           android:title="@string/category_notifications_title"
-          android:fragment="com.crystal.mine.Notifications"
+          android:fragment="com.crystal.mine.fragments.Notifications"
           android:layout="@layout/preference_category_notifications"
           />
 
@@ -112,7 +112,7 @@
           android:id="@+id/powermenu"
           android:icon="@drawable/ic_category_powermenu"
           android:title="@string/category_powermenu_title"
-          android:fragment="com.crystal.mine.PowerMenu"
+          android:fragment="com.crystal.mine.fragments.PowerMenu"
           android:layout="@layout/preference_category_powermenu"
           />
 
@@ -121,7 +121,7 @@
           android:id="@+id/quick_settings"
           android:icon="@drawable/ic_category_quicksettings"
           android:title="@string/category_quicksettings_title"
-          android:fragment="com.crystal.mine.QuickSettings"
+          android:fragment="com.crystal.mine.fragments.QuickSettings"
           android:layout="@layout/preference_category_quicksettings"
           />
 
@@ -130,7 +130,7 @@
           android:id="@+id/statusbar"
           android:icon="@drawable/ic_category_statusbar"
           android:title="@string/category_statusbar_title"
-          android:fragment="com.crystal.mine.StatusBar"
+          android:fragment="com.crystal.mine.fragments.StatusBar"
           android:layout="@layout/preference_category_statusbar"
           />
 

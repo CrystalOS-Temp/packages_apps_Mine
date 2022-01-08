@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.crystal.mine;
+package com.crystal.mine.fragments;
 
 import android.app.Activity;
 import android.content.Context;
@@ -46,8 +46,8 @@ import java.util.List;
 import android.content.SharedPreferences;
 import android.os.SELinux;
 import android.util.Log;
-import com.crystal.utils.SuShell;
-import com.crystal.utils.SuTask;
+import com.crystal.mine.utils.SuShell;
+import com.crystal.mine.utils.SuTask;
 
 @SearchIndexable
 public class Miscellaneous extends SettingsPreferenceFragment implements OnPreferenceChangeListener {

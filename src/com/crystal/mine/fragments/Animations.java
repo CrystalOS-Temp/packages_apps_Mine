@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2020 Project-Awaken
+ * Copyright (C) 2021 CrystalOS-Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,23 +14,23 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.crystal.mine;
+package com.crystal.mine.fragments;
 
 import android.app.Activity;
-import android.content.Context;
 import android.content.ContentResolver;
-import android.content.Intent;
+import android.content.Context;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.UserHandle;
-import android.provider.SearchIndexableResource;
 import android.provider.Settings;
+import android.provider.SearchIndexableResource;
 
-import androidx.preference.ListPreference;
-import androidx.preference.SwitchPreference;
-import androidx.preference.Preference;
 import androidx.preference.PreferenceCategory;
+import androidx.preference.ListPreference;
+import androidx.preference.Preference;
 import androidx.preference.PreferenceScreen;
 import androidx.preference.Preference.OnPreferenceChangeListener;
+import androidx.preference.SwitchPreference;
 
 import com.android.settings.R;
 import com.android.settings.search.BaseSearchIndexProvider;
@@ -43,37 +44,15 @@ import java.util.Arrays;
 import java.util.List;
 
 @SearchIndexable
-public class QuickSettings extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
-
-    private ListPreference mQuickPulldown;
+public class Animations extends SettingsPreferenceFragment {
 
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
-        addPreferencesFromResource(R.xml.category_quicksettings);
+        addPreferencesFromResource(R.xml.category_animations);
         PreferenceScreen prefSet = getPreferenceScreen();
-
-        int qpmode = Settings.System.getIntForUser(getContentResolver(), Settings.System.STATUS_BAR_QUICK_QS_PULLDOWN, 0, UserHandle.USER_CURRENT);
-        mQuickPulldown = (ListPreference) findPreference("status_bar_quick_qs_pulldown");
-        mQuickPulldown.setValue(String.valueOf(qpmode));
-        mQuickPulldown.setSummary(mQuickPulldown.getEntry());
-        mQuickPulldown.setOnPreferenceChangeListener(this);
-    }
-
-    @Override
-    public boolean onPreferenceChange(Preference preference, Object newValue) {
-        ContentResolver resolver = getActivity().getContentResolver();
-        if (preference == mQuickPulldown) {
-            int value = Integer.parseInt((String) newValue);
-            Settings.System.putIntForUser(resolver,
-                    Settings.System.STATUS_BAR_QUICK_QS_PULLDOWN, value,
-                    UserHandle.USER_CURRENT);
-            int index = mQuickPulldown.findIndexOfValue((String) newValue);
-            mQuickPulldown.setSummary(
-                    mQuickPulldown.getEntries()[index]);
-            return true;
-        }
-        return false;
+        final Resources res = getResources();
+        final PreferenceScreen prefScreen = getPreferenceScreen();
     }
 
     @Override
@@ -87,7 +66,7 @@ public class QuickSettings extends SettingsPreferenceFragment implements OnPrefe
                 public List<SearchIndexableResource> getXmlResourcesToIndex(
                         Context context, boolean enabled) {
                     final SearchIndexableResource sir = new SearchIndexableResource(context);
-                    sir.xmlResId = R.xml.category_quicksettings;
+                    sir.xmlResId = R.xml.category_animations;
                     return Arrays.asList(sir);
                 }
 
