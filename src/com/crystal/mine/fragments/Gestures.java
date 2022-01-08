@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.crystal.mine;
+package com.crystal.mine.fragments;
 
 import android.app.Activity;
 import android.content.ContentResolver;
@@ -44,12 +44,12 @@ import java.util.Arrays;
 import java.util.List;
 
 @SearchIndexable
-public class CrystalGoodies extends SettingsPreferenceFragment {
+public class Gestures extends SettingsPreferenceFragment {
 
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
-        addPreferencesFromResource(R.xml.category_crystalgoodies);
+        addPreferencesFromResource(R.xml.category_gestures);
         PreferenceScreen prefSet = getPreferenceScreen();
         final Resources res = getResources();
         final PreferenceScreen prefScreen = getPreferenceScreen();
@@ -66,7 +66,7 @@ public class CrystalGoodies extends SettingsPreferenceFragment {
                 public List<SearchIndexableResource> getXmlResourcesToIndex(
                         Context context, boolean enabled) {
                     final SearchIndexableResource sir = new SearchIndexableResource(context);
-                    sir.xmlResId = R.xml.category_crystalgoodies;
+                    sir.xmlResId = R.xml.category_gestures;
                     return Arrays.asList(sir);
                 }
 

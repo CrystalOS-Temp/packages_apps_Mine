@@ -31,7 +31,7 @@
                android:icon="@drawable/ic_themes"
                android:title="@string/monet_title"
                android:summary="@string/monet_summary"
-               android:fragment="com.crystal.utils.MonetSettings" />
+               android:fragment="com.crystal.mine.utils.MonetSettings" />
 
      </PreferenceCategory>
 

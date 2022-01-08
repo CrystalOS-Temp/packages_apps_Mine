@@ -1,4 +1,4 @@
-package com.crystal.utils;
+package com.crystal.mine.utils;
 
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager.NameNotFoundException;
