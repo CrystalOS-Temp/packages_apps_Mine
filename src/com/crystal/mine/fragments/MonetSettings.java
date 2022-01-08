@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.crystal.utils;
+package com.crystal.mine.fragments;
 
 import android.content.ContentResolver;
 import android.content.Context;

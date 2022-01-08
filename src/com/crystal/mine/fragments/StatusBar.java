@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.crystal.mine;
+package com.crystal.mine.fragments;
 
 import android.app.Activity;
 import android.content.Context;
