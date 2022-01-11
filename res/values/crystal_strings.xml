@@ -56,6 +56,8 @@
      <string name="notif_pref_title">Notification customizations</string>
      <string name="btns_pref_title">Button customizations</string>
      <string name="call_pref_title">Phone call options</string>
+     <string name="monet_pref_title">Monet Controls</string>
+     <string name="traffic_pref_title">Network traffic indicator</string>
 
      <!-- SELinux related -->
      <string name="selinux_explanation_summary">SELinux is a set of kernel modifications and user-space tools. Changing modes can cause unwanted effects. Use at your own risk!</string>
