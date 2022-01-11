@@ -20,7 +20,6 @@
           <item>@string/quick_pulldown_left</item>
           <item>@string/quick_pulldown_always</item>
      </string-array>
-
      <string-array name="quick_pulldown_values" translatable="false">
           <item>0</item>
           <item>1</item>
@@ -34,7 +33,6 @@
           <item>@string/volume_key_cursor_control_on</item>
           <item>@string/volume_key_cursor_control_on_reverse</item>
      </string-array>
-
      <string-array name="volume_key_cursor_control_values">
           <item>0</item>
           <item>1</item>
@@ -47,7 +45,6 @@
           <item>@string/traffic_statusbar</item>
           <item>@string/traffic_expanded_statusbar</item>
      </string-array>
-
      <string-array name="network_traffic_location_values" translatable="false">
           <item>0</item>
           <item>1</item>
@@ -62,13 +59,26 @@
           <item>@string/show_network_traffic_down</item>
           <item>@string/show_network_traffic_all</item>
      </string-array>
-     
      <string-array name="show_network_traffic_type_values" translatable="false">
           <item>3</item>
           <item>4</item>
           <item>1</item>
           <item>2</item>
           <item>0</item>
+     </string-array>
+
+     <!-- Blink flashlight for incoming calls -->
+     <string-array name="flashlight_on_call_entries">
+          <item>@string/flashlight_on_call_disabled</item>
+          <item>@string/flashlight_on_call_ringer</item>
+          <item>@string/flashlight_on_call_silent</item>
+          <item>@string/flashlight_on_call_always</item>
+     </string-array>
+     <string-array name="flashlight_on_call_values">
+          <item>0</item>
+          <item>1</item>
+          <item>2</item>
+          <item>3</item>
      </string-array>
 
 </resources>
