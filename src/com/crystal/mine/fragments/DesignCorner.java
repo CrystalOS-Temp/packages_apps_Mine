@@ -46,6 +46,15 @@ import java.util.List;
 @SearchIndexable
 public class DesignCorner extends SettingsPreferenceFragment {
 
+    final static String TAG = "MonetSettings";
+
+    private static final String PREF_CUSTOM_COLOR = "monet_engine_custom_color";
+    private static final String PREF_COLOR_OVERRIDE = "monet_engine_color_override";
+    private static final String PREF_CHROMA_FACTOR = "monet_engine_chroma_factor";
+    private static final String PREF_ACCURATE_SHADES = "monet_engine_accurate_shades";
+    private static final String PREF_LINEAR_LIGHTNESS = "monet_engine_linear_lightness";
+    private static final String PREF_WHITE_LUMINANCE = "monet_engine_white_luminance_user";
+
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
@@ -53,6 +62,22 @@ public class DesignCorner extends SettingsPreferenceFragment {
         PreferenceScreen prefSet = getPreferenceScreen();
         final Resources res = getResources();
         final PreferenceScreen prefScreen = getPreferenceScreen();
+    }
+
+    public static void reset(Context mContext) {
+        ContentResolver resolver = mContext.getContentResolver();
+        Settings.Secure.putIntForUser(resolver,
+                PREF_CUSTOM_COLOR, 0, UserHandle.USER_CURRENT);
+        Settings.Secure.putIntForUser(resolver,
+                PREF_COLOR_OVERRIDE, 0xffffffff, UserHandle.USER_CURRENT);
+        Settings.Secure.putFloatForUser(resolver,
+                PREF_CHROMA_FACTOR, 100.0f, UserHandle.USER_CURRENT);
+        Settings.Secure.putIntForUser(resolver,
+                PREF_ACCURATE_SHADES, 1, UserHandle.USER_CURRENT);
+        Settings.Secure.putIntForUser(resolver,
+                PREF_LINEAR_LIGHTNESS, 0, UserHandle.USER_CURRENT);
+        Settings.Secure.putIntForUser(resolver,
+                PREF_WHITE_LUMINANCE, 425, UserHandle.USER_CURRENT);
     }
 
     @Override
