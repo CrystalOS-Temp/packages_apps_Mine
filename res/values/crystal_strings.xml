@@ -55,6 +55,7 @@
      <string name="design_pref_title">Design customizations</string>
      <string name="notif_pref_title">Notification customizations</string>
      <string name="btns_pref_title">Button customizations</string>
+     <string name="call_pref_title">Phone call options</string>
 
      <!-- SELinux related -->
      <string name="selinux_explanation_summary">SELinux is a set of kernel modifications and user-space tools. Changing modes can cause unwanted effects. Use at your own risk!</string>
@@ -219,5 +220,12 @@
      <!-- Roaming indicator icon -->
      <string name="roaming_indicator_icon_title">Roaming indicator</string>
      <string name="roaming_indicator_icon_summary">Display roaming indicator in signal icon when in roaming mode</string>
+
+     <!-- Blink flashlight for incoming calls -->
+     <string name="flashlight_on_call_title">Blink Flashlight for call</string>
+     <string name="flashlight_on_call_disabled">Disabled</string>
+     <string name="flashlight_on_call_ringer">Only in ringer mode</string>
+     <string name="flashlight_on_call_silent">Only when ringer is silent</string>
+     <string name="flashlight_on_call_always">Always</string>
 
 </resources>
