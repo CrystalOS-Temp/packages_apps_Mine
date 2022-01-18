@@ -38,6 +38,10 @@ import com.android.settingslib.search.SearchIndexable;
 
 import com.android.internal.logging.nano.MetricsProto;
 
+import com.crystal.support.preferences.SystemSettingListPreference;
+import com.crystal.support.preferences.SystemSettingSwitchPreference;
+import com.crystal.support.preferences.CustomSeekBarPreference;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -57,7 +61,13 @@ public class Miscellaneous extends SettingsPreferenceFragment implements OnPrefe
     private static final String SELINUX_CATEGORY = "selinux";
     private static final String PREF_SELINUX_MODE = "selinux_mode";
     private static final String PREF_SELINUX_PERSISTENCE = "selinux_persistence";
+    private static final String PREF_FLASH_ON_CALL = "flashlight_on_call";
+    private static final String PREF_FLASH_ON_CALL_DND = "flashlight_on_call_ignore_dnd";
+    private static final String PREF_FLASH_ON_CALL_RATE = "flashlight_on_call_rate";
 
+    private SystemSettingListPreference mFlashOnCall;
+    private SystemSettingSwitchPreference mFlashOnCallIgnoreDND;
+    private CustomSeekBarPreference mFlashOnCallRate;
     private SwitchPreference mSelinuxMode;
     private SwitchPreference mSelinuxPersistence;
 
@@ -65,32 +75,63 @@ public class Miscellaneous extends SettingsPreferenceFragment implements OnPrefe
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
         addPreferencesFromResource(R.xml.category_miscellaneous);
+        ContentResolver resolver = getActivity().getContentResolver();
         PreferenceScreen prefSet = getPreferenceScreen();
 
-    // SELinux
-    Preference selinuxCategory = findPreference(SELINUX_CATEGORY);
-    mSelinuxMode = (SwitchPreference) findPreference(PREF_SELINUX_MODE);
-    mSelinuxMode.setChecked(SELinux.isSELinuxEnforced());
-    mSelinuxMode.setOnPreferenceChangeListener(this);
+        // SELinux
+        Preference selinuxCategory = findPreference(SELINUX_CATEGORY);
+        mSelinuxMode = (SwitchPreference) findPreference(PREF_SELINUX_MODE);
+        mSelinuxMode.setChecked(SELinux.isSELinuxEnforced());
+        mSelinuxMode.setOnPreferenceChangeListener(this);
 
-    mSelinuxPersistence = (SwitchPreference) findPreference(PREF_SELINUX_PERSISTENCE);
-    mSelinuxPersistence.setOnPreferenceChangeListener(this);
-    mSelinuxPersistence.setChecked(getContext()
+        mSelinuxPersistence = (SwitchPreference) findPreference(PREF_SELINUX_PERSISTENCE);
+        mSelinuxPersistence.setOnPreferenceChangeListener(this);
+        mSelinuxPersistence.setChecked(getContext()
         .getSharedPreferences("selinux_pref", Context.MODE_PRIVATE)
-        .contains(PREF_SELINUX_MODE));   
+        .contains(PREF_SELINUX_MODE));
+
+        mFlashOnCallRate = (CustomSeekBarPreference)
+                findPreference(PREF_FLASH_ON_CALL_RATE);
+        int value = Settings.System.getInt(resolver,
+                Settings.System.FLASHLIGHT_ON_CALL_RATE, 1);
+        mFlashOnCallRate.setValue(value);
+        mFlashOnCallRate.setOnPreferenceChangeListener(this);
+
+        mFlashOnCallIgnoreDND = (SystemSettingSwitchPreference)
+                findPreference(PREF_FLASH_ON_CALL_DND);
+        value = Settings.System.getInt(resolver,
+                Settings.System.FLASHLIGHT_ON_CALL, 0);
+        mFlashOnCallIgnoreDND.setVisible(value > 1);
+        mFlashOnCallRate.setVisible(value != 0);
+
+        mFlashOnCall = (SystemSettingListPreference)
+                findPreference(PREF_FLASH_ON_CALL);
+        mFlashOnCall.setOnPreferenceChangeListener(this);
     }
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         ContentResolver resolver = getActivity().getContentResolver();
         if (preference == mSelinuxMode) {
-        boolean enabled = (Boolean) newValue;
-        new SwitchSelinuxTask(getActivity()).execute(enabled);
-        setSelinuxEnabled(enabled, mSelinuxPersistence.isChecked());
-        return true;
-      } else if (preference == mSelinuxPersistence) {
-        setSelinuxEnabled(mSelinuxMode.isChecked(), (Boolean) newValue);
-        return true;
+            boolean enabled = (Boolean) newValue;
+            new SwitchSelinuxTask(getActivity()).execute(enabled);
+            setSelinuxEnabled(enabled, mSelinuxPersistence.isChecked());
+            return true;
+        } else if (preference == mSelinuxPersistence) {
+            setSelinuxEnabled(mSelinuxMode.isChecked(), (Boolean) newValue);
+            return true;
+        } else if (preference == mFlashOnCall) {
+            int value = Integer.parseInt((String) newValue);
+            Settings.System.putInt(resolver,
+                    Settings.System.FLASHLIGHT_ON_CALL, value);
+            mFlashOnCallIgnoreDND.setVisible(value > 1);
+            mFlashOnCallRate.setVisible(value != 0);
+            return true;
+        } else if (preference == mFlashOnCallRate) {
+            int value = (Integer) newValue;
+            Settings.System.putInt(resolver,
+                    Settings.System.FLASHLIGHT_ON_CALL_RATE, value);
+            return true;
         }
         return false;
     }
