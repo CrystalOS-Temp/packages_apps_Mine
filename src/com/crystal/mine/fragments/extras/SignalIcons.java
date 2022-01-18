@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2021 AospExtended ROM Project
+ * Copyright (C) 2022 crDroid Android Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,18 +14,14 @@
  * limitations under the License.
  */
 
-package com.crystal.mine.extras;
-
-import static com.android.internal.util.crystal.ThemeUtils.ICON_SHAPE_KEY;
+package com.crystal.mine.fragments.extras;
 
 import android.content.ContentResolver;
 import android.content.Context;
-import android.content.res.ColorStateList;
 import android.content.res.Resources;
 import android.content.pm.PackageManager;
 import android.graphics.drawable.AnimationDrawable;
 import android.graphics.drawable.Drawable;
-import android.graphics.drawable.ShapeDrawable;
 import android.os.Bundle;
 import android.provider.SearchIndexableResource;
 import android.provider.Settings;
@@ -44,7 +40,6 @@ import android.view.ViewGroup.LayoutParams;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.core.graphics.ColorUtils;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView.ViewHolder;
 import androidx.recyclerview.widget.RecyclerView;
@@ -59,7 +54,6 @@ import com.android.settings.R;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.search.Indexable;
 import com.android.settings.SettingsPreferenceFragment;
-import com.android.settingslib.Utils;
 
 import com.bumptech.glide.Glide;
 
@@ -67,25 +61,26 @@ import com.android.internal.util.crystal.ThemeUtils;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Arrays;
 
 import org.json.JSONObject;
 import org.json.JSONException;
 
-public class IconShapes extends SettingsPreferenceFragment {
+public class SignalIcons extends SettingsPreferenceFragment {
 
     private RecyclerView mRecyclerView;
     private ThemeUtils mThemeUtils;
-
-    private String mCategory = ICON_SHAPE_KEY;
+    private String mCategory = "android.theme.customization.signal_icon";
 
     private List<String> mPkgs;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getActivity().setTitle(R.string.theme_customization_icon_shape_title);
+        getActivity().setTitle(R.string.theme_customization_signal_icon_title);
 
         mThemeUtils = new ThemeUtils(getActivity());
         mPkgs = mThemeUtils.getOverlayPackagesForCategory(mCategory, "android");
@@ -128,16 +123,19 @@ public class IconShapes extends SettingsPreferenceFragment {
 
         @Override
         public CustomViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-            View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_option, parent, false);
+            View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.icon_option, parent, false);
             CustomViewHolder vh = new CustomViewHolder(v);
             return vh;
         }
 
         @Override
         public void onBindViewHolder(CustomViewHolder holder, final int position) {
-            String pkg = mPkgs.get(position);
+            String iconPkg = mPkgs.get(position);
 
-            holder.image.setBackgroundDrawable(mThemeUtils.createShapeDrawable(pkg));
+            holder.image1.setBackgroundDrawable(getDrawable(holder.image1.getContext(), iconPkg, "ic_signal_cellular_0_5_bar"));
+            holder.image2.setBackgroundDrawable(getDrawable(holder.image2.getContext(), iconPkg, "ic_signal_cellular_1_5_bar"));
+            holder.image3.setBackgroundDrawable(getDrawable(holder.image3.getContext(), iconPkg, "ic_signal_cellular_3_5_bar"));
+            holder.image4.setBackgroundDrawable(getDrawable(holder.image4.getContext(), iconPkg, "ic_signal_cellular_5_5_bar"));
 
             String currentPackageName = mThemeUtils.getOverlayInfos(mCategory).stream()
                 .filter(info -> info.isEnabled())
@@ -145,18 +143,22 @@ public class IconShapes extends SettingsPreferenceFragment {
                 .findFirst()
                 .orElse("android");
 
-            holder.name.setText("android".equals(pkg) ? "Default" : getLabel(holder.name.getContext(), pkg));
+            holder.name.setText("android".equals(iconPkg) ? "Default" : getLabel(holder.name.getContext(), iconPkg));
 
-            final boolean isDefault = "android".equals(currentPackageName) && "android".equals(pkg);
-            final int color = ColorUtils.setAlphaComponent(
-                     Utils.getColorAttrDefaultColor(getContext(), android.R.attr.colorAccent),
-                     pkg.equals(currentPackageName) || isDefault ? 170 : 75);
-            holder.image.setBackgroundTintList(ColorStateList.valueOf(color));
+            if (currentPackageName.equals(iconPkg)) {
+                mAppliedPkg = iconPkg;
+                if (mSelectedPkg == null) {
+                    mSelectedPkg = iconPkg;
+                }
+            }
 
-            holder.itemView.findViewById(R.id.option_tile).setBackgroundDrawable(null);
+            holder.itemView.setActivated(iconPkg == mSelectedPkg);
             holder.itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+                    updateActivatedStatus(mSelectedPkg, false);
+                    updateActivatedStatus(iconPkg, true);
+                    mSelectedPkg = iconPkg;
                     enableOverlays(position);
                 }
             });
@@ -169,11 +171,28 @@ public class IconShapes extends SettingsPreferenceFragment {
 
         public class CustomViewHolder extends RecyclerView.ViewHolder {
             TextView name;
-            ImageView image;
+            ImageView image1;
+            ImageView image2;
+            ImageView image3;
+            ImageView image4;
             public CustomViewHolder(View itemView) {
                 super(itemView);
                 name = (TextView) itemView.findViewById(R.id.option_label);
-                image = (ImageView) itemView.findViewById(R.id.option_thumbnail);
+                image1 = (ImageView) itemView.findViewById(R.id.image1);
+                image2 = (ImageView) itemView.findViewById(R.id.image2);
+                image3 = (ImageView) itemView.findViewById(R.id.image3);
+                image4 = (ImageView) itemView.findViewById(R.id.image4);
+            }
+        }
+
+        private void updateActivatedStatus(String pkg, boolean isActivated) {
+            int index = mPkgs.indexOf(pkg);
+            if (index < 0) {
+                return;
+            }
+            RecyclerView.ViewHolder holder = mRecyclerView.findViewHolderForAdapterPosition(index);
+            if (holder != null && holder.itemView != null) {
+                holder.itemView.setActivated(isActivated);
             }
         }
     }
@@ -183,7 +202,12 @@ public class IconShapes extends SettingsPreferenceFragment {
             PackageManager pm = context.getPackageManager();
             Resources res = pkg.equals("android") ? Resources.getSystem()
                     : pm.getResourcesForApplication(pkg);
-            return res.getDrawable(res.getIdentifier(drawableName, "drawable", pkg));
+            int resId = res.getIdentifier(drawableName, "drawable", pkg);
+            if (resId == 0) {
+                return Resources.getSystem().getDrawable(
+                        Resources.getSystem().getIdentifier(drawableName, "drawable", "android"));
+            }
+            return res.getDrawable(resId);
         }
         catch (PackageManager.NameNotFoundException e) {
             e.printStackTrace();
@@ -204,5 +228,17 @@ public class IconShapes extends SettingsPreferenceFragment {
 
     public void enableOverlays(int position) {
         mThemeUtils.setOverlayEnabled(mCategory, mPkgs.get(position));
+    }
+
+    public void enableOverlay(String category, String target, String pattern) {
+        if (pattern.isEmpty()) {
+            mThemeUtils.setOverlayEnabled(category, "android");
+            return;
+        }
+        for (String pkg: mThemeUtils.getOverlayPackagesForCategory(category, target)) {
+            if (pkg.contains(pattern)) {
+                mThemeUtils.setOverlayEnabled(category, pkg);
+            }
+        }
     }
 }
