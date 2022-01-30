@@ -20,7 +20,7 @@
           android:title="@string/anims_pref_title">
 
 
-          <com.crystal.support.preferences.SystemSettingSwitchPreference
+          <com.crystal.mine.preferences.SystemSettingSwitchPreference
                android:key="charging_animation"
                android:title="@string/charging_animation_title"
                android:summary="@string/charging_animation_summary"

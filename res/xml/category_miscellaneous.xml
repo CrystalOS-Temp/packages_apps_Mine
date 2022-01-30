@@ -43,7 +43,7 @@
      <PreferenceCategory
           android:title="@string/wakeonplug_pref_title">
 
-          <com.crystal.support.preferences.GlobalSettingSwitchPreference
+          <com.crystal.mine.preferences.GlobalSettingSwitchPreference
             android:key="wake_when_plugged_or_unplugged"
             android:title="@string/wakeup_when_plugged_unplugged_title"
             android:summary="@string/wakeup_when_plugged_unplugged_summary"
@@ -54,20 +54,20 @@
      <PreferenceCategory
           android:title="@string/call_pref_title">
 
-          <com.crystal.support.preferences.SystemSettingListPreference
+          <com.crystal.mine.preferences.SystemSettingListPreference
                android:key="flashlight_on_call"
                android:title="@string/flashlight_on_call_title"
                android:entries="@array/flashlight_on_call_entries"
                android:entryValues="@array/flashlight_on_call_values"
                android:defaultValue="0" />
 
-          <com.crystal.support.preferences.SystemSettingSwitchPreference
+          <com.crystal.mine.preferences.SystemSettingSwitchPreference
                android:key="flashlight_on_call_ignore_dnd"
                android:title="@string/flashlight_on_call_ignore_dnd_title"
                android:summary="@string/flashlight_on_call_ignore_dnd_summary"
                android:defaultValue="false" />
 
-          <com.crystal.support.preferences.CustomSeekBarPreference
+          <com.crystal.mine.preferences.CustomSeekBarPreference
                android:key="flashlight_on_call_rate"
                android:title="@string/flashlight_on_call_rate_title"
                android:summary="@string/flashlight_on_call_rate_summary"
