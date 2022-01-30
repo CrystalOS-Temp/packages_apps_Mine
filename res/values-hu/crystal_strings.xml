@@ -16,6 +16,27 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">Szín Választó</string>
+    <string name="press_color_to_apply">Érintse meg az alábbi színt az alkalmazáshoz</string>
+    <string name="arrow_right">→</string>
+    <string name="arrow_down">↓</string>
+    <string name="hex">Hex:</string>
+    <string name="hex_hint" translatable="false">#FFDDDDDD</string>
+    <string name="hex_check_button_text">ELŐNÉZET</string>
+    <string name="hex_reset_button_text">VISSZAÁLLÍTÁS</string>
+    <string name="set">Beállít</string>
+    <string name="color_default">Alapértelmezett</string>
+    <string name="color_right_arrow" translatable="false">"→"</string>
+    <string name="color_down_arrow" translatable="false">"↓"</string>
+    <string name="longpress_info">Érintse meg hosszan a dobozt a mentéshez</string>
+
+    <!-- SeekBar -->
+    <string name="seekbar_no_default_value">Nincs alapérték beállítva</string>
+    <string name="seekbar_default_value_set"><xliff:g id="number">%d</xliff:g> beállítva alapértelmezettnek</string>
+    <string name="seekbar_default_value_already_set">Az alapértelmezett érték már be van állítva</string>
+    <string name="seekbar_default_string">Alapértelmezett</string>
+
     <!-- General -->
     <string name="ok">Oké</string>
     <string name="default_string">Alapértelmezett</string>

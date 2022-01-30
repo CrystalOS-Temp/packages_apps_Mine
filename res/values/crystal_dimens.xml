@@ -22,4 +22,7 @@
     <!-- Dashboard tile image margin start / end -->
     <dimen name="dashboard_tile_image_margin">18dp</dimen>
 
+    <dimen name="picker_circle_preview_size">26dp</dimen>
+    <dimen name="alert_dialog_padding_material">20dp</dimen>
+    
 </resources>
