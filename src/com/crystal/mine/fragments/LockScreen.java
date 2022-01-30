@@ -41,7 +41,7 @@ import com.android.settingslib.search.SearchIndexable;
 import com.android.internal.widget.LockPatternUtils;
 import com.android.internal.logging.nano.MetricsProto;
 
-import com.crystal.support.preferences.SystemSettingSwitchPreference;
+import com.crystal.mine.preferences.SystemSettingSwitchPreference;
 
 import java.util.ArrayList;
 import java.util.Arrays;

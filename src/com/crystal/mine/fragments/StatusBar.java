@@ -38,8 +38,8 @@ import com.android.settingslib.search.SearchIndexable;
 
 import com.android.internal.logging.nano.MetricsProto;
 
-import com.crystal.support.preferences.CustomSeekBarPreference;
-import com.crystal.support.preferences.SystemSettingSwitchPreference;
+import com.crystal.mine.preferences.CustomSeekBarPreference;
+import com.crystal.mine.preferences.SystemSettingSwitchPreference;
 
 import java.util.ArrayList;
 import java.util.Arrays;
