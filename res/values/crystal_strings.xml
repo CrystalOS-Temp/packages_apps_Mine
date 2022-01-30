@@ -14,6 +14,27 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+     <!-- Color Picker -->
+     <string name="dialog_color_picker">Color Picker</string>
+     <string name="press_color_to_apply">Press on color below to apply</string>
+     <string name="arrow_right">→</string>
+     <string name="arrow_down">↓</string>
+     <string name="hex">Hex:</string>
+     <string name="hex_hint" translatable="false">#FFDDDDDD</string>
+     <string name="hex_check_button_text">PREVIEW</string>
+     <string name="hex_reset_button_text">RESET</string>
+     <string name="set">Set</string>
+     <string name="color_default">Default</string>
+     <string name="color_right_arrow" translatable="false">"→"</string>
+     <string name="color_down_arrow" translatable="false">"↓"</string>
+     <string name="longpress_info">Longpress box to save color</string>
+
+     <!-- SeekBar -->
+     <string name="seekbar_no_default_value">No default value set</string>
+     <string name="seekbar_default_value_set">Value set to default of <xliff:g id="number">%d</xliff:g></string>
+     <string name="seekbar_default_value_already_set">Default value is already set</string>
+     <string name="seekbar_default_string">Default</string>
+
      <!-- General -->
      <string name="ok">Okay</string>
      <string name="default_string">Default</string>
@@ -58,6 +79,7 @@
      <string name="call_pref_title">Phone call options</string>
      <string name="monet_pref_title">Monet Controls</string>
      <string name="traffic_pref_title">Network traffic indicator</string>
+     <string name="qs_brightness_pref_title">Brightness slider</string>
 
      <!-- SELinux related -->
      <string name="selinux_explanation_summary">SELinux is a set of kernel modifications and user-space tools. Changing modes can cause unwanted effects. Use at your own risk!</string>

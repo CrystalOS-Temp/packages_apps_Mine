@@ -19,25 +19,25 @@
      <PreferenceCategory
           android:title="@string/sb_icons_pref_title">
 
-          <com.crystal.support.preferences.SystemSettingSwitchPreference
+          <com.crystal.mine.preferences.SystemSettingSwitchPreference
                android:key="show_fourg_icon"
                android:title="@string/show_fourg_icon_title"
                android:summary="@string/show_fourg_icon_summary"
                android:defaultValue="false"/>
 
-          <com.crystal.support.preferences.SystemSettingSwitchPreference
+          <com.crystal.mine.preferences.SystemSettingSwitchPreference
                android:key="data_disabled_icon"
                android:title="@string/data_disabled_icon_title"
                android:summary="@string/data_disabled_icon_summary"
                android:defaultValue="true"/>
 
-          <com.crystal.support.preferences.SystemSettingSwitchPreference
+          <com.crystal.mine.preferences.SystemSettingSwitchPreference
                android:key="volte_icon"
                android:title="@string/volte_icon_title"
                android:summary="@string/volte_icon_summary"
                android:defaultValue="true"/>
 
-          <com.crystal.support.preferences.SystemSettingSwitchPreference
+          <com.crystal.mine.preferences.SystemSettingSwitchPreference
                android:key="roaming_indicator_icon"
                android:title="@string/roaming_indicator_icon_title"
                android:summary="@string/roaming_indicator_icon_summary"
@@ -65,13 +65,13 @@
                android:defaultValue="0"
                android:persistent="false" />
 
-          <com.crystal.support.preferences.SystemSettingSwitchPreference
+          <com.crystal.mine.preferences.SystemSettingSwitchPreference
                android:key="network_traffic_arrow"
                android:title="@string/network_traffic_arrow"
                android:summary="@string/network_traffic_arrow_summary"
                android:defaultValue="false" />
     
-          <com.crystal.support.preferences.CustomSeekBarPreference
+          <com.crystal.mine.preferences.CustomSeekBarPreference
                android:key="network_traffic_autohide_threshold"
                android:title="@string/network_traffic_autohide_threshold_title"
                android:max="10"
@@ -79,7 +79,7 @@
                settings:defaultValue="1"
                settings:units="" />
 
-          <com.crystal.support.preferences.CustomSeekBarPreference
+          <com.crystal.mine.preferences.CustomSeekBarPreference
                android:key="network_traffic_font_size"
                android:title="@string/nettraf_font_size"
                android:max="46"

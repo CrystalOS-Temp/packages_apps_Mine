@@ -20,13 +20,13 @@
      <PreferenceCategory
           android:title="@string/sleep_gestures_pref_title">
 
-          <com.crystal.support.preferences.SystemSettingSwitchPreference
+          <com.crystal.mine.preferences.SystemSettingSwitchPreference
                android:key="double_tap_sleep_gesture"
                android:title="@string/double_tap_to_sleep_statusbar_title"
                android:summary="@string/double_tap_to_sleep_statusbar_summary"
                android:defaultValue="true" />
 
-          <com.crystal.support.preferences.SystemSettingSwitchPreference
+          <com.crystal.mine.preferences.SystemSettingSwitchPreference
                android:key="double_tap_sleep_lockscreen"
                android:title="@string/double_tap_to_sleep_lockscreen_title"
                android:summary="@string/double_tap_to_sleep_lockscreen_summary"
@@ -37,7 +37,7 @@
      <PreferenceCategory
           android:title="@string/screenshot_gestures_pref_title" >
 
-     <com.crystal.support.preference.SystemSettingSwitchPreference
+     <com.crystal.mine.preferences.SystemSettingSwitchPreference
           android:key="swipe_to_screenshot"
           android:title="@string/swipe_to_screenshot_title"
           android:summary="@string/swipe_to_screenshot_summary"
