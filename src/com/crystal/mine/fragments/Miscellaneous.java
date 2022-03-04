@@ -20,9 +20,11 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.ContentResolver;
 import android.os.Bundle;
+import android.os.SystemProperties;
 import android.os.UserHandle;
 import android.provider.SearchIndexableResource;
 import android.provider.Settings;
+import android.widget.Toast;
 
 import androidx.preference.ListPreference;
 import androidx.preference.SwitchPreference;
@@ -65,6 +67,11 @@ public class Miscellaneous extends SettingsPreferenceFragment implements OnPrefe
     private static final String PREF_FLASH_ON_CALL_DND = "flashlight_on_call_ignore_dnd";
     private static final String PREF_FLASH_ON_CALL_RATE = "flashlight_on_call_rate";
 
+    private static final String KEY_SPOOF = "use_photos_spoof";
+    private static final String SYS_SPOOF = "persist.sys.photo";
+
+    private SwitchPreference mSpoof;
+
     private SystemSettingListPreference mFlashOnCall;
     private SystemSettingSwitchPreference mFlashOnCallIgnoreDND;
     private CustomSeekBarPreference mFlashOnCallRate;
@@ -77,6 +84,11 @@ public class Miscellaneous extends SettingsPreferenceFragment implements OnPrefe
         addPreferencesFromResource(R.xml.category_miscellaneous);
         ContentResolver resolver = getActivity().getContentResolver();
         PreferenceScreen prefSet = getPreferenceScreen();
+
+        final String useSpoof = SystemProperties.get(SYS_SPOOF, "1");
+        mSpoof = (SwitchPreference) findPreference(KEY_SPOOF);
+        mSpoof.setChecked("1".equals(useSpoof));
+        mSpoof.setOnPreferenceChangeListener(this);
 
         // SELinux
         Preference selinuxCategory = findPreference(SELINUX_CATEGORY);
@@ -131,6 +143,16 @@ public class Miscellaneous extends SettingsPreferenceFragment implements OnPrefe
             int value = (Integer) newValue;
             Settings.System.putInt(resolver,
                     Settings.System.FLASHLIGHT_ON_CALL_RATE, value);
+            return true;
+        }
+        else if (preference == mSpoof) {
+            boolean value = (Boolean) newValue;
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.USE_PHOTOS_SPOOF, value ? 1 : 0);
+            SystemProperties.set(SYS_SPOOF, value ? "1" : "0");
+            Toast.makeText(getActivity(),
+                    (R.string.photos_spoof_toast),
+                    Toast.LENGTH_LONG).show();
             return true;
         }
         return false;
