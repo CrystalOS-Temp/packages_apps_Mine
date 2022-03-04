@@ -18,6 +18,13 @@
      xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
      android:title="@string/category_miscellaneous_title" >
 
+     <com.crystal.mine.preferences.SystemSettingSwitchPreference
+          android:key="use_photos_spoof"
+          android:title="@string/use_photos_spoof_title"
+          android:summary="@string/use_photos_spoof_summary"
+          android:defaultValue="true"
+          android:persistent="false" />
+
      <PreferenceCategory
           android:key="selinux"
           android:title="@string/selinux_pref_title">
