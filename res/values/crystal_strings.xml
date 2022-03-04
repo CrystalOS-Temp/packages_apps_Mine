@@ -306,4 +306,8 @@
      <string name="official_devices">Maintainers and Official Devices</string>
      <string name="check_maintainers">Go to our official group to check out our maintainers!</string>
 
+     <!-- Fingerprint Ripple Effect -->
+     <string name="enable_fingerprint_ripple_effect_title">Ripple effect</string>
+     <string name="enable_fingerprint_ripple_effect_summary">Show ripple effect on unlock with fingerprint</string>
+
 </resources>
