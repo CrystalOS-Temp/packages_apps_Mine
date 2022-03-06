@@ -315,4 +315,7 @@
      <string name="use_photos_spoof_summary">Your device will be identified as a Pixel XL by the Photos app to get unlimited photo storage at original quality</string>
      <string name="photos_spoof_toast">Restart the Photos app for it to take effect</string>
 
+     <!-- Radio informations -->
+     <string name="radio_info_title">Radio info</string>
+
 </resources>
