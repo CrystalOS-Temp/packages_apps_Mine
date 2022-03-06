@@ -342,4 +342,7 @@
      <string name="official_devices">Maintainers and Official Devices</string>
      <string name="check_maintainers">Go to our official group to check out our maintainers!</string>
 
+     <!-- Radio informations -->
+     <string name="radio_info_title">Radio info</string>
+
 </resources>
