@@ -29,10 +29,11 @@
      <Preference
           android:key="display_cutout_force_fullscreen_settings"
           android:title="@string/display_cutout_force_fullscreen_title"
-          android:summary="@string/display_cutout_force_fullscreen_summary"
-          android:fragment="com.crystal.mine.fragments.extras.DisplayCutoutForceFullscreenSettings"
-          settings:controller="com.crystal.mine.fragments.extras.DisplayCutoutForceFullscreenPreferenceController"
-          app:allowDividerAbove="true" />
+          android:summary="@string/display_cutout_force_fullscreen_summary">
+          <intent android:action="android.intent.action.MAIN"
+               android:targetPackage="com.android.settings"
+               android:targetClass="com.crystal.mine.fragments.extras.DisplayCutoutForceFullscreenActivity"/>
+    </Preference>
 
      <PreferenceCategory
           android:key="selinux"
