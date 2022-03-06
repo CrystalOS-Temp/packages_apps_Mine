@@ -25,6 +25,13 @@
           android:defaultValue="true"
           android:persistent="false" />
 
+     <com.crystal.mine.preferences.SystemSettingSwitchPreference
+          android:key="use_stream_spoof"
+          android:title="@string/use_stream_spoof_title"
+          android:summary="@string/use_stream_spoof_summary"
+          android:defaultValue="true"
+          android:persistent="false" />
+
      <!-- Display Cutout -->
      <Preference
           android:key="display_cutout_force_fullscreen_settings"
