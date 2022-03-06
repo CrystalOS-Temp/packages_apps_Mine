@@ -25,6 +25,15 @@
           android:defaultValue="true"
           android:persistent="false" />
 
+     <!-- Display Cutout -->
+     <Preference
+          android:key="display_cutout_force_fullscreen_settings"
+          android:title="@string/display_cutout_force_fullscreen_title"
+          android:summary="@string/display_cutout_force_fullscreen_summary"
+          android:fragment="com.crystal.mine.fragments.extras.DisplayCutoutForceFullscreenSettings"
+          settings:controller="com.crystal.mine.fragments.extras.DisplayCutoutForceFullscreenPreferenceController"
+          app:allowDividerAbove="true" />
+
      <PreferenceCategory
           android:key="selinux"
           android:title="@string/selinux_pref_title">
