@@ -137,4 +137,8 @@
     <string name="gaming_mode_title">Játék tér</string>
     <string name="gaming_mode_summary">Extra funkciók a magával ragadó játék elményért</string>
 
+    <!-- BasePreferenceController -->
+    <string name="search">Keresés</string>
+    <string name="search_apps">Alkalmazások keresése</string>
+
 </resources>

@@ -21,5 +21,8 @@
 
     <dimen name="picker_circle_preview_size">26dp</dimen>
     <dimen name="alert_dialog_padding_material">20dp</dimen>
-    
+
+    <dimen name="default_margin">16dp</dimen>
+    <dimen name="default_padding">16dp</dimen>
+
 </resources>
