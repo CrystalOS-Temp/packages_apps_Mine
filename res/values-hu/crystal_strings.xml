@@ -442,8 +442,7 @@
     <string name="heads_up_snooze_15min">15 perc</string>
     <string name="heads_up_snooze_20min">20 perc</string>
 
-    <!-- Location Privacy Indicator -->
-    <string name="location_privacy_title"> Mutassa a lokáció jelzőt</string>
-    <string name="location_privacy_summary">Engedélyezi - Letiltja a lokáció jelzőt a gyorsbeállítások panelen és az értesítésisávon</string>
+    <!-- Location privacy indicator -->
+    <string name="location_privacy_indicator_title">Mutassa a lokáció jelzőt</string>
 
 </resources>
