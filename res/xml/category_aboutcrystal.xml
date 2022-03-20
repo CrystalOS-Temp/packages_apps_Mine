@@ -18,4 +18,141 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/category_aboutcrystal_title" >
 
+       <Preference
+        android:key="category_aboutcrystal"
+        android:title="@string/about_crystal"
+        android:fragment="com.crystal.mine.fragments.AboutCrystal"
+        android:icon="@drawable/ic_aboutcrystal" />
+
+          <PreferenceCategory
+                   android:key="about"
+                   android:title="@string/about_info" >
+             <Preference
+                 android:summary="@string/about_info_summary" >
+                   <intent
+                    android:action="android.intent.action.VIEW"
+                    android:data="@string/cos_web_link" />
+          </Preference>
+
+          </PreferenceCategory>
+
+
+          <PreferenceCategory
+                   android:key="social"
+                   android:title="@string/social_header" >
+
+             <Preference
+                 android:title="@string/website"
+                 android:summary="@string/website_description"
+                 android:icon="@drawable/ic_website" >
+                   <intent
+                       android:action="android.intent.action.VIEW"
+                       android:data="@string/cos_web_link" />
+             </Preference>
+
+             <Preference
+                 android:title="@string/cos_telegram"
+                 android:summary="@string/cos_telegram_description"
+                 android:icon="@drawable/ic_telegram" >
+                   <intent
+                       android:action="android.intent.action.VIEW"
+                       android:data="@string/cos_telegram_link" />
+             </Preference>
+
+             <Preference
+                 android:title="@string/cos_github"
+                 android:summary="@string/cos_github_description"
+                 android:icon="@drawable/ic_github" >
+                   <intent
+                       android:action="android.intent.action.VIEW"
+                       android:data="@string/cos_github_link" />
+          </Preference>
+
+             <Preference
+                  android:title="@string/donation"
+                  android:summary="@string/donation_description"
+                  android:icon="@drawable/ic_donation" >
+                    <intent
+                        android:action="android.intent.action.VIEW"
+                        android:data="@string/donation_link" />
+             </Preference>
+
+          </PreferenceCategory>
+
+          <PreferenceCategory
+                   android:key="cos_coreteam"
+                   android:title="@string/core_header" >
+
+             <Preference
+                  android:title="@string/founder"
+                  android:summary="@string/founder_description"
+                  android:icon="@drawable/ic_developers" >
+                    <intent
+                        android:action="android.intent.action.VIEW"
+                        android:data="https://github.com/HyperN00B" />
+          </Preference>
+
+             <Preference
+                  android:title="@string/founder_2"
+                  android:summary="@string/founder_2_description"
+                  android:icon="@drawable/ic_developers" >
+                    <intent
+                        android:action="android.intent.action.VIEW"
+                        android:data="https://github.com/izzy328" />
+          </Preference>
+
+          <Preference
+                  android:title="@string/features"
+                  android:summary="@string/features_description"
+                  android:icon="@drawable/ic_developers" >
+                    <intent
+                        android:action="android.intent.action.VIEW"
+                        android:data="https://github.com/adrian-8901" />
+          </Preference>
+
+          <Preference
+                  android:title="@string/backend"
+                  android:summary="@string/backend_description"
+                  android:icon="@drawable/ic_developers" >
+                    <intent
+                        android:action="android.intent.action.VIEW"
+                        android:data="https://github.com/Mohitmarwaha98" />
+          </Preference>
+
+          <Preference
+                  android:title="@string/security"
+                  android:summary="@string/security_description"
+                  android:icon="@drawable/ic_developers" >
+                    <intent
+                        android:action="android.intent.action.VIEW"
+                        android:data="https://github.com/muhammad23012009" />
+          </Preference>
+
+          <Preference
+                  android:title="@string/designer"
+                  android:summary="@string/designer_description"
+                  android:icon="@drawable/ic_developers" >
+                    <intent
+                        android:action="android.intent.action.VIEW"
+                        android:data="https://github.com/XelXen" />
+          </Preference>
+
+          </PreferenceCategory>
+
+          <PreferenceCategory
+                    android:key="cos_maintainers"
+                    android:title="@string/official_devices" >
+
+             <Preference
+                  android:key="maintainers"
+                  android:icon="@drawable/ic_developers"
+                  android:title="@string/check_maintainers" >
+                    <intent
+                         android:action="android.intent.action.VIEW"
+                         android:data="@string/cos_telegram_link" />
+
+             </Preference>
+
+          </PreferenceCategory>
+
 </PreferenceScreen>
