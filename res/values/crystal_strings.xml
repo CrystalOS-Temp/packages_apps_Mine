@@ -294,4 +294,39 @@
     <!-- [CHAR_LIMIT=NONE] Developer Settings: Label for the option that turns off customizations for a given category.-->
     <string name="theme_customization_device_default">Device default</string>
 
+    <!-- About Crystal -->
+     <string name="about_crystal">About CrystalOS</string>
+     <string name="about_info">About Us</string>
+     <string name="about_info_summary">CrystalOS is a custom rom that based on AOSP and ArrowOS for fluid experience, stability and tons of customizations.</string>
+     <string name="core_header">Our Core Team</string>
+     <string name="founder">HyperN00B</string>
+     <string name="founder_description">Founder</string>
+     <string name="founder_2">SH4D0WBRE4KER</string>
+     <string name="founder_2_description">Founder</string>
+     <string name="features">P4042</string>
+     <string name="features_description">Core Dev / Features</string>
+     <string name="backend">Mohit</string>
+     <string name="backend_description">Core Dev / Backend</string>
+     <string name="security">TheVancedGamer</string>
+     <string name="security_description">Core Dev / Security</string>
+     <string name="designer">XelXen</string>
+     <string name="designer_description">Wallpaper Designer / Bootanimation Designer</string>
+     <string name="social_header">#Lets Crystalize!</string>
+     <string name="website">Website</string>
+     <string name="website_description">COS website for downloads and more info about our maintainers.</string>
+     <string name="cos_web_link">http://crystalos.github.io</string>
+     <string name="cos_telegram">Telegram</string>
+     <string name="cos_telegram_description">COS Official discussion group.</string>
+     <string name="cos_telegram_link">https://t.me/crystalosofficial</string>
+     <string name="cos_github">Github</string>
+     <string name="cos_github_description">All sources are fully open on Github!</string>
+     <string name="cos_github_link">https://github.com/CrystalOS-Temp/</string>
+     <string name="donation">Support Us</string>
+     <string name="donation_description">If you are kind, please consider donate a dollar to us for maintaining this project and servers! Every single penny of donation is a big support for us to continue our work!</string>
+     <string name="donation_link">https://paypal.me/P4042</string>
+
+     <!-- Maintainers -->
+     <string name="official_devices">Maintainers and Official Devices</string>
+     <string name="check_maintainers">Go to our official group to check out our maintainers!</string>
+
 </resources>
