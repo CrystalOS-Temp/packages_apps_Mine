@@ -80,6 +80,7 @@
      <string name="monet_pref_title">Monet Controls</string>
      <string name="traffic_pref_title">Network traffic indicator</string>
      <string name="qs_brightness_pref_title">Brightness slider</string>
+     <string name="vol_steps_pref_title">Volume Steps</string>
 
      <!-- SELinux related -->
      <string name="selinux_explanation_summary">SELinux is a set of kernel modifications and user-space tools. Changing modes can cause unwanted effects. Use at your own risk!</string>
@@ -349,5 +350,17 @@
      <string name="use_stream_spoof_title">Higher quality streams</string>
      <string name="use_stream_spoof_summary">Enable Higher quality streams on Amazon Prime, Disney+, Hotstar, and Netflix. (Mileage will vary per-device)</string>
      <string name="stream_spoof_toast">Restart the streaming app for it to take effect</string>
+
+     <!-- Volume Steps Fragment -->
+     <string name="volume_steps_fragment_title">Volume steps</string>
+     <string name="volume_steps_summary">Customize volume steps</string>
+     <string name="volume_steps_alarm_title">Volume steps: Alarm</string>
+     <string name="volume_steps_dtmf_title">Volume steps: DTMF</string>
+     <string name="volume_steps_music_title">Volume steps: Media</string>
+     <string name="volume_steps_notification_title">Volume steps: Notification</string>
+     <string name="volume_steps_ring_title">Volume steps: Ringer</string>
+     <string name="volume_steps_system_title">Volume steps: System</string>
+     <string name="volume_steps_voice_call_title">Volume steps: Voice Call</string>
+     <string name="volume_steps_reset">Reset</string>
 
 </resources>
