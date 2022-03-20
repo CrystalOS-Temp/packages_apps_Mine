@@ -44,7 +44,7 @@ import java.util.Arrays;
 import java.util.List;
 
 @SearchIndexable
-public class AboutCrystal extends SettingsPreferenceFragment {
+public class AboutCrystal extends SettingsPreferenceFragment implements Preference.OnPreferenceChangeListener{
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -53,11 +53,22 @@ public class AboutCrystal extends SettingsPreferenceFragment {
         PreferenceScreen prefSet = getPreferenceScreen();
         final Resources res = getResources();
         final PreferenceScreen prefScreen = getPreferenceScreen();
+        final ContentResolver resolver = getActivity().getContentResolver();
     }
 
     @Override
     public int getMetricsCategory() {
         return MetricsProto.MetricsEvent.CRYSTAL;
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
     }
 
     public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
@@ -76,4 +87,10 @@ public class AboutCrystal extends SettingsPreferenceFragment {
                     return keys;
                 }
             };
+
+    @Override
+    public boolean onPreferenceChange(Preference preference, Object objValue) {
+        return false;
+    }
+
 }
