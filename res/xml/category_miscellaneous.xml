@@ -18,6 +18,30 @@
      xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
      android:title="@string/category_miscellaneous_title" >
 
+     <com.crystal.mine.preferences.SystemSettingSwitchPreference
+          android:key="use_photos_spoof"
+          android:title="@string/use_photos_spoof_title"
+          android:summary="@string/use_photos_spoof_summary"
+          android:defaultValue="true"
+          android:persistent="false" />
+
+     <com.crystal.mine.preferences.SystemSettingSwitchPreference
+          android:key="use_stream_spoof"
+          android:title="@string/use_stream_spoof_title"
+          android:summary="@string/use_stream_spoof_summary"
+          android:defaultValue="true"
+          android:persistent="false" />
+
+     <!-- Display Cutout -->
+     <Preference
+          android:key="display_cutout_force_fullscreen_settings"
+          android:title="@string/display_cutout_force_fullscreen_title"
+          android:summary="@string/display_cutout_force_fullscreen_summary">
+          <intent android:action="android.intent.action.MAIN"
+               android:targetPackage="com.android.settings"
+               android:targetClass="com.crystal.mine.fragments.extras.DisplayCutoutForceFullscreenActivity"/>
+    </Preference>
+
      <PreferenceCategory
           android:key="selinux"
           android:title="@string/selinux_pref_title">
@@ -50,6 +74,14 @@
             android:defaultValue="true" />
 
      </PreferenceCategory>
+
+     <Preference
+          android:title="@string/radio_info_title"
+          android:key="radio_info_settings">
+          <intent android:action="android.intent.action.MAIN"
+               android:targetPackage="com.android.phone"
+               android:targetClass="com.android.phone.settings.RadioInfo" />
+     </Preference>
 
      <PreferenceCategory
           android:title="@string/call_pref_title">

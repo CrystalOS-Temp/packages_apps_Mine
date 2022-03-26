@@ -80,6 +80,7 @@
      <string name="monet_pref_title">Monet Controls</string>
      <string name="traffic_pref_title">Network traffic indicator</string>
      <string name="qs_brightness_pref_title">Brightness slider</string>
+     <string name="vol_steps_pref_title">Volume Steps</string>
 
      <!-- SELinux related -->
      <string name="selinux_explanation_summary">SELinux is a set of kernel modifications and user-space tools. Changing modes can cause unwanted effects. Use at your own risk!</string>
@@ -276,25 +277,25 @@
      <string name="status_bar_toggle_brightness_summary">Adjust brightness by sliding across the status bar</string>
 
      <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the settings category for theme overlays. -->
-    <string name="theme_customization_category">Theming</string>
-    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize headline and body fonts. -->
-    <string name="theme_customization_font_title">Headline / Body font</string>
-    <string name="theme_customization_font_summary">Set system font style</string>
-    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize the adaptive icon shape (e.g. launcher and quick settings icons). -->
-    <string name="theme_customization_icon_shape_title">Icon shape</string>
-    <string name="theme_customization_icon_shape_summary">Set system icon shape style</string>
-    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize the system wide icon pack. -->
-    <string name="theme_customization_icon_pack_title">Icon pack</string>
-    <string name="theme_customization_icon_pack_summary">Set custom icon pack style</string>
+     <string name="theme_customization_category">Theming</string>
+     <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize headline and body fonts. -->
+     <string name="theme_customization_font_title">Headline / Body font</string>
+     <string name="theme_customization_font_summary">Set system font style</string>
+     <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize the adaptive icon shape (e.g. launcher and quick settings icons). -->
+     <string name="theme_customization_icon_shape_title">Icon shape</string>
+     <string name="theme_customization_icon_shape_summary">Set system icon shape style</string>
+     <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize the system wide icon pack. -->
+     <string name="theme_customization_icon_pack_title">Icon pack</string>
+     <string name="theme_customization_icon_pack_summary">Set custom icon pack style</string>
      <string name="theme_customization_signal_icon_title">Signal icon style</string>
-    <string name="theme_customization_signal_icon_summary">Set custom signal icon style</string>
-    <string name="theme_customization_wifi_icon_title">WiFi icon style</string>
-    <string name="theme_customization_wifi_icon_summary">Set custom wifi icon style</string>
+     <string name="theme_customization_signal_icon_summary">Set custom signal icon style</string>
+     <string name="theme_customization_wifi_icon_title">WiFi icon style</string>
+     <string name="theme_customization_wifi_icon_summary">Set custom wifi icon style</string>
 
-    <!-- [CHAR_LIMIT=NONE] Developer Settings: Label for the option that turns off customizations for a given category.-->
-    <string name="theme_customization_device_default">Device default</string>
+     <!-- [CHAR_LIMIT=NONE] Developer Settings: Label for the option that turns off customizations for a given category.-->
+     <string name="theme_customization_device_default">Device default</string>
 
-    <!-- About Crystal -->
+     <!-- About Crystal -->
      <string name="about_crystal">About CrystalOS</string>
      <string name="about_info">About Us</string>
      <string name="about_info_summary">CrystalOS is a custom rom that based on AOSP and ArrowOS for fluid experience, stability and tons of customizations.</string>
@@ -328,5 +329,39 @@
      <!-- Maintainers -->
      <string name="official_devices">Maintainers and Official Devices</string>
      <string name="check_maintainers">Go to our official group to check out our maintainers!</string>
+
+     <!-- Fingerprint Ripple Effect -->
+     <string name="enable_fingerprint_ripple_effect_title">Ripple effect</string>
+     <string name="enable_fingerprint_ripple_effect_summary">Show ripple effect on unlock with fingerprint</string>
+
+
+     <!-- Unlimited g00gle ph0t0s st0rage -->
+     <string name="use_photos_spoof_title">Unlimited Photos storage</string>
+     <string name="use_photos_spoof_summary">Your device will be identified as a Pixel XL by the Photos app to get unlimited photo storage at original quality</string>
+     <string name="photos_spoof_toast">Restart the Photos app for it to take effect</string>
+
+     <!-- Notch: Full screen apps -->
+     <string name="display_cutout_force_fullscreen_title">Full screen apps</string>
+     <string name="display_cutout_force_fullscreen_summary">Force apps to ignore notch space</string>
+
+     <!-- Radio informations -->
+     <string name="radio_info_title">Radio info</string>
+
+     <!-- Higher quality streams for known streaming apps -->
+     <string name="use_stream_spoof_title">Higher quality streams</string>
+     <string name="use_stream_spoof_summary">Enable Higher quality streams on Amazon Prime, Disney+, Hotstar, and Netflix. (Mileage will vary per-device)</string>
+     <string name="stream_spoof_toast">Restart the streaming app for it to take effect</string>
+
+     <!-- Volume Steps Fragment -->
+     <string name="volume_steps_fragment_title">Volume steps</string>
+     <string name="volume_steps_summary">Customize volume steps</string>
+     <string name="volume_steps_alarm_title">Volume steps: Alarm</string>
+     <string name="volume_steps_dtmf_title">Volume steps: DTMF</string>
+     <string name="volume_steps_music_title">Volume steps: Media</string>
+     <string name="volume_steps_notification_title">Volume steps: Notification</string>
+     <string name="volume_steps_ring_title">Volume steps: Ringer</string>
+     <string name="volume_steps_system_title">Volume steps: System</string>
+     <string name="volume_steps_voice_call_title">Volume steps: Voice Call</string>
+     <string name="volume_steps_reset">Reset</string>
 
 </resources>
