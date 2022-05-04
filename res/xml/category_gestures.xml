@@ -17,32 +17,38 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/category_gestures_title" >
 
-     <PreferenceCategory
-          android:title="@string/sleep_gestures_pref_title">
+    <PreferenceCategory
+        android:title="@string/sleep_gestures_pref_title">
 
-          <com.crystal.mine.preferences.SystemSettingSwitchPreference
-               android:key="double_tap_sleep_gesture"
-               android:title="@string/double_tap_to_sleep_statusbar_title"
-               android:summary="@string/double_tap_to_sleep_statusbar_summary"
-               android:defaultValue="true" />
+        <com.crystal.mine.preferences.SystemSettingSwitchPreference
+            android:key="double_tap_sleep_gesture"
+            android:title="@string/double_tap_to_sleep_statusbar_title"
+            android:summary="@string/double_tap_to_sleep_statusbar_summary"
+            android:defaultValue="true" />
 
-          <com.crystal.mine.preferences.SystemSettingSwitchPreference
-               android:key="double_tap_sleep_lockscreen"
-               android:title="@string/double_tap_to_sleep_lockscreen_title"
-               android:summary="@string/double_tap_to_sleep_lockscreen_summary"
-               android:defaultValue="true" />
+        <com.crystal.mine.preferences.SystemSettingSwitchPreference
+            android:key="double_tap_sleep_lockscreen"
+            android:title="@string/double_tap_to_sleep_lockscreen_title"
+            android:summary="@string/double_tap_to_sleep_lockscreen_summary"
+            android:defaultValue="true" />
 
-     </PreferenceCategory>
+    </PreferenceCategory>
 
-     <PreferenceCategory
-          android:title="@string/screenshot_gestures_pref_title" >
+    <com.crystal.mine.preferences.SecureSettingSwitchPreference
+        android:key="doze_pulse_on_double_tap"
+        android:title="@string/double_tap_on_doze_to_wake_title"
+        android:summary="@string/double_tap_on_doze_to_wake_summary"
+        android:defaultValue="true" />
 
-     <com.crystal.mine.preferences.SystemSettingSwitchPreference
-          android:key="swipe_to_screenshot"
-          android:title="@string/swipe_to_screenshot_title"
-          android:summary="@string/swipe_to_screenshot_summary"
-          android:defaultValue="false" />
+    <PreferenceCategory
+        android:title="@string/screenshot_gestures_pref_title" >
 
-     </PreferenceCategory>
+    <com.crystal.mine.preferences.SystemSettingSwitchPreference
+        android:key="swipe_to_screenshot"
+        android:title="@string/swipe_to_screenshot_title"
+        android:summary="@string/swipe_to_screenshot_summary"
+        android:defaultValue="false" />
+
+    </PreferenceCategory>
 
 </PreferenceScreen>
