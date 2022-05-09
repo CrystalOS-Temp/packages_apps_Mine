@@ -124,4 +124,13 @@
     <string name="ignore_window_secure_title">Bizalmas jelző figyelmen kívül hagyása</string>
     <string name="ignore_window_secure_summary">Ez a lehetőség eltávolítja a képernyőkép és képernyőfelvétel limitációit minden alkalmazáson. Alap esetben a speciális alkalmazás tartalmak feketével ki vannak takarva a felvételeken. Ez kényelmes lehet néhány esetben de adatszivárgáshoz vezethet. Ezen beállítás módosítása után lehet hogy szükséges lesz a célalkalmazás újraindítása a beállítások érvénybe léptetéséhez.</string>
 
+    <!-- Screen off animation -->
+    <string name="screen_off_animation_title">Képernyő kikapcsolási animáció</string>
+    <string name="screen_off_animation_crt">CRT</string>
+    <string name="screen_off_animation_scale">Skálázás</string>
+
+    <!-- Power menu on lockscreen -->
+    <string name="lockscreen_power_menu_disabled_title">Bekapcsoló menü letiltása a zárképernyőn</string>
+    <string name="lockscreen_power_menu_disabled_summary">Csak biztonságos zárképernyőkre érvényes (PIN, Jelszó, Minta)</string>
+
 </resources>
