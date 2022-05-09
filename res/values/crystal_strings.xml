@@ -337,9 +337,9 @@
     <string name="volume_steps_voice_call_title">Volume steps: Voice Call</string>
     <string name="volume_steps_reset">Reset</string>
 
-	<!-- Double Tap on Doze to wake -->
-	<string name="double_tap_on_doze_to_wake_title">Double-tap to wake on doze</string>
-	<string name="double_tap_on_doze_to_wake_summary">Double tap to wake when device is dreaming</string>
+    <!-- Double Tap on Doze to wake -->
+    <string name="double_tap_on_doze_to_wake_title">Double-tap to wake on doze</string>
+    <string name="double_tap_on_doze_to_wake_summary">Double tap to wake when device is dreaming</string>
 
     <!-- Laboratory - Application downgrade -->
     <string name="app_downgrade_title">Allow application downgrade</string>
@@ -353,5 +353,9 @@
     <string name="screen_off_animation_title">Screen off animation</string>
     <string name="screen_off_animation_crt">CRT</string>
     <string name="screen_off_animation_scale">Scale</string>
+
+    <!-- Power menu on lockscreen -->
+    <string name="lockscreen_power_menu_disabled_title">Disable power menu on lock screen</string>
+    <string name="lockscreen_power_menu_disabled_summary">This will only disable the power menu on secure lock screens (PIN, Password, Pattern)</string>
 
 </resources>
