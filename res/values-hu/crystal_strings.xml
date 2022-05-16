@@ -133,4 +133,8 @@
     <string name="lockscreen_power_menu_disabled_title">Bekapcsoló menü letiltása a zárképernyőn</string>
     <string name="lockscreen_power_menu_disabled_summary">Csak biztonságos zárképernyőkre érvényes (PIN, Jelszó, Minta)</string>
 
+    <!-- Gaming mode -->
+    <string name="gaming_mode_title">Játék tér</string>
+    <string name="gaming_mode_summary">Extra funkciók a magával ragadó játék elményért</string>
+
 </resources>
