@@ -301,7 +301,8 @@
     <string name="cos_github_description">All sources are fully open on Github!</string>
     <string name="cos_github_link">https://github.com/CrystalOS-Temp/</string>
     <string name="donation">Support Us</string>
-    <string name="donation_description">If you are kind, please consider donate a dollar to us for maintaining this project and servers! Every single penny of donation is a big support for us to continue our work!</string>
+    <string name="donation_description">If you like what we\'re doing and you\'d like to help us with development and keeping the project maintained, please consider donating!
+    Every single penny helps keeping the project maintained and covering server rental costs!</string>
     <string name="donation_link">https://paypal.me/P4042</string>
 
     <!-- Maintainers -->
