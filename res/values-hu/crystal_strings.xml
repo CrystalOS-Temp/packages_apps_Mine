@@ -14,6 +14,27 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">Szín Választó</string>
+    <string name="press_color_to_apply">Nyomj a lentebbi színre az alkalmazáshoz</string>
+    <string name="arrow_right">→</string>
+    <string name="arrow_down">↓</string>
+    <string name="hex">Hex:</string>
+    <string name="hex_hint" translatable="false">#FFDDDDDD</string>
+    <string name="hex_check_button_text">ELŐNÉZET</string>
+    <string name="hex_reset_button_text">VISSZAÁLLÍTÁS</string>
+    <string name="set">Beállít</string>
+    <string name="color_default">Alapértelmezett</string>
+    <string name="color_right_arrow" translatable="false">"→"</string>
+    <string name="color_down_arrow" translatable="false">"↓"</string>
+    <string name="longpress_info">Nyomd hosszan a dobozt a szín mentéséhez</string>
+
+    <!-- SeekBar -->
+    <string name="seekbar_no_default_value">Nincs alapértelmezett érték beállítva</string>
+    <string name="seekbar_default_value_set">Az érték visszaállítva<xliff:g id="number">%d</xliff:g> alapértelemezettre</string>
+    <string name="seekbar_default_value_already_set">Az alapértelmezett érték már be va állítva</string>
+    <string name="seekbar_default_string">Alapértelmezett</string>
+
     <!-- General -->
     <string name="ok">Oké</string>
     <string name="default_string">Alapértelmezett</string>
@@ -51,7 +72,14 @@
     <string name="powermenu_pref_title">Fejlett újraindítási lehetőségek</string>
     <string name="sb_icons_pref_title">Értesítésisáv ikon testreszabások</string>
     <string name="qs_pref_title">Gyors beállítások testreszabásai</string>
+    <string name="design_pref_title">Dizájn testreszabások</string>
+    <string name="notif_pref_title">Értesítés testreszabások</string>
+    <string name="btns_pref_title">Gomb testreszabások</string>
+    <string name="call_pref_title">Telefon hívás opciók</string>
+    <string name="monet_pref_title">Monet Színek</string>
+    <string name="traffic_pref_title">Hálózati forgalom jelző</string>
     <string name="qs_brightness_pref_title">Fényerő csúszka</string>
+    <string name="vol_steps_pref_title">Hangerő léptetés</string>
 
     <!-- SELinux related -->
     <string name="selinux_explanation_summary">A SELinux egy kernel módosításokból és felhasználói eszközökből álló gyűjtemény. A mód változtatása nem várt eredményekkel járhat. Saját felelősségre használd!</string>
@@ -116,6 +144,204 @@
     <!-- QS footer warnings -->
     <string name="qs_footer_warnings_title">Gyorsbeállítások lábléc figyelmeztetés</string>
     <string name="qs_footer_warnings_summary">Jelenjen meg figyelmeztetés a gyorsbeállítások panel alján arról, hogy a hálózatot lehet hogy megfigyelik külső alkalmazások vagy a VPN</string>
+
+    <!-- Fingerprint authentication vibration -->
+    <string name="fprint_sucess_vib_title">Sikeres Rezgés</string>
+    <string name="fprint_sucess_vib_summary">Rezgés sikeres ujjlenyomatos hitelesítés esetén</string>
+    <string name="fprint_error_vib_title">Hibás Rezgés</string>
+    <string name="fprint_error_vib_summary">Rezgés sikertelen ujjlenyomatos hitelesítés esetén</string>
+
+    <!-- Old mobile type icons -->
+    <string name="use_old_mobiletype_title">Kis mobil típusú ikon</string>
+    <string name="use_old_mobiletype_summary">Mutassa a mobil ikont a térerő jelző fölött</string>
+    
+    <!-- Charging animation -->
+    <string name="charging_animation_title">Töltési animáció</string>
+    <string name="charging_animation_summary">Jelenítsen meg egy animációt az eszköz töltőre csatlakoztatásakor</string>
+
+    <!-- Call strength icons in QS -->
+    <string name="show_qs_call_strength_icon_title">Mutassa a térerő ikon(oka)t</string>
+    <string name="show_qs_call_strength_icon_summary">Mutassa a térerő ikonokat a GyorsBeállítások panelen amikor lehetséges</string>
+
+    <!-- Toast app icon -->
+    <string name="toast_icon_title">Toast alkalmazás ikon</string>
+    <string name="toast_icon_summary">Mutassa a Toast értesítéshez tartozó alkalmazás ikonját</string>
+
+    <!-- Annoying Notifications -->
+    <string name="notification_sound_vib_screen_on_title">Zavaró értesítések</string>
+    <string name="notification_sound_vib_screen_on_summary">Legyen hangos és rezgő visszajelzés bejövő értesítéskor ha a képernyő be van kapcsolva</string>
+
+    <!-- Less boring heads up -->
+    <string name="less_boring_heads_up_title">Épelméjűbb Heads-Up</string>
+    <string name="less_boring_heads_up_summary">Letiltja a beugró értesítéseket minden alkalmazásnak kivéve a Tárcsázót és az Üzenetek alkalmazást</string>
+
+    <!-- UI settings -->
+    <string name="monet_title">Monet beállítások</string>
+    <string name="monet_summary">Monet témamotor beállításainak testreszabása</string>
+
+    <!-- Monet Engine -->
+    <string name="monet_engine_custom_color_title">Egyéni szín használata</string>
+    <string name="monet_engine_custom_color_summary">Egyéni szín használata a Monet témamotorhoz a háttérképből kinyert színek helyett</string>
+    <string name="monet_engine_color_override_title">Egyéni szín</string>
+    <string name="monet_engine_white_luminance_user_title">Fehér megvilágítás</string>
+    <string name="monet_engine_accurate_shades_title">Pontos árnyalatok használata</string>
+    <string name="monet_engine_chroma_factor_title">Színtelítettség</string>
+    <string name="monet_engine_linear_lightness_title">Lineáris fényesség használata</string>
+
+    <!-- Tiles on secure keyguard -->
+    <string name="use_tiles_on_secure_keyguard_title">Kötelező feloldás érzékeny csempe használatához</string>
+    <string name="use_tiles_on_secure_keyguard_summary">Kérje az eszköz feloldását érzékeny csempe használata esetén</string>
+
+    <!-- Volume rocker cursor control -->
+    <string name="cursor_section_header">Kurzor</string>
+    <string name="volume_key_cursor_control_title">Billentyűzet kurzor vezérlés</string>
+    <string name="volume_key_cursor_control_off">Kikapcsolva</string>
+    <string name="volume_key_cursor_control_on">Hangerő Fel/Le - Kurzor Balra/Jobbra</string>
+    <string name="volume_key_cursor_control_on_reverse">Hangerő Fel/Le - Kurzor Jobbra/Balra</string>
+
+    <!-- Volume rocker wake -->
+    <string name="volume_rocker_wake_title">Keltés hangerő gombra</string>
+    <string name="volume_rocker_wake_summary">A hangerő gombok megnyomása felkelti az eszközt</string>
+
+    <!-- Volume swap buttons -->
+    <string name="swap_volume_buttons_title">Átforgatás</string>
+    <string name="swap_volume_buttons_summary">Hangerő gombok megcserélése ha az eszköz elforgatott állapotban van</string>
+
+    <!-- Show VoLTE icon on statusbar -->
+    <string name="volte_icon_title">VoLTE ikon</string>
+    <string name="volte_icon_summary">VoLTE ikon megjelenítése</string>
+
+    <!-- QuickSettings haptic feedback -->
+    <string name="quick_settings_vibrate_title">Érintéskor rezegjen</string>
+    <string name="quick_settings_vibrate_summary">Rezegjen GyorsBeállítások csempe megérintésekor</string>
+
+    <!-- Statusbar net monitor -->
+    <string name="traffic_title">Forgalom jelző</string>
+    <string name="network_traffic_state_summary">Mutassa a hálózati aktivitást az értesítési sávon</string>
+    <string name="network_traffic">Hálózati forgalom</string>
+    <string name="network_traffic_state_title">Hálózati forgalom megjelenítés</string>
+    <string name="network_traffic_location">Forgalom jelző elhelyezkedése</string>
+    <string name="traffic_disabled">Kikapcsolva</string>
+    <string name="traffic_statusbar">Értesítési Sáv</string>
+    <string name="traffic_expanded_statusbar">Kibővített Fejléc</string>
+    <string name="network_traffic_autohide_threshold_title">Hálózati forgalom jelző elrejtésének határértéke (KB/s)</string>
+    <string name="network_traffic_arrow">Mutassa a nyilakat</string>
+    <string name="network_traffic_arrow_summary">Mutassa a hálózati forgalom irányát jelző nyilakat</string>
+    <string name="network_traffic_type">Válassza ki a hálózati aktivitás típusát</string>
+    <string name="show_network_traffic_combined">Kombinált (Feltöltés  Letöltés)</string>
+    <string name="show_network_traffic_dynamic">Dinamikus</string>
+    <string name="show_network_traffic_up">Feltöltés</string>
+    <string name="show_network_traffic_down">Letöltés</string>
+    <string name="show_network_traffic_all">Mindkettő</string>
+    <string name="nettraf_font_size">Betűméret</string>
+
+    <!-- Data disabled icon -->
+    <string name="data_disabled_icon_title">Kikapcsolt mobilnet ikon</string>
+    <string name="data_disabled_icon_summary">Mutassa a kikapcsolt mobilnetet jelző X-et a térerő ikonnál</string>
+
+    <!-- Roaming indicator icon -->
+    <string name="roaming_indicator_icon_title">Barangolás jelző</string>
+    <string name="roaming_indicator_icon_summary">Mutassa a hálózati barangolás jelzőt</string>
+
+    <!-- Blink flashlight for incoming calls -->
+    <string name="flashlight_on_call_title">Vaku villogtatása bejövő hívásoknál</string>
+    <string name="flashlight_on_call_disabled">Kikapcsolva</string>
+    <string name="flashlight_on_call_ringer">Csak csörgésnél</string>
+    <string name="flashlight_on_call_no_ringer">Csak csendes módban</string>
+    <string name="flashlight_on_call_silent">Teljesen néma módban (se csörgés, se rezgés)</string>
+    <string name="flashlight_on_call_always">Mindig</string>
+    <string name="flashlight_on_call_ignore_dnd_title">Ne Zavarjanak figyelmen kívül hagyása</string>
+    <string name="flashlight_on_call_ignore_dnd_summary">Vaku villogtatása Ne Zavarjanak módban is</string>
+    <string name="flashlight_on_call_rate_title">Sebesség</string>
+    <string name="flashlight_on_call_rate_summary">Vaku villogásának sebessége</string>
+
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the settings category for theme overlays. -->
+    <string name="theme_customization_category">Témázás</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize headline and body fonts. -->
+    <string name="theme_customization_font_title">Betűtípus</string>
+    <string name="theme_customization_font_summary">Állítsa be a rendszer betűtípusát</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize the adaptive icon shape (e.g. launcher and quick settings icons). -->
+    <string name="theme_customization_icon_shape_title">Ikon Forma</string>
+    <string name="theme_customization_icon_shape_summary">Allítsa be a rendszer ikonok formáját</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize the system wide icon pack. -->
+    <string name="theme_customization_icon_pack_title">Ikon csomag</string>
+    <string name="theme_customization_icon_pack_summary">Állítson be egyéni ikon csomagot</string>
+    <string name="theme_customization_signal_icon_title">Térerő ikon stílusa</string>
+    <string name="theme_customization_signal_icon_summary">Állítson be egyéni térerő ikon stílust</string>
+    <string name="theme_customization_wifi_icon_title">WiFi ikon stílus</string>
+    <string name="theme_customization_wifi_icon_summary">Állítson be egyén WiFi ikon stílust</string>
+
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Label for the option that turns off customizations for a given category.-->
+    <string name="theme_customization_device_default">Eszköz alapértelmezett</string>
+
+    <!-- About Crystal -->
+    <string name="about_crystal">A CrystalOS-ről</string>
+    <string name="about_info">Rólunk</string>
+    <string name="about_info_summary">A CrystalOS egy egyéni ROM ami AOSP és ArrowOS alapokon nyugszik hogy egy stabil, funkciógazdag, és gyors élményt biztosítson.</string>
+    <string name="core_header">Fejlesztő csapatunk</string>
+    <string name="founder">HyperN00B</string>
+    <string name="founder_description">Alapító</string>
+    <string name="founder_2">SH4D0WBRE4KER</string>
+    <string name="founder_2_description">Alapító</string>
+    <string name="features">P4042</string>
+    <string name="features_description">Fejlesztő / Funkció</string>
+    <string name="backend">Mohit</string>
+    <string name="backend_description">Fejlesztő / Stabilitás</string>
+    <string name="security">TheVancedGamer</string>
+    <string name="security_description">Fejlesztő / Biztonság</string>
+    <string name="designer">XelXen</string>
+    <string name="designer_description">Háttérkép/Bootanimáció Dizájner</string>
+    <string name="social_header">#Let\'s Crystalize!</string>
+    <string name="website">Weboldal</string>
+    <string name="website_description">COS weboldal letöltéshez és további információkért rólunk.</string>
+    <string name="cos_web_link">http://crystalos.github.io</string>
+    <string name="cos_telegram">Telegram</string>
+    <string name="cos_telegram_description">COS Hivatalos Chatszoba.</string>
+    <string name="cos_telegram_link">https://t.me/crystalosofficial</string>
+    <string name="cos_github">Github</string>
+    <string name="cos_github_description">A forrást nyíltan megtalálod GitHubon!</string>
+    <string name="cos_github_link">https://github.com/CrystalOS-Temp/</string>
+    <string name="donation">Támogass Minket</string>
+    <string name="donation_description">Ha tetszik amit csinálunk és szeretnéd támogatni a projekt fenntartását és fejlődését, kérlek fontold meg a támogatásunkat!
+    Minden apró támogatás segít a projekt fenntartásában és a szerver bérlési költségek fedezésében!</string>
+    <string name="donation_link">https://paypal.me/P4042</string>
+
+    <!-- Maintainers -->
+    <string name="official_devices">Fenntartók és Hivatalosan Támogatott Eszközök</string>
+    <string name="check_maintainers">A fenntartóinkat és támogatott eszközeinket a feljebb található Hivatalos Chatszobában találod!</string>
+
+    <!-- Fingerprint Ripple Effect -->
+    <string name="enable_fingerprint_ripple_effect_title">Fodrozódás animáció</string>
+    <string name="enable_fingerprint_ripple_effect_summary">Mutassa a fordozódás animációt ujjlenyomatos feloldásnál</string>
+
+    <!-- Unlimited g00gle ph0t0s st0rage -->
+    <string name="use_photos_spoof_title">Korlátlan Fotók tárhely</string>
+    <string name="use_photos_spoof_summary">Az eszközöd Pixel XL-ként lesz azonsítva a Google Fotók alkalmazás által hogy elérhetővé váljon a fotók korlátlan mentése eredeti minőségben</string>
+    <string name="photos_spoof_toast">A Fotók alkalmazás újraindítása szükséges a változások életbe léptetéséhez</string>
+
+    <!-- Radio informations -->
+    <string name="radio_info_title">Antenna infó</string>
+
+    <!-- Higher quality streams for known streaming apps -->
+    <string name="use_stream_spoof_title">Jobb minőségű streamek</string>
+    <string name="use_stream_spoof_summary">Magasabb minőség engedélyezése Amazon Primeon, Disneyon, Hotstaron, és Netflixen. (Az eredmény eszközönként eltérhet)</string>
+    <string name="stream_spoof_toast">A streaming alkalmazás újraindítása szükséges a változások életbe léptetéséhez</string>
+
+    <!-- Volume Steps Fragment -->
+    <string name="volume_steps_fragment_title">Hangerő léptetések</string>
+    <string name="volume_steps_summary">Hangerő léptetések testreszabása</string>
+    <string name="volume_steps_alarm_title">Hangerő léptetések: Ébresztő</string>
+    <string name="volume_steps_dtmf_title">Hangerő léptetések: Tárcsázó</string>
+    <string name="volume_steps_music_title">Hangerő léptetések: Média</string>
+    <string name="volume_steps_notification_title">Hangerő léptetések: Értesítés</string>
+    <string name="volume_steps_ring_title">Hangerő léptetések: Csörgés</string>
+    <string name="volume_steps_system_title">Hangerő léptetések: Rendszer</string>
+    <string name="volume_steps_voice_call_title">Hangerő léptetések: Hang Hívás</string>
+    <string name="volume_steps_reset">Visszaállítás</string>
+
+    <!-- Double Tap on Doze to wake -->
+    <string name="double_tap_on_doze_to_wake_title">Dupla érintéses keltés álmodozás módban</string>
+    <string name="double_tap_on_doze_to_wake_summary">Érintse meg kétszer a képernyőt az eszköz felkeltéséhez álmodozás módban</string>
 
     <!-- Laboratory - Application downgrade -->
     <string name="app_downgrade_title">Alkalmazás vissza frissítés</string>
