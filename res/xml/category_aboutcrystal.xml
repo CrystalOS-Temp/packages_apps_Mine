@@ -18,13 +18,7 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/category_aboutcrystal_title" >
 
-       <Preference
-        android:key="category_aboutcrystal"
-        android:title="@string/about_crystal"
-        android:fragment="com.crystal.mine.fragments.AboutCrystal"
-        android:icon="@drawable/ic_aboutcrystal" />
-
-          <PreferenceCategory
+        <PreferenceCategory
                    android:key="about"
                    android:title="@string/about_info" >
              <Preference
@@ -35,7 +29,6 @@
           </Preference>
 
           </PreferenceCategory>
-
 
           <PreferenceCategory
                    android:key="social"
