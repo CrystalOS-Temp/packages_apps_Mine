@@ -13,62 +13,89 @@
      limitations under the License.
 -->
 <PreferenceScreen
-     xmlns:android="http://schemas.android.com/apk/res/android"
-     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-     android:title="@string/category_designcorner_title" >
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    android:title="@string/category_designcorner_title" >
 
-     <PreferenceCategory
-          android:title="@string/design_pref_title">
+    <PreferenceCategory
+        android:title="@string/design_pref_title">
 
-          <com.crystal.mine.preferences.SystemSettingSwitchPreference
-               android:key="toast_icon"
-               android:title="@string/toast_icon_title"
-               android:summary="@string/toast_icon_summary"
-               android:defaultValue="false" />
+        <com.crystal.mine.preferences.SystemSettingSwitchPreference
+            android:key="toast_icon"
+            android:title="@string/toast_icon_title"
+            android:summary="@string/toast_icon_summary"
+            android:defaultValue="false" />
 
-     </PreferenceCategory>
+    </PreferenceCategory>
 
-     <PreferenceCategory
-          android:title="@string/monet_pref_title">
+    <PreferenceCategory
+        android:title="@string/monet_pref_title">
 
-          <com.crystal.mine.preferences.SecureSettingSwitchPreference
-               android:key="monet_engine_custom_color"
-               android:title="@string/monet_engine_custom_color_title"
-               android:summary="@string/monet_engine_custom_color_summary"
-               android:defaultValue="false" />
+        <com.crystal.mine.preferences.SecureSettingSwitchPreference
+            android:key="monet_engine_custom_color"
+            android:title="@string/monet_engine_custom_color_title"
+            android:summary="@string/monet_engine_custom_color_summary"
+            android:defaultValue="false" />
 
-          <com.crystal.mine.colorpicker.SecureSettingColorPickerPreference
-               android:key="monet_engine_color_override"
-               android:title="@string/monet_engine_color_override_title"
-               android:dependency="monet_engine_custom_color"
-               android:defaultValue="0xffffffff" />
+        <com.crystal.mine.colorpicker.SecureSettingColorPickerPreference
+            android:key="monet_engine_color_override"
+            android:title="@string/monet_engine_color_override_title"
+            android:dependency="monet_engine_custom_color"
+            android:defaultValue="0xffffffff" />
 
-          <com.crystal.mine.preferences.SecureSettingSeekBarPreference
-               android:key="monet_engine_white_luminance_user"
-               android:title="@string/monet_engine_white_luminance_user_title"
-               android:defaultValue="425"
-               android:max="1000"
-               settings:min="0"
-               settings:interval="25"/>
+        <com.crystal.mine.preferences.SecureSettingSeekBarPreference
+            android:key="monet_engine_white_luminance_user"
+            android:title="@string/monet_engine_white_luminance_user_title"
+            android:defaultValue="425"
+            android:max="1000"
+            settings:min="0"
+            settings:interval="25"/>
 
-          <com.crystal.mine.preferences.SecureSettingSwitchPreference
-               android:key="monet_engine_accurate_shades"
-               android:title="@string/monet_engine_accurate_shades_title"
-               android:defaultValue="true" />
+        <com.crystal.mine.preferences.SecureSettingSwitchPreference
+            android:key="monet_engine_accurate_shades"
+            android:title="@string/monet_engine_accurate_shades_title"
+            android:defaultValue="true" />
 
-          <com.crystal.mine.preferences.SecureSettingSeekBarPreference
-               android:key="monet_engine_chroma_factor"
-               android:title="@string/monet_engine_chroma_factor_title"
-               android:defaultValue="100"
-               android:max="400"
-               settings:min="50"
-               settings:interval="25"/>
+        <com.crystal.mine.preferences.SecureSettingSeekBarPreference
+            android:key="monet_engine_chroma_factor"
+            android:title="@string/monet_engine_chroma_factor_title"
+            android:defaultValue="100"
+            android:max="400"
+            settings:min="50"
+            settings:interval="25"/>
 
-          <com.crystal.mine.preferences.SecureSettingSwitchPreference
-               android:key="monet_engine_linear_lightness"
-               android:title="@string/monet_engine_linear_lightness_title"
-               android:defaultValue="false" />
+        <com.crystal.mine.preferences.SecureSettingSwitchPreference
+            android:key="monet_engine_linear_lightness"
+            android:title="@string/monet_engine_linear_lightness_title"
+            android:defaultValue="false" />
 
-     </PreferenceCategory>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/notification_material_dismiss_button_title">
+
+        <com.crystal.mine.preferences.SystemSettingSwitchPreference
+            android:key="notification_material_dismiss"
+            android:title="@string/notification_material_dismiss_button_title"
+            android:summary="@string/notification_material_dismiss_button_summary"
+            android:defaultValue="false" />
+
+        <com.crystal.mine.preferences.SystemSettingSeekBarPreference
+            android:key="notification_material_dismiss_style"
+            android:title="@string/clearall_style_title"
+            android:dependency="notification_material_dismiss"
+            android:defaultValue="0"
+            android:max="9"
+            android:min="0" />
+
+        <com.crystal.mine.preferences.SystemSettingSeekBarPreference
+            android:key="notification_material_dismiss_bgstyle"
+            android:title="@string/clearall_bgstyle_title"
+            android:dependency="notification_material_dismiss"
+            android:defaultValue="0"
+            android:max="2"   
+            android:min="0" />
+
+    </PreferenceCategory>
 
 </PreferenceScreen>

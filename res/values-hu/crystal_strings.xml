@@ -378,4 +378,10 @@
     <string name="qs_show_auto_brightness_title">Automatikus fényerő ikon</string>
     <string name="qs_show_auto_brightness_summary">Mutassa a kapcsolót a fényerő csúszka mellett</string>
 
+    <!-- OOS style material dismiss all button for notifications -->
+    <string name="notification_material_dismiss_button_title">Értesítések törlése gomb</string>
+    <string name="notification_material_dismiss_button_summary">Cserélje le az értesítések törlése feliratot egy lebegő gombra</string>
+    <string name="clearall_style_title">Értesítések törlése gomb stílusa</string>
+    <string name="clearall_bgstyle_title">Értesítések törlése gomb háttere</string>
+
 </resources>
