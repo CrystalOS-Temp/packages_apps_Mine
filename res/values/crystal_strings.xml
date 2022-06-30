@@ -81,6 +81,7 @@
     <string name="traffic_pref_title">Network traffic indicator</string>
     <string name="qs_brightness_pref_title">Brightness slider</string>
     <string name="vol_steps_pref_title">Volume Steps</string>
+    <string name="settings_layout_pref_title">Settings UI interface</string>
 
     <!-- SELinux related -->
     <string name="selinux_explanation_summary">SELinux is a set of kernel modifications and user-space tools. Changing modes can cause unwanted effects. Use at your own risk!</string>
@@ -380,5 +381,19 @@
     <!-- Quick Settings brightness icon -->
     <string name="qs_show_auto_brightness_title">Auto brightness icon</string>
     <string name="qs_show_auto_brightness_summary">Show toggle for adaptive brightness near the slider</string>
+
+    <!-- Custom settings dashboard style -->
+    <string name="settings_dashboard_style_title">Settings layout</string>
+    <string name="settings_dashboard_style_aosp">Aosp</string>
+    <string name="settings_dashboard_style_oos11">OxygenOS 11</string>
+    <string name="settings_dashboard_style_oos12">OxygenOS 12</string>
+    <string name="settings_dashboard_style_crystal">Crystal</string>
+    <string name="settings_dashboard_style_crystal_clean">Crystal Clean</string>
+    <string name="settings_base_style_title">Settings Base layout</string>
+    <string name="settings_base_style_summary">Use an alternative layout for setting menus</string>
+    <string name="settings_home_style_title">Settings Home layout</string>
+    <string name="settings_home_style_summary">Use stock aosp layout for homepage</string>
+    <string name="disable_usercard_title">Settings UserCard</string>
+    <string name="disable_usercard_summary">Toggle in order not to show the usercard on main settings page</string>
 
 </resources>
