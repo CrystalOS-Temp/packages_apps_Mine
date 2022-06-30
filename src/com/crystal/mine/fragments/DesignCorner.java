@@ -36,14 +36,30 @@ import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settingslib.search.SearchIndexable;
 
+import com.android.internal.crystal.utils.CrystalUtils;
 import com.android.internal.logging.nano.MetricsProto;
+
+import com.crystal.mine.preferences.SystemSettingListPreference;
+import com.crystal.mine.preferences.SystemSettingSwitchPreference;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 @SearchIndexable
-public class DesignCorner extends SettingsPreferenceFragment {
+public class DesignCorner extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
+
+    // SETTINGS_LAYOUT_VARS
+    private static final String ALT_SETTINGS_LAYOUT = "alt_settings_layout";
+    private static final String SETTINGS_DASHBOARD_STYLE = "settings_dashboard_style";
+    private static final String USE_STOCK_LAYOUT = "use_stock_layout";
+    private static final String DISABLE_USERCARD = "disable_usercard";
+
+    // settingsLayoutVars
+    private SystemSettingListPreference mSettingsDashBoardStyle;
+    private SystemSettingSwitchPreference mAltSettingsLayout;
+    private SystemSettingSwitchPreference mUseStockLayout;
+    private SystemSettingSwitchPreference mDisableUserCard; 
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -52,6 +68,15 @@ public class DesignCorner extends SettingsPreferenceFragment {
         PreferenceScreen prefSet = getPreferenceScreen();
         final Resources res = getResources();
         final PreferenceScreen prefScreen = getPreferenceScreen();
+
+        mSettingsDashBoardStyle = (SystemSettingListPreference) findPreference(SETTINGS_DASHBOARD_STYLE);
+        mSettingsDashBoardStyle.setOnPreferenceChangeListener(this);
+        mAltSettingsLayout = (SystemSettingSwitchPreference) findPreference(ALT_SETTINGS_LAYOUT);
+        mAltSettingsLayout.setOnPreferenceChangeListener(this);
+        mUseStockLayout = (SystemSettingSwitchPreference) findPreference(USE_STOCK_LAYOUT);
+        mUseStockLayout.setOnPreferenceChangeListener(this);
+        mDisableUserCard = (SystemSettingSwitchPreference) findPreference(DISABLE_USERCARD);
+        mDisableUserCard.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -75,4 +100,23 @@ public class DesignCorner extends SettingsPreferenceFragment {
                     return keys;
                 }
             };
+
+    @Override
+    public boolean onPreferenceChange(Preference preference, Object objValue) {
+        ContentResolver resolver = getActivity().getContentResolver();
+        if (preference == mSettingsDashBoardStyle) {
+            CrystalUtils.showSettingsRestartDialog(getContext());
+            return true;
+        } else if (preference == mAltSettingsLayout) {
+            CrystalUtils.showSettingsRestartDialog(getContext());
+            return true;
+        } else if (preference == mUseStockLayout) {
+            CrystalUtils.showSettingsRestartDialog(getContext());
+            return true;
+        } else if (preference == mDisableUserCard) {
+            CrystalUtils.showSettingsRestartDialog(getContext());
+            return true;
+        }
+        return false;
+    }
 }

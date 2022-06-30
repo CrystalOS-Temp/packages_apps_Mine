@@ -63,6 +63,9 @@
     <string name="category_quicksettings_title">Gyors Beállítások</string>
     <string name="category_statusbar_title">Értesítési sáv</string>
 
+    <!-- Pref category titles -->
+    <string name="settings_layout_pref_title">Beállítások kezelőfelülete</string>
+
     <!-- Fingerprint unlock -->
     <string name="fp_unlock_keystore_title">Közvetlen ujjlenyomatos feloldás</string>
     <string name="fp_unlock_keystore_summary">Eszköz feloldása ujjlenyomattal újraindítás vagy zárolás után</string>
@@ -85,5 +88,19 @@
     <string name="incall_vibrate_connect_title">Rezgés csatlakozáskor</string>
     <string name="incall_vibrate_call_wait_title">Rezgés hívás várakoztatáskor</string>
     <string name="incall_vibrate_disconnect_title">Rezgés szétkapcsoláskor</string>
+
+    <!-- Custom settings dashboard style -->
+    <string name="settings_dashboard_style_title">Beállítások elrendezés</string>
+    <string name="settings_dashboard_style_aosp">AOSP</string>
+    <string name="settings_dashboard_style_oos11">OxygenOS 11</string>
+    <string name="settings_dashboard_style_oos12">OxygenOS 12</string>
+    <string name="settings_dashboard_style_crystal">Kristály</string>
+    <string name="settings_dashboard_style_crystal_clean">Kristály Tiszta</string>
+    <string name="settings_base_style_title">Beállítások alap elrendezés</string>
+    <string name="settings_base_style_summary">Használjon alternatív elrendezést a Beállítások menükben</string>
+    <string name="settings_home_style_title">Beállítások kezdőoldal elrendezés</string>
+    <string name="settings_home_style_summary">Használja az alapértelmezett AOSP elrendezést a Beállítások kezdőoldalához</string>
+    <string name="disable_usercard_title">Beállítások Felhasználó kártya</string>
+    <string name="disable_usercard_summary">Ki-Bekapcsolja a felhasználó kártyát a Beállítások kezdőoldalán</string>
 
 </resources> 
