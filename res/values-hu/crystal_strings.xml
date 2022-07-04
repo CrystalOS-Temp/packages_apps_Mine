@@ -390,4 +390,8 @@
     <string name="strict_standby_policy_title">Szigorú készenléti házirend</string>
     <string name="strict_standby_policy_summary">A korlátozott akkumulátor használatú alkalmazásokat erőltetetten leállítja bezárásukkor és szigorúbb korlátozást alkalmaz rájuk. Ezek a korlátozások töltés közben is érvényesek az alkalmazásokra.</string>
 
+    <!-- Force background freezer -->
+    <string name="force_background_freezer_title">Háttér alkalmazás fagyasztó</string>
+    <string name="force_background_freezer_summary">A korlátozott akkumulátor használatú alkalmazásokat befagyasztja amikor azok háttérbe kerülnek majd kiolvasztja amikor visszakerülnek előtérbe. Ez javíthat az akkumulátoridőn de összemolásokhoz és nem válaszoló alkalmazásokhoz vezethet.</string>
+
 </resources>
