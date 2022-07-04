@@ -386,4 +386,8 @@
     <string name="headset_connect_player_title">Zenelejátszó indítása</string>
     <string name="headset_connect_player_summary">Indítsa el az alapértelmezett zenelejátszó alkalmazást fülhallgató csatlakoztatásakor</string>
 
+    <!-- Strict standby -->
+    <string name="strict_standby_policy_title">Szigorú készenléti házirend</string>
+    <string name="strict_standby_policy_summary">A korlátozott akkumulátor használatú alkalmazásokat erőltetetten leállítja bezárásukkor és szigorúbb korlátozást alkalmaz rájuk. Ezek a korlátozások töltés közben is érvényesek az alkalmazásokra.</string>
+
 </resources>
