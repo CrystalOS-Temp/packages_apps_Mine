@@ -70,8 +70,8 @@ public class Miscellaneous extends SettingsPreferenceFragment implements OnPrefe
     
     private static final String KEY_PHOTOS_SPOOF = "use_photos_spoof";
     private static final String KEY_STREAM_SPOOF = "use_stream_spoof";
-    private static final String SYS_PHOTOS_SPOOF = "persist.sys.photo";
-    private static final String SYS_STREAM_SPOOF = "persist.sys.stream";
+    private static final String SYS_PHOTOS_SPOOF = "persist.sys.pixelprops.gphotos";
+    private static final String SYS_STREAM_SPOOF = "persist.sys.pixelprops.streaming";
 
     private SwitchPreference mPhotosSpoof;
     private SwitchPreference mStreamSpoof;
