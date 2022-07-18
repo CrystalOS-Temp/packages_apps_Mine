@@ -396,4 +396,8 @@
     <string name="disable_usercard_title">Settings UserCard</string>
     <string name="disable_usercard_summary">Toggle in order not to show the usercard on main settings page</string>
 
+    <!-- Unlock FPS for specific games -->
+    <string name="use_games_spoof_title">Unlock higher FPS in games</string>
+    <string name="use_games_spoof_summary">Spoof your device as a different model for specific games to unlock higher FPS</string>
+
 </resources>

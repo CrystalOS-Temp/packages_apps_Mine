@@ -70,11 +70,14 @@ public class Miscellaneous extends SettingsPreferenceFragment implements OnPrefe
     
     private static final String KEY_PHOTOS_SPOOF = "use_photos_spoof";
     private static final String KEY_STREAM_SPOOF = "use_stream_spoof";
+    private static final String KEY_GAMES_SPOOF = "use_games_spoof";
     private static final String SYS_PHOTOS_SPOOF = "persist.sys.pixelprops.gphotos";
     private static final String SYS_STREAM_SPOOF = "persist.sys.pixelprops.streaming";
+    private static final String SYS_GAMES_SPOOF = "persist.sys.pixelprops.games";
 
     private SwitchPreference mPhotosSpoof;
     private SwitchPreference mStreamSpoof;
+    private SwitchPreference mGamesSpoof;
 
     private SystemSettingListPreference mFlashOnCall;
     private SystemSettingSwitchPreference mFlashOnCallIgnoreDND;
@@ -98,6 +101,10 @@ public class Miscellaneous extends SettingsPreferenceFragment implements OnPrefe
         mStreamSpoof = (SwitchPreference) findPreference(KEY_STREAM_SPOOF);
         mStreamSpoof.setChecked("1".equals(useStreamSpoof));
         mStreamSpoof.setOnPreferenceChangeListener(this);
+
+        mGamesSpoof = (SwitchPreference) findPreference(KEY_GAMES_SPOOF);
+        mGamesSpoof.setChecked(SystemProperties.getBoolean(SYS_GAMES_SPOOF, false));
+        mGamesSpoof.setOnPreferenceChangeListener(this);
 
         // SELinux
         Preference selinuxCategory = findPreference(SELINUX_CATEGORY);
@@ -175,6 +182,10 @@ public class Miscellaneous extends SettingsPreferenceFragment implements OnPrefe
             Toast.makeText(getActivity(),
                     (R.string.stream_spoof_toast),
                     Toast.LENGTH_LONG).show();
+            return true;
+        } else if (preference == mGamesSpoof) {
+            boolean value = (Boolean) newValue;
+            SystemProperties.set(SYS_GAMES_SPOOF, value ? "true" : "false");
             return true;
         }
         return false;

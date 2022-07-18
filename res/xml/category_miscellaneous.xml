@@ -32,6 +32,13 @@
         android:defaultValue="true"
         android:persistent="false" />
 
+    <com.crystal.mine.preferences.SystemSettingSwitchPreference
+        android:key="use_games_spoof"
+        android:title="@string/use_games_spoof_title"
+        android:summary="@string/use_games_spoof_summary"
+        android:defaultValue="true"
+        android:persistent="false" />
+
     <PreferenceCategory
         android:key="selinux"
         android:title="@string/selinux_pref_title">
