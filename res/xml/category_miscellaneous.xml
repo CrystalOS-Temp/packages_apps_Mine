@@ -84,6 +84,13 @@
 
     </PreferenceCategory>
 
+    <!-- Launch music player when headset is connected -->
+    <com.crystal.mine.preferences.SystemSettingSwitchPreference
+        android:key="headset_connect_player"
+        android:title="@string/headset_connect_player_title"
+        android:summary="@string/headset_connect_player_summary"
+        android:defaultValue="false" />
+
     <Preference
         android:title="@string/radio_info_title"
         android:key="radio_info_settings">
