@@ -24,6 +24,15 @@
         android:summary="@string/lockscreen_power_menu_disabled_summary"
         android:defaultValue="true" />
 
+    <com.crystal.mine.preferences.SecureSettingListPreference
+        android:key="power_menu_type"
+        android:title="@string/power_menu_type"
+        android:summary="%s"
+        android:dialogTitle="@string/power_menu_type"
+        android:entries="@array/power_menu_type_entries"
+        android:entryValues="@array/power_menu_type_values"
+        android:defaultValue="0" />
+
     <PreferenceCategory
         android:title="@string/powermenu_pref_title">
 

@@ -398,4 +398,9 @@
     <string name="lockscreen_battery_info_title">Zárképernyő töltés infó</string>
     <string name="lockscreen_battery_info_summary">Mutassa a töltő áramot, feszültséget, wattot és akkumulátor hőmérsékletet a zárképernyőn</string>
 
+    <!-- Power menu style -->
+    <string name="power_menu_type">Bekapcsoló menü stílusa</string>
+    <string name="power_menu_type_lite">Lite (Android 12)</string>
+    <string name="power_menu_type_full">Full (Android 11)</string>
+
 </resources>

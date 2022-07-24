@@ -144,4 +144,14 @@
         <item>4</item>
     </string-array>
 
+    <!-- Power menu type -->
+    <string-array name="power_menu_type_entries">
+        <item>@string/power_menu_type_lite</item>
+        <item>@string/power_menu_type_full</item>
+    </string-array>
+    <string-array name="power_menu_type_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
 </resources>
