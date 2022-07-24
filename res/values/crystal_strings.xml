@@ -420,5 +420,8 @@
     <string name="power_menu_type">Power menu style</string>
     <string name="power_menu_type_lite">Lite (Android 12)</string>
     <string name="power_menu_type_full">Full (Android 11)</string>
+    <string name="power_menu_type_classic">Classic (A9)</string>
+    <string name="power_menu_type_grid">Grid</string>
+    <string name="power_menu_type_legacy">Legacy (A8)</string>
 
 </resources>

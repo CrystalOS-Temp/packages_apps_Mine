@@ -402,5 +402,8 @@
     <string name="power_menu_type">Bekapcsoló menü stílusa</string>
     <string name="power_menu_type_lite">Lite (Android 12)</string>
     <string name="power_menu_type_full">Full (Android 11)</string>
+    <string name="power_menu_type_classic">Klasszikus (Android 8)</string>
+    <string name="power_menu_type_grid">Rács</string>
+    <string name="power_menu_type_legacy">Régi (Android 7)</string>
 
 </resources>
