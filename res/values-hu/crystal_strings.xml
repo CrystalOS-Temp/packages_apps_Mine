@@ -431,4 +431,15 @@
     <string name="heads_up_time_out_8sec">8 másodperc</string>
     <string name="heads_up_time_out_10sec">10 másodperc</string>
 
+    <!-- Heads up snooze -->
+    <string name="heads_up_snooze_title">Alvás időzítő</string>
+    <string name="heads_up_snooze_summary_one_minute">Az értesítésen történő felhúzás 1 percre szünetelni fogja az alkalmazás beúszó értesítéseit</string>
+    <string name="heads_up_snooze_summary">Az értesítésen történő felhúzás <xliff:g id="number">%d</xliff:g> percre szünetelni fogja az alkalmazás beúszó értesítéseit</string>
+    <string name="heads_up_snooze_disabled_summary">Alvás időzítő kikapcsolva</string>
+    <string name="heads_up_snooze_1min">1 perc</string>
+    <string name="heads_up_snooze_5min">5 perc</string>
+    <string name="heads_up_snooze_10min">10 perc</string>
+    <string name="heads_up_snooze_15min">15 perc</string>
+    <string name="heads_up_snooze_20min">20 perc</string>
+
 </resources>
