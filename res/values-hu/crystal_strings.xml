@@ -421,4 +421,14 @@
     <string name="dialog_delete_title">Törlés</string>
     <string name="dialog_delete_message">Eltávolítja a kíválasztott elemet?</string>
 
+    <!-- Heads up timeout -->
+    <string name="heads_up_time_out_title">Időkorlát</string>
+    <string name="heads_up_time_out_summary">A beúszó értesítések <xliff:g id="number">%d</xliff:g> másodpercig jelennek meg</string>
+    <string name="heads_up_time_out_2sec">2 másodperc</string>
+    <string name="heads_up_time_out_4sec">4 másodperc</string>
+    <string name="heads_up_time_out_5sec">5 másodperc</string>
+    <string name="heads_up_time_out_6sec">6 másodperc</string>
+    <string name="heads_up_time_out_8sec">8 másodperc</string>
+    <string name="heads_up_time_out_10sec">10 másodperc</string>
+
 </resources>
