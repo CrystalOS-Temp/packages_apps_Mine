@@ -13,25 +13,65 @@
      limitations under the License.
 -->
 <PreferenceScreen
-     xmlns:android="http://schemas.android.com/apk/res/android"
-     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-     android:title="@string/category_notifications_title" >
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    android:title="@string/category_notifications_title" >
 
-     <PreferenceCategory
-          android:title="@string/notif_pref_title">
+    <!-- Notifications -->
+    <PreferenceCategory
+        android:title="@string/notif_pref_title">
 
-     <com.crystal.mine.preferences.SystemSettingSwitchPreference
-          android:key="notification_sound_vib_screen_on"
-          android:title="@string/notification_sound_vib_screen_on_title"
-          android:summary="@string/notification_sound_vib_screen_on_summary"
-          android:defaultValue="true" />
+        <com.crystal.mine.preferences.SystemSettingSwitchPreference
+            android:key="notification_sound_vib_screen_on"
+            android:title="@string/notification_sound_vib_screen_on_title"
+            android:summary="@string/notification_sound_vib_screen_on_summary"
+            android:defaultValue="true" />
+    
+        <com.crystal.mine.preferences.SystemSettingSwitchPreference
+            android:key="less_boring_heads_up"
+            android:title="@string/less_boring_heads_up_title"
+            android:summary="@string/less_boring_heads_up_summary"
+            android:defaultValue="false" />
 
-     <com.crystal.mine.preferences.SystemSettingSwitchPreference
-          android:key="less_boring_heads_up"
-          android:title="@string/less_boring_heads_up_title"
-          android:summary="@string/less_boring_heads_up_summary"
-          android:defaultValue="false" />
+    </PreferenceCategory>
 
-     </PreferenceCategory>
+    <!-- HeadsUp -->
+    <PreferenceCategory
+        android:title="@string/heads_up_pref_title">
+
+        <com.crystal.mine.preferences.GlobalSettingSwitchPreference
+            android:key="heads_up_notifications_enabled"
+            android:title="@string/heads_up_notifications"
+            android:summaryOn="@string/summary_heads_up_enabled"
+            android:summaryOff="@string/summary_heads_up_disabled"
+            android:defaultValue="true" />
+
+        <PreferenceCategory
+            android:title="@string/heads_up_stoplist_title"
+            android:key="stoplist_applications"
+            android:dependency="heads_up_notifications_enabled" >
+
+            <Preference
+                android:key="add_stoplist_packages"
+                android:icon="@drawable/ic_menu_add_activated_tint"
+                android:title="@string/add_heads_up_package"
+                android:summary="@string/add_heads_up_stoplist_summary" />
+    
+        </PreferenceCategory>
+
+        <PreferenceCategory
+            android:title="@string/heads_up_blacklist_title"
+            android:key="blacklist_applications"
+            android:dependency="heads_up_notifications_enabled" >
+          
+            <Preference
+                android:key="add_blacklist_packages"
+                android:icon="@drawable/ic_menu_add_activated_tint"
+                android:title="@string/add_heads_up_package"
+                android:summary="@string/add_heads_up_blacklist_summary" />
+     
+        </PreferenceCategory>
+
+    </PreferenceCategory>
 
 </PreferenceScreen>

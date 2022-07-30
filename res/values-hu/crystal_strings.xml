@@ -80,6 +80,7 @@
     <string name="traffic_pref_title">Hálózati forgalom jelző</string>
     <string name="qs_brightness_pref_title">Fényerő csúszka</string>
     <string name="vol_steps_pref_title">Hangerő léptetés</string>
+    <string name="heads_up_pref_title">Beúszó értesítések</string>
 
     <!-- SELinux related -->
     <string name="selinux_explanation_summary">A SELinux egy kernel módosításokból és felhasználói eszközökből álló gyűjtemény. A mód változtatása nem várt eredményekkel járhat. Saját felelősségre használd!</string>
@@ -405,5 +406,19 @@
     <string name="power_menu_type_classic">Klasszikus (Android 8)</string>
     <string name="power_menu_type_grid">Rács</string>
     <string name="power_menu_type_legacy">Régi (Android 7)</string>
+
+    <!-- HeadsUp stop/blacklist -->
+    <string name="heads_up_notifications">Beúszó értesítések</string>
+    <string name="heads_up_notifications_summary">Beúszó értesítés beállítások testreszabása</string>
+    <string name="summary_heads_up_enabled">A beúszó értesítések engedélyezve vannak</string>
+    <string name="summary_heads_up_disabled">A beúszó értesítések le vannak tiltva</string>
+    <string name="add_heads_up_package">Alkalmazás hozzáadása</string>
+    <string name="add_heads_up_stoplist_summary">A beúszó értesítések ezekben az alkalmazásokban le vannak tiltva</string>
+    <string name="add_heads_up_blacklist_summary">A beúszó értesítések ezektől az alkalmazásoktól le vannak tiltva</string>
+    <string name="heads_up_stoplist_title">Stoplista</string>
+    <string name="heads_up_blacklist_title">Feketelista</string>
+    <string name="profile_choose_app">Válasszon alkalmazást</string>
+    <string name="dialog_delete_title">Törlés</string>
+    <string name="dialog_delete_message">Eltávolítja a kíválasztott elemet?</string>
 
 </resources>
