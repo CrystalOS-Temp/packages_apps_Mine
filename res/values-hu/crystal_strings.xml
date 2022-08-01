@@ -445,4 +445,8 @@
     <!-- Location privacy indicator -->
     <string name="location_privacy_indicator_title">Mutassa a lokáció jelzőt</string>
 
+    <!-- Alert Slider Notifications (OnePlus devices) -->
+    <string name="alert_slider_notifications_title">Alert slider értesítések</string>
+    <string name="alert_slider_notifications_summary">Jelenjen meg értesítés az Alert Slider állapotának váltásakor</string>
+
 </resources>

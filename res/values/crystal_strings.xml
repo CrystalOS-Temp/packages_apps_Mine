@@ -463,4 +463,8 @@
     <!-- Location privacy indicator -->
     <string name="location_privacy_indicator_title">Show privacy indicator for location</string>
 
+    <!-- Alert Slider Notifications (OnePlus devices) -->
+    <string name="alert_slider_notifications_title">Alert slider notifications</string>
+    <string name="alert_slider_notifications_summary">Display notification when changing alert slider position</string>
+
 </resources>

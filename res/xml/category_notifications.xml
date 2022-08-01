@@ -72,6 +72,13 @@
      
         </PreferenceCategory>
 
+        <!-- Alert Slider Notifications -->
+        <com.crystal.mine.preferences.SystemSettingSwitchPreference
+            android:key="alert_slider_notifications"
+            android:title="@string/alert_slider_notifications_title"
+            android:summary="@string/alert_slider_notifications_summary"
+            android:defaultValue="true" />
+
         <ListPreference
             android:key="heads_up_time_out"
             android:title="@string/heads_up_time_out_title"
