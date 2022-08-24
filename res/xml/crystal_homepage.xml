@@ -75,6 +75,13 @@
         android:fragment="com.crystal.mine.fragments.Notifications"
         android:layout="@layout/preference_category_notifications" />
 
+    <!-- Power Menu -->
+    <Preference
+        android:key="powermenu"
+        android:title="@string/category_powermenu_title"
+        android:fragment="com.crystal.mine.fragments.PowerMenu"
+        android:layout="@layout/preference_category_powermenu" />
+
     <!-- Quick Settings -->
     <Preference
         android:key="quicksettings"
