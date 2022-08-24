@@ -35,6 +35,7 @@
     <string name="category_designcorner_title">Dizájn Sarok</string>
     <string name="category_gestures_title">Gesztusok</string>
     <string name="category_lockscreen_title">Zárképernyő</string>
+    <string name="category_miscellaneous_title">Vegyes</string>
     <string name="category_navigation_title">Navigáció</string>
     <string name="category_notifications_title">Értesítések</string>
     <string name="category_powermenu_title">Bekapcs Menü</string>

@@ -61,6 +61,13 @@
         android:fragment="com.crystal.mine.fragments.LockScreen"
         android:layout="@layout/preference_category_lockscreen" />
 
+    <!-- Miscellaneous -->
+    <Preference
+        android:key="miscellaneous"
+        android:title="@string/category_miscellaneous_title"
+        android:fragment="com.crystal.mine.fragments.Miscellaneous"
+        android:layout="@layout/preference_category_miscellaneous" />
+
     <!-- Navigation -->
     <Preference
         android:key="navigation"
