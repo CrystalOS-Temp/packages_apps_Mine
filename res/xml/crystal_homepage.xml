@@ -47,6 +47,13 @@
         android:fragment="com.crystal.mine.fragments.DesignCorner"
         android:layout="@layout/preference_category_designcorner" />
 
+    <!-- Gestures -->
+    <Preference
+        android:key="gestures"
+        android:title="@string/category_gestures_title"
+        android:fragment="com.crystal.mine.fragments.Gestures"
+        android:layout="@layout/preference_category_gestures" />
+
     <!-- Lockscreen -->
     <Preference
         android:key="lockscreen"

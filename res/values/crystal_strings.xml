@@ -33,6 +33,7 @@
     <string name="category_animations_title">Animations</string>
     <string name="category_buttons_title">Buttons</string>
     <string name="category_designcorner_title">Design Corner</string>
+    <string name="category_gestures_title">Gestures</string>
     <string name="category_lockscreen_title">Lockscreen</string>
     <string name="category_quicksettings_title">Quick Settings</string>
     <string name="category_statusbar_title">Statusbar</string>
