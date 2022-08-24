@@ -68,6 +68,13 @@
         android:fragment="com.crystal.mine.fragments.Navigation"
         android:layout="@layout/preference_category_navigation" />
 
+    <!-- Notifications -->
+    <Preference
+        android:key="notifications"
+        android:title="@string/category_notifications_title"
+        android:fragment="com.crystal.mine.fragments.Notifications"
+        android:layout="@layout/preference_category_notifications" />
+
     <!-- Quick Settings -->
     <Preference
         android:key="quicksettings"

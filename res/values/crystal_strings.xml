@@ -35,6 +35,7 @@
     <string name="category_designcorner_title">Design Corner</string>
     <string name="category_gestures_title">Gestures</string>
     <string name="category_navigation_title">Navigation</string>
+    <string name="category_notifications_title">Notifications</string>
     <string name="category_lockscreen_title">Lockscreen</string>
     <string name="category_quicksettings_title">Quick Settings</string>
     <string name="category_statusbar_title">Statusbar</string>
