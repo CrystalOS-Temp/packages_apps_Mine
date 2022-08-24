@@ -61,6 +61,13 @@
         android:fragment="com.crystal.mine.fragments.LockScreen"
         android:layout="@layout/preference_category_lockscreen" />
 
+    <!-- Navigation -->
+    <Preference
+        android:key="navigation"
+        android:title="@string/category_navigation_title"
+        android:fragment="com.crystal.mine.fragments.Navigation"
+        android:layout="@layout/preference_category_navigation" />
+
     <!-- Quick Settings -->
     <Preference
         android:key="quicksettings"
