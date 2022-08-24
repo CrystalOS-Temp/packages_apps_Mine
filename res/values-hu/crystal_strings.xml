@@ -30,6 +30,7 @@
     <!-- Crystal Mine -->
     <string name="crystal_homepage_title">Crystal Mine</string>
     <string name="category_aboutcrystal_title">A CrystalOS-ről</string>
+    <string name="category_animations_title">Animációk</string>
     <string name="category_buttons_title">Gombok</string>
     <string name="category_lockscreen_title">Zárképernyő</string>
     <string name="category_quicksettings_title">Gyors Beállítások</string>

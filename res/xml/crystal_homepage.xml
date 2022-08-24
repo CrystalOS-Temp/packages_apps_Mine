@@ -26,6 +26,13 @@
         android:fragment="com.crystal.mine.fragments.AboutCrystal"
         android:layout="@layout/preference_category_aboutcrystal" />
 
+    <!-- Animations -->
+    <Preference
+        android:key="animations"
+        android:title="@string/category_animations_title"
+        android:fragment="com.crystal.mine.fragments.Animations"
+        android:layout="@layout/preference_category_animations" />
+
     <!-- Buttons -->
     <Preference
         android:key="buttons"
