@@ -72,4 +72,8 @@
     <string name="wakeup_when_plugged_unplugged_title">Töltéskor felkeltés</string>
     <string name="wakeup_when_plugged_unplugged_summary">Keltse fel az eszközt töltőre csatlakoztatáskor/leválasztáskor</string>
 
+    <!-- Noisy notificaton -->
+    <string name="notification_sound_vib_screen_on_title">Feltűnő értesítések</string>
+    <string name="notification_sound_vib_screen_on_summary">Bekapcsolt képernyőnél az értesítések hangos és rezgő visszajelzést is adnak.</string>
+
 </resources> 
