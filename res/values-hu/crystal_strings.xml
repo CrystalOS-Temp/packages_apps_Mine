@@ -76,4 +76,8 @@
     <string name="notification_sound_vib_screen_on_title">Feltűnő értesítések</string>
     <string name="notification_sound_vib_screen_on_summary">Bekapcsolt képernyőnél az értesítések hangos és rezgő visszajelzést is adnak.</string>
 
+    <!-- Less boring heads-up -->
+    <string name="less_boring_heads_up_title">Kevésbé zavaró beuszó értesítések</string>
+    <string name="less_boring_heads_up_summary">A beuszó értesítések csak a Tárcsázó és az Üzenetek alkalmazásoktól jelennek meg ha azok nincsenek előtérben</string>
+
 </resources> 
