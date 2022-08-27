@@ -38,12 +38,16 @@ import com.android.settingslib.search.SearchIndexable;
 
 import com.android.internal.logging.nano.MetricsProto;
 
+import com.android.internal.crystal.utils.CrystalUtils;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 @SearchIndexable
 public class Notifications extends SettingsPreferenceFragment {
+
+    private static final String INCALL_VIB_OPTIONS = "incall_vib_options";
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -52,6 +56,11 @@ public class Notifications extends SettingsPreferenceFragment {
         PreferenceScreen prefSet = getPreferenceScreen();
         final Resources res = getResources();
         final PreferenceScreen prefScreen = getPreferenceScreen();
+
+        PreferenceCategory incallVibCategory = (PreferenceCategory) findPreference(INCALL_VIB_OPTIONS);
+        if (!CrystalUtils.isVoiceCapable(getActivity())) {
+                prefScreen.removePreference(incallVibCategory);
+        }
     }
 
     @Override

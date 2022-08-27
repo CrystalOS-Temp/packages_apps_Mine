@@ -80,4 +80,10 @@
     <string name="less_boring_heads_up_title">Kevésbé zavaró beuszó értesítések</string>
     <string name="less_boring_heads_up_summary">A beuszó értesítések csak a Tárcsázó és az Üzenetek alkalmazásoktól jelennek meg ha azok nincsenek előtérben</string>
 
+    <!-- Incall vibrate options -->
+    <string name="incall_vibration_category">Hívásközbeni rezgés opciók</string>
+    <string name="incall_vibrate_connect_title">Rezgés csatlakozáskor</string>
+    <string name="incall_vibrate_call_wait_title">Rezgés hívás várakoztatáskor</string>
+    <string name="incall_vibrate_disconnect_title">Rezgés szétkapcsoláskor</string>
+
 </resources> 
