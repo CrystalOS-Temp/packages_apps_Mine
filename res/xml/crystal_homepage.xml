@@ -45,13 +45,13 @@
           />
 
      <!-- CrystalGoodies -->
-     <Preference
+     <!--Preference
           android:id="@+id/crystalgoodies"
           android:icon="@drawable/ic_category_crystalgoodies"
           android:title="@string/category_crystalgoodies_title"
           android:fragment="com.crystal.mine.fragments.CrystalGoodies"
           android:layout="@layout/preference_category_crystalgoodies"
-          />
+          /-->
 
      <!-- DesignCorner -->
      <Preference
