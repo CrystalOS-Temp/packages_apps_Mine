@@ -100,7 +100,7 @@
     <Preference
         android:key="statusbar"
         android:title="@string/category_statusbar_title"
-        android:fragment="com.crystal.mine.fragments.Statusbar"
+        android:fragment="com.crystal.mine.fragments.StatusBar"
         android:layout="@layout/preference_category_statusbar" />
 
 </PreferenceScreen>
