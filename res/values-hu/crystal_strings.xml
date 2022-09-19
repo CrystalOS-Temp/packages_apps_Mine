@@ -137,4 +137,9 @@
     <string name="quick_pulldown_left">Bal oldalt</string>
     <string name="quick_pulldown_always">Mindig</string>
 
+    <!-- Lockscreen battery info -->
+    <string name="lockscreen_charging_info_title">Zárképernyő töltés infó</string>
+    <string name="lockscreen_charging_info_summary">Mutassa a hőmérsékletet, a töltő áramot és egyebeket töltés közben a zárképernyőn</string>
+
+
 </resources> 
