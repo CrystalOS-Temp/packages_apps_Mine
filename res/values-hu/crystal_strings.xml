@@ -118,4 +118,12 @@
     <string name="roaming_indicator_icon_title">Barangolás ikon</string>
     <string name="roaming_indicator_icon_summary">Jelenítse meg az R betűt adatbarangolás módban</string>
 
+    <!-- Statusbar double tap to sleep -->
+    <string name="double_tap_to_sleep_title">Dupla koppintásra alvás az értesítési sávon</string>
+    <string name="double_tap_to_sleep_summary">Érintse meg kétszer az értesítési sávot az eszköz altatásához</string>
+
+    <!-- Lockscreen double tap to sleep -->
+    <string name="double_tap_sleep_lockscreen_title">Dupla koppintásra alvás a zárképernyőn</string>
+    <string name="double_tap_sleep_lockscreen_summary">Érintse meg kétszer a zárképernyőt az eszköz altatásához</string>
+
 </resources> 
