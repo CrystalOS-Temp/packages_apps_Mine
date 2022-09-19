@@ -126,4 +126,8 @@
     <string name="double_tap_sleep_lockscreen_title">Dupla koppintásra alvás a zárképernyőn</string>
     <string name="double_tap_sleep_lockscreen_summary">Érintse meg kétszer a zárképernyőt az eszköz altatásához</string>
 
+    <!-- Lockscreen statusbar -->
+    <string name="hide_lockscreen_status_bar_title">Zárképernyő értesítési sáv</string>
+    <string name="hide_lockscreen_status_bar_summary">Rejtse el az értesítési sávot a zárképernyőt</string>
+
 </resources> 

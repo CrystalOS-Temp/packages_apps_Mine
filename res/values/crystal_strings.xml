@@ -126,4 +126,8 @@
     <string name="double_tap_sleep_lockscreen_title">Lockscreen double tap to sleep</string>
     <string name="double_tap_sleep_lockscreen_summary">Double tap anywhere on the lockscreen to put the device to sleep</string>
 
+    <!-- Lockscreen statusbar -->
+    <string name="hide_lockscreen_status_bar_title">Lockscreen statusbar hide</string>
+    <string name="hide_lockscreen_status_bar_summary">Hide the statusbar on the lockscreen</string>
+
 </resources>
