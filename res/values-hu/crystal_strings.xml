@@ -114,4 +114,8 @@
     <string name="data_disabled_icon_title">Mutassa a mobiladat letiltva ikont</string>
     <string name="data_disabled_icon_summary">Jelenítse meg az X-et a térerő ikon mellett amikor a mobilinternet ki van kapcsolva</string>
 
+    <!-- Roaming indicator icon -->
+    <string name="roaming_indicator_icon_title">Barangolás ikon</string>
+    <string name="roaming_indicator_icon_summary">Jelenítse meg az R betűt adatbarangolás módban</string>
+
 </resources> 
