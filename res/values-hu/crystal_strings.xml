@@ -130,4 +130,11 @@
     <string name="hide_lockscreen_status_bar_title">Zárképernyő értesítési sáv</string>
     <string name="hide_lockscreen_status_bar_summary">Rejtse el az értesítési sávot a zárképernyőt</string>
 
+    <!-- Quick QS Pulldown -->
+    <string name="status_bar_quick_qs_pulldown">Gyors beállítások egyszerű lenyitása</string>
+    <string name="quick_pulldown_none">Kikapcsolva</string>
+    <string name="quick_pulldown_right">Jobb oldalt</string>
+    <string name="quick_pulldown_left">Bal oldalt</string>
+    <string name="quick_pulldown_always">Mindig</string>
+
 </resources> 

@@ -130,4 +130,11 @@
     <string name="hide_lockscreen_status_bar_title">Lockscreen statusbar hide</string>
     <string name="hide_lockscreen_status_bar_summary">Hide the statusbar on the lockscreen</string>
 
+    <!-- Quick QS Pulldown -->
+    <string name="status_bar_quick_qs_pulldown">Quick QS pulldown</string>
+    <string name="quick_pulldown_none">Disabled</string>
+    <string name="quick_pulldown_right">Pulldown status bar from right side</string>
+    <string name="quick_pulldown_left">Pulldown status bar from left side</string>
+    <string name="quick_pulldown_always">Always show quick settings on status bar pull down</string>
+
 </resources>
