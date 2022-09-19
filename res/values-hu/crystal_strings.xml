@@ -106,4 +106,8 @@
     <string name="aosp_gestures_title">AOSP Gesztus beállítások</string>
     <string name="aosp_gestures_summary">AOSP-ben alapból megtalálható gesztus beállítások</string>
 
+    <!-- Show LTE/4G switch -->
+    <string name="show_fourg_title">4G ikon LTE helyett</string>
+    <string name="show_fourg_summary">Lecseréli az értesítési sávon található LTE ikont 4G ikonra</string>
+
 </resources> 
