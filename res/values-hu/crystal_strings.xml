@@ -110,4 +110,8 @@
     <string name="show_fourg_title">4G ikon LTE helyett</string>
     <string name="show_fourg_summary">Lecseréli az értesítési sávon található LTE ikont 4G ikonra</string>
 
+    <!-- Data disabled icon -->
+    <string name="data_disabled_icon_title">Mutassa a mobiladat letiltva ikont</string>
+    <string name="data_disabled_icon_summary">Jelenítse meg az X-et a térerő ikon mellett amikor a mobilinternet ki van kapcsolva</string>
+
 </resources> 
