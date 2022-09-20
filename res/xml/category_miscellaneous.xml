@@ -25,4 +25,10 @@
         android:summary="@string/wakeup_when_plugged_unplugged_summary"
         android:defaultValue="false" />
 
+    <com.crystal.mine.preferences.SystemSettingSwitchPreference
+        android:key="headset_connect_player"
+        android:title="@string/headset_connect_player_title"
+        android:summary="@string/headset_connect_player_summary"
+        android:defaultValue="false" />
+
 </PreferenceScreen>
