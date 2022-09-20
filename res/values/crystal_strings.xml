@@ -141,4 +141,8 @@
     <string name="lockscreen_charging_info_title">Show charging info in lockscreen</string>
     <string name="lockscreen_charging_info_summary">Shows temperature, charging current and more while plugged in</string>
 
+    <!-- Notification guts kill app button -->
+    <string name="notification_guts_kill_app_button_title">Force stop button</string>
+    <string name="notification_guts_kill_app_button_summary">Show force stop button in the notification\'s longpress menu</string>
+
 </resources>
