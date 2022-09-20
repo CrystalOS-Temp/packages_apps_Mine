@@ -149,4 +149,8 @@
     <string name="headset_connect_player_title">Zenelejászó indítása</string>
     <string name="headset_connect_player_summary">Indítsa el az alapértelmezett zenelejátszó alkalmazást vezetékes füllhallgató csatlakoztatásakor</string>
 
+    <!-- Charging animation -->
+    <string name="charging_animation_title">Töltés animáció</string>
+    <string name="charging_animation_summary">Jelenítsen meg töltési animációt az eszköz töltőre csatlakoztatásakor</string>
+
 </resources> 

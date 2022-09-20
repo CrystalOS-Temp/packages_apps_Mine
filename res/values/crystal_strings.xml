@@ -149,4 +149,8 @@
     <string name="headset_connect_player_title">Launch music app on headset connection</string>
     <string name="headset_connect_player_summary">Launch the default music app when headset is connected</string>
 
+    <!-- Charging animation -->
+    <string name="charging_animation_title">Charging animation</string>
+    <string name="charging_animation_summary">Display an animation when the device is plugged in</string>
+
 </resources>
