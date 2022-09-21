@@ -153,4 +153,8 @@
     <string name="charging_animation_title">Töltés animáció</string>
     <string name="charging_animation_summary">Jelenítsen meg töltési animációt az eszköz töltőre csatlakoztatásakor</string>
 
+    <!-- Ignore secure window -->
+    <string name="ignore_window_secure_title">Hagyja figyelmen kívül a védett jelzőt</string>
+    <string name="ignore_window_secure_summary">Eltávolítja a képernyőkép és képernyővideó limitációkat minden alkalmazáson. Alapesetben a védett alkalmazások területe feketével van elfedve a felvételeken. Ez néhány esetben jól jöhet de adatszivárgáshoz vezethet. Ezen beállítás módosítása után lehet, hogy újra kell indítani a célalkalmazást a módosítás érvénybe léptetéséhez</string>
+
 </resources> 
