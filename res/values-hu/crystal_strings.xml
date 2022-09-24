@@ -169,4 +169,8 @@
     <string name="use_tiles_on_secure_keyguard_title">Feloldás érzékeny csempékhez</string>
     <string name="use_tiles_on_secure_keyguard_summary">Fel kelljen oldani az eszközt az értékeny gyorsbeállítások csempék használatához</string>
 
+    <!-- Alert Slider Notifications (OnePlus devices) -->
+    <string name="alert_slider_notifications_title">Alert slider értesítések</string>
+    <string name="alert_slider_notifications_summary">Jelenítsen meg értesítést az Alert slider állapotának változásakor</string>
+
 </resources>

@@ -48,6 +48,9 @@ import java.util.List;
 public class Notifications extends SettingsPreferenceFragment {
 
     private static final String INCALL_VIB_OPTIONS = "incall_vib_options";
+    private static final String ALERT_SLIDER_PREF = "alert_slider_notifications";
+
+    private Preference mAlertSlider;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -61,6 +64,13 @@ public class Notifications extends SettingsPreferenceFragment {
         if (!CrystalUtils.isVoiceCapable(getActivity())) {
                 prefScreen.removePreference(incallVibCategory);
         }
+
+        mAlertSlider = (Preference) prefSet.findPreference(ALERT_SLIDER_PREF);
+        boolean mAlertSliderAvailable = res.getBoolean(
+                com.android.internal.R.bool.config_hasAlertSlider);
+        if (!mAlertSliderAvailable)
+            prefSet.removePreference(mAlertSlider);
+        
     }
 
     @Override
