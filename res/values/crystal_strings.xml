@@ -165,4 +165,8 @@
     <string name="burn_in_protection_interval_title">Interval of shift</string>
     <string name="burn_in_protection_interval_summary">How often to make icons shift</string>
 
+    <!-- Tiles on secure keyguard -->
+    <string name="use_tiles_on_secure_keyguard_title">Require unlocking to use sensitive tiles</string>
+    <string name="use_tiles_on_secure_keyguard_summary">Ask to unlock lock screen when using sensitive tiles</string>
+
 </resources>

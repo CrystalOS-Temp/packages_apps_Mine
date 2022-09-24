@@ -165,4 +165,8 @@
     <string name="burn_in_protection_interval_title">Elmozgatás gyakorisága</string>
     <string name="burn_in_protection_interval_summary">Milyen gyakran mozduljanak el az ikonok</string>
 
-</resources> 
+    <!-- Tiles on secure keyguard -->
+    <string name="use_tiles_on_secure_keyguard_title">Feloldás érzékeny csempékhez</string>
+    <string name="use_tiles_on_secure_keyguard_summary">Fel kelljen oldani az eszközt az értékeny gyorsbeállítások csempék használatához</string>
+
+</resources>
