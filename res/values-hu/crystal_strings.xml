@@ -157,4 +157,12 @@
     <string name="ignore_window_secure_title">Hagyja figyelmen kívül a védett jelzőt</string>
     <string name="ignore_window_secure_summary">Eltávolítja a képernyőkép és képernyővideó limitációkat minden alkalmazáson. Alapesetben a védett alkalmazások területe feketével van elfedve a felvételeken. Ez néhány esetben jól jöhet de adatszivárgáshoz vezethet. Ezen beállítás módosítása után lehet, hogy újra kell indítani a célalkalmazást a módosítás érvénybe léptetéséhez</string>
 
+    <!-- Burn-in Protection -->
+    <string name="unit_x1000ms">x1000 ms</string>
+    <string name="burnin_category">Beégés Védelem</string>
+    <string name="burn_in_protection_title">Beégés védelem</string>
+    <string name="burn_in_protection_summary">Elmozgatja az értesítési és navigációs sáv ikonokat hogy megakadályozza azok beégését</string>
+    <string name="burn_in_protection_interval_title">Elmozgatás gyakorisága</string>
+    <string name="burn_in_protection_interval_summary">Milyen gyakran mozduljanak el az ikonok</string>
+
 </resources> 

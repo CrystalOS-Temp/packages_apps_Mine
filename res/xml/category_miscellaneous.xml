@@ -37,4 +37,27 @@
         android:summary="@string/ignore_window_secure_summary"
         android:defaultValue="false"/>
 
+    <PreferenceCategory
+        android:key="burnin_category"
+        android:title="@string/burnin_category">
+
+        <com.crystal.mine.preferences.SystemSettingSwitchPreference
+            android:key="burn_in_protection"
+            android:title="@string/burn_in_protection_title"
+            android:summary="@string/burn_in_protection_summary"
+            android:defaultValue="true" />
+
+        <com.crystal.mine.preferences.SystemSettingSeekBarPreference
+            android:key="burn_in_protection_interval"
+            android:title="@string/burn_in_protection_interval_title"
+            android:max="120"
+            android:min="30"
+            settings:unitsLeft=""
+            settings:unitsRight="@string/unit_x1000ms"
+            android:dependency="burn_in_protection"
+            android:defaultValue="60"
+            android:persistent="false" />
+
+    </PreferenceCategory>
+
 </PreferenceScreen>

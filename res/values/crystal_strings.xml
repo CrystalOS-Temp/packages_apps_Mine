@@ -157,4 +157,12 @@
     <string name="ignore_window_secure_title">Ignore window secure flags</string>
     <string name="ignore_window_secure_summary">This removes the screenshots and screenrecords limits for all applications. Normally, special applications are replaced with black areas in records. This can be convenient in some cases but may lead to privacy leaks. After changing this toggle, you may need to restart applications for the change to take effect</string>
 
+    <!-- Burn-in Protection -->
+    <string name="unit_x1000ms">x1000 ms</string>
+    <string name="burnin_category">Burn-in Protection</string>
+    <string name="burn_in_protection_title">Burn-in Protection</string>
+    <string name="burn_in_protection_summary">Shift navabr and statusbar icons to prevent burn-in</string>
+    <string name="burn_in_protection_interval_title">Interval of shift</string>
+    <string name="burn_in_protection_interval_summary">How often to make icons shift</string>
+
 </resources>
