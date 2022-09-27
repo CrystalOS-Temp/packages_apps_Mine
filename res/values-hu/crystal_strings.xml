@@ -173,4 +173,16 @@
     <string name="alert_slider_notifications_title">Alert slider értesítések</string>
     <string name="alert_slider_notifications_summary">Jelenítsen meg értesítést az Alert slider állapotának változásakor</string>
 
+    <!-- Volume Steps Fragment -->
+    <string name="volume_steps_fragment_title">Hangerő léptetés</string>
+    <string name="volume_steps_summary">Szabja testre a hangerő léptetését</string>
+    <string name="volume_steps_alarm_title">Hangerő lépések: Ébresztés</string>
+    <string name="volume_steps_dtmf_title">Hangerő lépések: Tárcsázó</string>
+    <string name="volume_steps_music_title">Hangerő lépések: Média</string>
+    <string name="volume_steps_notification_title">Hangerő lépések: Értesítések</string>
+    <string name="volume_steps_ring_title">Hangerő lépések: Csörgés</string>
+    <string name="volume_steps_system_title">Hangerő lépések: Rendszer</string>
+    <string name="volume_steps_voice_call_title">Hangerő lépések: Hívás</string>
+    <string name="volume_steps_reset">Visszaállítás</string>
+
 </resources>
