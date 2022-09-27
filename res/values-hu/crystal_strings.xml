@@ -185,4 +185,8 @@
     <string name="volume_steps_voice_call_title">Hangerő lépések: Hívás</string>
     <string name="volume_steps_reset">Visszaállítás</string>
 
+    <!-- Volume panel to left -->
+    <string name="volume_panel_on_left_title">Bal oldali hangerő panel</string>
+    <string name="volume_panel_on_left_summary">A hangerő panel a képernyő bal oldaláról nyíljon</string>
+
 </resources>
