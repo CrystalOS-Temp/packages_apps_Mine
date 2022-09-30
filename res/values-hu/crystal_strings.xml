@@ -189,4 +189,8 @@
     <string name="volume_panel_on_left_title">Bal oldali hangerő panel</string>
     <string name="volume_panel_on_left_summary">A hangerő panel a képernyő bal oldaláról nyíljon</string>
 
+    <!-- QuickSettings haptic feedback -->
+    <string name="quick_settings_vibrate_title">Érintéskor rezegjen</string>
+    <string name="quick_settings_vibrate_summary">Rezegjen az eszköz amikor megérinti a GyorsBeállítások csempék egyikét</string>
+
 </resources>

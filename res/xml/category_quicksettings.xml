@@ -32,4 +32,10 @@
         android:summary="@string/use_tiles_on_secure_keyguard_summary"
         android:defaultValue="true" />
 
+    <com.crystal.mine.preferences.SecureSettingSwitchPreference
+        android:key="quick_settings_vibrate"
+        android:title="@string/quick_settings_vibrate_title"
+        android:summary="@string/quick_settings_vibrate_summary"
+        android:defaultValue="false"/>
+
 </PreferenceScreen>
