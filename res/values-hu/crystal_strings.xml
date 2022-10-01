@@ -222,4 +222,8 @@
     <string name="screen_off_animation_crt" translatable="false">CRT</string>
     <string name="screen_off_animation_scale">Skálázás</string>
 
+    <!--Volume keys -->
+    <string name="volume_rocker_wake_title">Hangerőre keltés</string>
+    <string name="volume_rocker_wake_summary">A hangerő gombok valamelyikének megnyomása felkelti az eszközt</string>
+
 </resources>

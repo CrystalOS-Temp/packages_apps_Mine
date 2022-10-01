@@ -25,6 +25,12 @@
         android:summary="@string/volume_panel_on_left_summary"
         android:defaultValue="false" />
 
+    <com.crystal.mine.preferences.SystemSettingSwitchPreference
+        android:key="volume_rocker_wake"
+        android:summary="@string/volume_rocker_wake_summary"
+        android:title="@string/volume_rocker_wake_title"
+        android:defaultValue="false" />
+
     <ListPreference
         android:key="volume_steps_alarm"
         android:title="@string/volume_steps_alarm_title"
