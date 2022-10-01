@@ -226,4 +226,8 @@
     <string name="volume_rocker_wake_title">Hangerőre keltés</string>
     <string name="volume_rocker_wake_summary">A hangerő gombok valamelyikének megnyomása felkelti az eszközt</string>
 
+    <!-- Volume button swap on rotate -->
+    <string name="swap_volume_buttons_title">Gomb forgatás</string>
+    <string name="swap_volume_buttons_summary">Hangerő gombok felcserélése ha az eszköz elforgatott állapotban van</string>
+
 </resources>
