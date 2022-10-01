@@ -193,4 +193,28 @@
     <string name="quick_settings_vibrate_title">Érintéskor rezegjen</string>
     <string name="quick_settings_vibrate_summary">Rezegjen az eszköz amikor megérinti a GyorsBeállítások csempék egyikét</string>
 
+    <!-- Tiles animation style -->
+    <string name="qs_tile_animation_style_title">Animáció stílusa</string>
+    <string name="qs_tile_animation_duration_title">Animáció hossza</string>
+    <string name="qs_tile_animation_interpolator_title">Csempe animáció interpolációja</string>
+    <string name="qs_tile_animation_style_off">Nincs animáció</string>
+    <string name="qs_tile_animation_style_flip">Pörgetés</string>
+    <string name="qs_tile_animation_style_rotate">Forgatás</string>
+    <string name="qs_tile_animation_duration_low">Lassú</string>
+    <string name="qs_tile_animation_duration_default">Alapértelmezett</string>
+    <string name="qs_tile_animation_duration_fast">Gyors</string>
+    <string name="qs_tile_animation_duration_quite_fast">Elég gyors</string>
+    <string name="qs_tile_animation_duration_super_fast">Szuper gyors</string>
+    <string name="qs_tile_animation_interpolator_linearInterpolator">Lineáris</string>
+    <string name="qs_tile_animation_interpolator_accelerateInterpolator">Gyorsítás</string>
+    <string name="qs_tile_animation_interpolator_decelerateInterpolator">Lassítás</string>
+    <string name="qs_tile_animation_interpolator_accelerateDecelerateInterpolator">Gyorsítás majd lassítás</string>
+    <string name="qs_tile_animation_interpolator_bounceInterpolator">Pattogás</string>
+    <string name="qs_tile_animation_interpolator_overshootInterpolator">Túlpörgetés</string>
+    <string name="qs_tile_animation_interpolator_anticipateInterpolator">Megelőzés</string>
+    <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">Megelőző túlpörgetés</string>
+    <string name="qs_set_animation_style">%1$s</string>
+    <string name="qs_set_animation_duration">%1$s</string>
+    <string name="qs_set_animation_interpolator">%1$s</string>
+
 </resources>
