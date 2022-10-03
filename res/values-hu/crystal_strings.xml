@@ -230,4 +230,8 @@
     <string name="swap_volume_buttons_title">Gomb forgatás</string>
     <string name="swap_volume_buttons_summary">Hangerő gombok felcserélése ha az eszköz elforgatott állapotban van</string>
 
+    <!-- Fingerprint Ripple Effect -->
+    <string name="enable_fingerprint_ripple_effect_title">Képernyő feloldási animáció</string>
+    <string name="enable_fingerprint_ripple_effect_summary">Mutassa a fodrozódó effektet az eszköz ujjlenyomatos feloldásakor</string>
+
 </resources>
