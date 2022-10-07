@@ -19,4 +19,22 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/category_powermenu_title" >
 
+    <com.crystal.mine.preferences.SystemSettingSeekBarPreference
+        android:key="transparent_power_menu"
+        android:title="@string/power_menu_transparency"
+        android:max="100"
+        android:min="0"
+        settings:unitsLeft=""
+        settings:unitsRight="%"
+        android:defaultValue="100" />
+
+    <com.crystal.mine.preferences.SystemSettingSeekBarPreference
+        android:key="transparent_power_dialog_dim"
+        android:title="@string/power_menu_dialog_dim"
+        android:max="100"
+        android:min="0"
+        settings:unitsLeft=""
+        settings:unitsRight="%"
+        android:defaultValue="50" />
+
 </PreferenceScreen> 

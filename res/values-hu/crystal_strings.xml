@@ -234,4 +234,9 @@
     <string name="enable_fingerprint_ripple_effect_title">Képernyő feloldási animáció</string>
     <string name="enable_fingerprint_ripple_effect_summary">Mutassa a fodrozódó effektet az eszköz ujjlenyomatos feloldásakor</string>
 
+    <!-- Power menu and dialogs opacity -->
+    <string name="panel_porn_title">Bekapcsoló menü homályosítás</string>
+    <string name="power_menu_transparency">Bekapcs/újraindítás menü homályosság</string>
+    <string name="power_menu_dialog_dim">Bekapcs/újraindítás dialógus háttér homályosításának mértéke</string>
+
 </resources>
