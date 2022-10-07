@@ -239,4 +239,11 @@
     <string name="power_menu_transparency">Bekapcs/újraindítás menü homályosság</string>
     <string name="power_menu_dialog_dim">Bekapcs/újraindítás dialógus háttér homályosításának mértéke</string>
 
+    <!-- Power menu Animations  -->
+    <string name="power_menu_animation_title">Bekapcs menü animáció</string>
+    <string name="power_menu_animation_dialog_title">Válassza ki a bekapcs menü animációját</string>
+    <string name="power_menu_animation_aosp">AOSP (alap)</string>
+    <string name="power_menu_animation_bottom">Alsó</string>
+    <string name="power_menu_animation_top">Felső</string>
+
 </resources>
