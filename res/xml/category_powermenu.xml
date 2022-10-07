@@ -23,7 +23,7 @@
         android:key="transparent_power_menu"
         android:title="@string/power_menu_transparency"
         android:max="100"
-        android:min="0"
+        android:min="10"
         settings:unitsLeft=""
         settings:unitsRight="%"
         android:defaultValue="100" />
