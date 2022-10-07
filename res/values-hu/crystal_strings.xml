@@ -245,5 +245,12 @@
     <string name="power_menu_animation_aosp">AOSP (alap)</string>
     <string name="power_menu_animation_bottom">Alsó</string>
     <string name="power_menu_animation_top">Felső</string>
+    <string name="power_menu_animation_xylon">Berepülés</string>
+    <string name="power_menu_animation_slide">Becsúszás</string>
+    <string name="power_menu_animation_turn">Bepörgés</string>
+    <string name="power_menu_animation_fly">Izzás</string>
+    <string name="power_menu_animation_card">3D</string>
+    <string name="power_menu_animation_translucent_top">Átlátszó (felső)</string>
+    <string name="power_menu_animation_translucent_bottom">Átlátszó (alsó)</string>
 
 </resources>
