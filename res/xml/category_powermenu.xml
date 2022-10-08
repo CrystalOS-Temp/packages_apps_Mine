@@ -94,4 +94,9 @@
             android:title="@string/powermenu_logout"
             android:defaultValue="false" />
 
+        <com.crystal.mine.preferences.SystemSettingSwitchPreference
+            android:key="powermenu_torch"
+            android:title="@string/powermenu_torch"
+            android:defaultValue="false" />
+
 </PreferenceScreen> 

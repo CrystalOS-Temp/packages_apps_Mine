@@ -37,6 +37,9 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.settingslib.search.SearchIndexable;
 
 import com.android.internal.logging.nano.MetricsProto;
+import com.android.internal.crystal.utils.CrystalUtils;
+
+import com.crystal.mine.preferences.SystemSettingSwitchPreference;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -46,8 +49,10 @@ import java.util.List;
 public class PowerMenu extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
     private static final String POWER_MENU_ANIMATIONS = "power_menu_animations";
+    private static final String KEY_POWERMENU_TORCH = "powermenu_torch";
 
     private ListPreference mPowerMenuAnimations;
+    private SystemSettingSwitchPreference mPowermenuTorch;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -62,6 +67,11 @@ public class PowerMenu extends SettingsPreferenceFragment implements OnPreferenc
                 getContentResolver(), Settings.System.POWER_MENU_ANIMATIONS, 0)));
         mPowerMenuAnimations.setSummary(mPowerMenuAnimations.getEntry());
         mPowerMenuAnimations.setOnPreferenceChangeListener(this);
+
+        mPowermenuTorch = (SystemSettingSwitchPreference) findPreference(KEY_POWERMENU_TORCH);
+        if (!CrystalUtils.deviceHasFlashlight(getActivity())) {
+            prefScreen.removePreference(mPowermenuTorch);
+        }
     }
 
     @Override

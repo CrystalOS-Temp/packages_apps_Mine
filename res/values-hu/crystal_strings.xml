@@ -269,5 +269,6 @@
     <string name="powermenu_users">Felhasználók</string>
     <string name="powermenu_logout">Kijelentkezés</string>
     <string name="powermenu_emergency">Segélyhívás</string>
+    <string name="powermenu_torch">Zseblámpa</string>
 
 </resources>
