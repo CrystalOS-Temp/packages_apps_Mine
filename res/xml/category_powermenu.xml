@@ -46,6 +46,12 @@
         android:summary="%s"
         android:persistent="false" />
 
+    <com.crystal.mine.preferences.SystemSettingSwitchPreference
+        android:key="lockscreen_power_menu_disabled"
+        android:title="@string/power_menu_hide_on_secure_title"
+        android:summary="@string/power_menu_hide_on_secure_summary"
+        android:defaultValue="true" />
+
     <PreferenceCategory
         android:title="@string/power_menu_items" />
 

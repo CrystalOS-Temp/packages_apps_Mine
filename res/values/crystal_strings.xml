@@ -271,4 +271,8 @@
     <string name="powermenu_emergency">Emergency</string>
     <string name="powermenu_torch">Flashlight</string>
 
+    <!-- Power menu on lockscreen -->
+    <string name="power_menu_hide_on_secure_title">Hide on lockscreen</string>
+    <string name="power_menu_hide_on_secure_summary">Hides the global actions menu on secure lockscreen</string>
+
 </resources>

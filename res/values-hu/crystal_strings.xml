@@ -271,4 +271,8 @@
     <string name="powermenu_emergency">Segélyhívás</string>
     <string name="powermenu_torch">Zseblámpa</string>
 
+    <!-- Power menu on lockscreen -->
+    <string name="power_menu_hide_on_secure_title">Bekapcs menü elrejtése</string>
+    <string name="power_menu_hide_on_secure_summary">Rejtse el a bekapcs menüt a védett zárképernyőn</string>
+
 </resources>
