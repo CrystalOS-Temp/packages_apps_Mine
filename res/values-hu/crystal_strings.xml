@@ -275,4 +275,16 @@
     <string name="power_menu_hide_on_secure_title">Bekapcs menü elrejtése</string>
     <string name="power_menu_hide_on_secure_summary">Rejtse el a bekapcs menüt a védett zárképernyőn</string>
 
+    <!-- QS footer icons -->
+    <string name="qs_footer_users_icon_title">Felhasználói fiók ikonja</string>
+    <string name="qs_footer_users_icon_summary">Jelenítse meg a felhasználó váltó ikont amikor indokolt</string>
+    <string name="qs_footer_edit_icon_title">Csempék szerkesztése ikon</string>
+    <string name="qs_footer_edit_icon_summary">Jelenítse meg a csempék szerkesztése ikont</string>
+    <string name="qs_footer_show_power_menu_title">Bekapcs menü gyorsgomb</string>
+    <string name="qs_footer_show_power_menu_summary">Jelenítse meg a bekapcs menü ikont</string>
+    <string name="qs_footer_services_icon_title">Futó szolgáltatások ikon</string>
+    <string name="qs_footer_services_icon_summary">Jelenítse meg a futó folyamatok ikont</string>
+    <string name="qs_footer_settings_icon_title">Beállítások gyorsgomb</string>
+    <string name="qs_footer_settings_icon_summary">Jelenítse meg a Beállítások ikont a láblécen</string>
+
 </resources>
