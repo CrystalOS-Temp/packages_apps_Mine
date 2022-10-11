@@ -287,4 +287,8 @@
     <string name="qs_footer_settings_icon_title">Beállítások gyorsgomb</string>
     <string name="qs_footer_settings_icon_summary">Jelenítse meg a Beállítások ikont a láblécen</string>
 
+    <!-- Bluetooth status -->
+    <string name="bluetooth_battery_title">Bluetooth akkumulátor állapot</string>
+    <string name="bluetooth_battery_summary">Jelenítse meg a csatlakoztatott Bluetooth eszköz akkumulátor állapotát ha lehetséges</string>
+
 </resources>
