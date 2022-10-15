@@ -31,6 +31,18 @@
         android:summary="@string/fp_unlock_keystore_summary"
         android:defaultValue="false" />
 
+    <SwitchPreference
+        android:key="fingerprint_success_vib"
+        android:title="@string/fprint_success_vib_title"
+        android:summary="@string/fprint_success_vib_summary"
+        android:persistent="false" />
+
+    <SwitchPreference
+        android:key="fingerprint_error_vib"
+        android:title="@string/fprint_error_vib_title"
+        android:summary="@string/fprint_error_vib_summary"
+        android:persistent="true" />
+
     <com.crystal.mine.preferences.SystemSettingSwitchPreference
         android:key="hide_lockscreen_status_bar"
         android:title="@string/hide_lockscreen_status_bar_title"

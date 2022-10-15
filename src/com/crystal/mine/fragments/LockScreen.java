@@ -18,7 +18,9 @@ package com.crystal.mine.fragments;
 import android.app.Activity;
 import android.content.ContentResolver;
 import android.content.Context;
+import android.content.pm.PackageManager;
 import android.content.res.Resources;
+import android.hardware.fingerprint.FingerprintManager;
 import android.os.Bundle;
 import android.os.UserHandle;
 import android.provider.Settings;
@@ -46,9 +48,15 @@ import java.util.Arrays;
 import java.util.List;
 
 @SearchIndexable
-public class LockScreen extends SettingsPreferenceFragment {
+public class LockScreen extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
     private static final String FP_KEYSTORE = "fp_unlock_keystore";
+    private static final String FINGERPRINT_SUCCESS_VIB = "fingerprint_success_vib";
+    private static final String FINGERPRINT_ERROR_VIB = "fingerprint_error_vib";
+
+    private FingerprintManager mFingerprintManager;
+    private SwitchPreference mFingerprintSuccessVib;
+    private SwitchPreference mFingerprintErrorVib;
 
     private SystemSettingSwitchPreference mFingerprintUnlock;
 
@@ -59,6 +67,28 @@ public class LockScreen extends SettingsPreferenceFragment {
         PreferenceScreen prefSet = getPreferenceScreen();
         final Resources res = getResources();
         final PreferenceScreen prefScreen = getPreferenceScreen();
+        final PackageManager mPm = getActivity().getPackageManager();
+
+        mFingerprintManager = (FingerprintManager) getActivity().getSystemService(Context.FINGERPRINT_SERVICE);
+        mFingerprintSuccessVib = (SwitchPreference) findPreference(FINGERPRINT_SUCCESS_VIB);
+        mFingerprintErrorVib = (SwitchPreference) findPreference(FINGERPRINT_ERROR_VIB);
+        if (mPm.hasSystemFeature(PackageManager.FEATURE_FINGERPRINT) &&
+                 mFingerprintManager != null) {
+            if (!mFingerprintManager.isHardwareDetected()){
+                prefSet.removePreference(mFingerprintSuccessVib);
+                prefSet.removePreference(mFingerprintErrorVib);
+            } else {
+                mFingerprintSuccessVib.setChecked((Settings.System.getInt(getContentResolver(),
+                        Settings.System.FP_SUCCESS_VIBRATE, 1) == 1));
+                mFingerprintSuccessVib.setOnPreferenceChangeListener(this);
+                mFingerprintErrorVib.setChecked((Settings.System.getInt(getContentResolver(),
+                        Settings.System.FP_ERROR_VIBRATE, 1) == 1));
+                mFingerprintErrorVib.setOnPreferenceChangeListener(this);
+            }
+        } else {
+            prefSet.removePreference(mFingerprintSuccessVib);
+            prefSet.removePreference(mFingerprintErrorVib);
+        }
 
         mFingerprintUnlock = (SystemSettingSwitchPreference) findPreference(FP_KEYSTORE);
 
@@ -76,6 +106,23 @@ public class LockScreen extends SettingsPreferenceFragment {
     @Override
     public int getMetricsCategory() {
         return MetricsProto.MetricsEvent.CRYSTAL;
+    }
+
+    @Override
+    public boolean onPreferenceChange(Preference preference, Object newValue) {
+        ContentResolver resolver = getActivity().getContentResolver();
+        if (preference == mFingerprintSuccessVib) {
+            boolean value = (Boolean) newValue;
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.FP_SUCCESS_VIBRATE, value ? 1 : 0);
+            return true;
+        } else if (preference == mFingerprintErrorVib) {
+            boolean value = (Boolean) newValue;
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.FP_ERROR_VIBRATE, value ? 1 : 0);
+            return true;
+        }
+        return false;
     }
 
     public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =

@@ -291,4 +291,10 @@
     <string name="bluetooth_battery_title">Bluetooth akkumulátor állapot</string>
     <string name="bluetooth_battery_summary">Jelenítse meg a csatlakoztatott Bluetooth eszköz akkumulátor állapotát ha lehetséges</string>
 
+    <!-- Fingerprint authentication vibration -->
+    <string name="fprint_error_vib_title">Sikertelen ujjlenyomatos rezgés</string>
+    <string name="fprint_error_vib_summary">Rezegjen az eszköz sikertelen ujjlenyomatos hitelesítéskor</string>
+    <string name="fprint_success_vib_title">Sikeres ujjlenyomatos rezgés</string>
+    <string name="fprint_success_vib_summary">Rezegjen az eszköz sikeres ujjlenyomatos hitelesítéskor</string>
+
 </resources>
