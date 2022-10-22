@@ -37,6 +37,12 @@
         android:summary="@string/ignore_window_secure_summary"
         android:defaultValue="false"/>
 
+    <Preference
+        android:key="smart_pixels"
+        android:title="@string/smart_pixels_title"
+        android:summary="@string/smart_pixels_summary"
+        android:fragment="com.crystal.mine.fragments.extras.SmartPixels" />
+
     <PreferenceCategory
         android:key="burnin_category"
         android:title="@string/burnin_category">

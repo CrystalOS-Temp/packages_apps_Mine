@@ -297,4 +297,31 @@
     <string name="fprint_success_vib_title">Sikeres ujjlenyomatos rezgés</string>
     <string name="fprint_success_vib_summary">Rezegjen az eszköz sikeres ujjlenyomatos hitelesítéskor</string>
 
+    <!-- Custom timeouts -->
+    <string name="custom_timeout_summary_never">Soha</string>
+    <string name="custom_timeout_summary_15secs">15 másodperc</string>
+    <string name="custom_timeout_summary_30secs">30 másodperc</string>
+    <string name="custom_timeout_summary_1min">1 perc</string>
+    <string name="custom_timeout_summary_2mins">2 perc</string>
+    <string name="custom_timeout_summary_5mins">5 perc</string>
+    <string name="custom_timeout_summary_10mins">10 perc</string>
+    <string name="custom_timeout_summary_20mins">20 perc</string>
+    <string name="custom_timeout_summary_30mins">30 perc</string>
+    <string name="custom_timeout_summary_1hour">1 óra</string>
+    <string name="custom_timeout_summary_2hours">2 óra</string>
+    <string name="custom_timeout_summary_4hours">4 óra</string>
+    <string name="custom_timeout_summary_8hours">8 óra</string>
+
+    <!-- Smart Pixels -->
+    <string name="smart_pixels_warning_text">Az Intelligens Pixelek egy akkumulátorkímélő funkció. A lekapcsolt pixelek arányától függően spórolhat akkumulátor töltöttséget. Megjegyzés: Ez néhány esetben érzeketlen képernyő területekhez vezethet</string>
+    <string name="smart_pixels_title">Intelligens Pixelek</string>
+    <string name="smart_pixels_summary">Spóroljon akkumulátor töltöttséget extra pixelek kikapcsolásával</string>
+    <string name="smart_pixels_enable_title">Intelligens Pixelek engedélyezése</string>
+    <string name="smart_pixels_enable_summary">Kapcsoljon ki pixeleket akkumulátor spórolásért</string>
+    <string name="smart_pixels_on_power_save_title">Automatikus bekapcsolás akkumulátorkímélő módban</string>
+    <string name="smart_pixels_on_power_save_summary">Engedélyezze az Intelligens Pixelek funkciót akkumulátorkímélő módba lépéskor</string>
+    <string name="smart_pixels_percent">Lekapcsolandó pixelek százalékban</string>
+    <string name="smart_pixels_shift_title">Beégés védelem</string>
+    <string name="smart_pixels_shift_summary">Megakadályozza a képernyő beégést a pixelek néhai elmozgatásával</string>
+
 </resources>
