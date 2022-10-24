@@ -324,4 +324,13 @@
     <string name="smart_pixels_shift_title">Beégés védelem</string>
     <string name="smart_pixels_shift_summary">Megakadályozza a képernyő beégést a pixelek néhai elmozgatásával</string>
 
+    <!-- Breathing Notifications -->
+    <string name="breathing_notifications_category">Lélegző értesítések</string>
+    <string name="sms_breath_title">Lélegző SMS</string>
+    <string name="sms_breath_summary">Az SMS értesítések egy lélegző effektet kapnak az értesítési sávon</string>
+    <string name="missed_call_breath_title">Lélegző Nem Fogadott Hívások</string>
+    <string name="missed_call_breath_summary">A Nem Fogadott Hívás értesítések egy lélgező effektet kapnak az értesítési sávon</string>
+    <string name="voicemail_breath_title">Lélegző Hangüzenet</string>
+    <string name="voicemail_breath_summary">A Hangüzenetek egy lélegző effektet kapnak az értesítési sávon</string>
+
 </resources>

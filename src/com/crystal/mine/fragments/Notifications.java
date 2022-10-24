@@ -18,6 +18,7 @@ package com.crystal.mine.fragments;
 import android.app.Activity;
 import android.content.ContentResolver;
 import android.content.Context;
+import android.content.pm.PackageManager;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.UserHandle;
@@ -45,12 +46,19 @@ import java.util.Arrays;
 import java.util.List;
 
 @SearchIndexable
-public class Notifications extends SettingsPreferenceFragment {
+public class Notifications extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
     private static final String INCALL_VIB_OPTIONS = "incall_vib_options";
     private static final String ALERT_SLIDER_PREF = "alert_slider_notifications";
+    private static final String SMS_BREATH = "sms_breath";
+    private static final String MISSED_CALL_BREATH = "missed_call_breath";
+    private static final String VOICEMAIL_BREATH = "voicemail_breath";
 
+    protected Context mContext;
     private Preference mAlertSlider;
+    private SwitchPreference mSmsBreath;
+    private SwitchPreference mMissedCallBreath;
+    private SwitchPreference mVoicemailBreath;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -59,6 +67,31 @@ public class Notifications extends SettingsPreferenceFragment {
         PreferenceScreen prefSet = getPreferenceScreen();
         final Resources res = getResources();
         final PreferenceScreen prefScreen = getPreferenceScreen();
+        mContext = getActivity().getApplicationContext();
+        ContentResolver resolver = getActivity().getContentResolver();
+
+        // Breathing Notifications
+        mSmsBreath = (SwitchPreference) findPreference(SMS_BREATH);
+        mMissedCallBreath = (SwitchPreference) findPreference(MISSED_CALL_BREATH);
+        mVoicemailBreath = (SwitchPreference) findPreference(VOICEMAIL_BREATH);
+
+        if (mContext.getPackageManager().hasSystemFeature(PackageManager.FEATURE_TELEPHONY)) {
+            mSmsBreath.setChecked(Settings.Global.getInt(resolver,
+                    Settings.Global.KEY_SMS_BREATH, 1) == 1);
+            mSmsBreath.setOnPreferenceChangeListener(this);
+
+            mMissedCallBreath.setChecked(Settings.Global.getInt(resolver,
+                    Settings.Global.KEY_MISSED_CALL_BREATH, 1) == 1);
+            mMissedCallBreath.setOnPreferenceChangeListener(this);
+
+            mVoicemailBreath.setChecked(Settings.Global.getInt(resolver,
+                    Settings.Global.KEY_VOICEMAIL_BREATH, 1) == 1);
+            mVoicemailBreath.setOnPreferenceChangeListener(this);
+        } else {
+            prefScreen.removePreference(mSmsBreath);
+            prefScreen.removePreference(mMissedCallBreath);
+            prefScreen.removePreference(mVoicemailBreath);
+        }
 
         PreferenceCategory incallVibCategory = (PreferenceCategory) findPreference(INCALL_VIB_OPTIONS);
         if (!CrystalUtils.isVoiceCapable(getActivity())) {
@@ -71,6 +104,24 @@ public class Notifications extends SettingsPreferenceFragment {
         if (!mAlertSliderAvailable)
             prefSet.removePreference(mAlertSlider);
         
+    }
+
+    public boolean onPreferenceChange(Preference preference, Object newValue) {
+        ContentResolver resolver = getActivity().getContentResolver();
+        if (preference == mSmsBreath) {
+            boolean value = (Boolean) newValue;
+            Settings.Global.putInt(getContentResolver(), SMS_BREATH, value ? 1 : 0);
+            return true;
+        } else if (preference == mMissedCallBreath) {
+            boolean value = (Boolean) newValue;
+            Settings.Global.putInt(getContentResolver(), MISSED_CALL_BREATH, value ? 1 : 0);
+            return true;
+        } else if (preference == mVoicemailBreath) {
+            boolean value = (Boolean) newValue;
+            Settings.Global.putInt(getContentResolver(), VOICEMAIL_BREATH, value ? 1 : 0);
+            return true;
+        }
+        return false;
     }
 
     @Override
