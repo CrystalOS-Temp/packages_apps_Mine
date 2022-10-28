@@ -333,4 +333,18 @@
     <string name="voicemail_breath_title">Lélegző Hangüzenet</string>
     <string name="voicemail_breath_summary">A Hangüzenetek egy lélegző effektet kapnak az értesítési sávon</string>
 
+    <!-- Quick Settings brightness slider -->
+    <string name="qs_show_brightness_slider_title">Fényerő csúszka</string>
+    <string name="qs_show_brightness_slider_never">Sose mutassa</string>
+    <string name="qs_show_brightness_slider_expanded">Kibővített állapotban mutassa</string>
+    <string name="qs_show_brightness_slider_always">Mindig mutassa</string>
+    <string name="qs_show_brightness_slider_not_expanded">Összecsukott állapotban mutassa</string>
+    <string name="qs_brightness_slider_position_title">Pozíció</string>
+    <string name="qs_brightness_slider_position_top">Felül</string>
+    <string name="qs_brightness_slider_position_bottom">Alul</string>
+
+    <!-- Quick Settings brightness icon -->
+    <string name="qs_show_auto_brightness_title">Automatikus fényerő ikon</string>
+    <string name="qs_show_auto_brightness_summary">Mutassa az automatikus fényerő ikont a fényerő csúszka mellett</string>
+
 </resources>
