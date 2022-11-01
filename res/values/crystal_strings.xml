@@ -16,6 +16,20 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+    <!-- Preference Category titles -->
+    <string name="live_vol_pref_cat_title">Live Volume Steps</string>
+    <string name="sett_lay_pref_cat_title">Settings Homepage Theme</string>
+    <string name="sleep_gest_pref_cat_title">Sleep Gestures</string>
+    <string name="lock_ui_pref_cat_title">Lockscreen UI</string>
+    <string name="lock_fp_pref_cat_title">Lockscreen Fingerprint</string>
+    <string name="burnin_pref_cat_title">Burn-in Protection</string>
+    <string name="incall_vib_pref_cat_title">In-Call Vibration</string>
+    <string name="breath_notif_pref_cat_title">Breathing Notifications</string>
+    <string name="power_menu_appear_pref_cat_title">Power Menu Appearance</string>
+    <string name="qs_bright_pref_cat_title">QS Brightness Slider</string>
+    <string name="qs_tile_anim_pref_cat_title">QS Tile Animations</string>
+    <string name="qs_extra_btns_pref_cat_title">QS Extra Buttons</string>
+
     <!-- Color Picker -->
     <string name="dialog_color_picker">Color Picker</string>
     <string name="press_color_to_apply">Press on color below to apply</string>
@@ -63,9 +77,6 @@
     <string name="category_quicksettings_title">Quick Settings</string>
     <string name="category_statusbar_title">Statusbar</string>
 
-    <!-- Pref category titles -->
-    <string name="settings_layout_pref_title">Settings UI interface</string>
-
     <!-- Fingerprint unlock -->
     <string name="fp_unlock_keystore_title">Force FP authentication</string>
     <string name="fp_unlock_keystore_summary">Unlock device with fingerprint after reboot or lockdown</string>
@@ -84,7 +95,6 @@
     <string name="less_boring_heads_up_summary">Show heads up only for dialer or messaging app if they are not in foreground</string>
 
     <!-- Incall vibrate options -->
-    <string name="incall_vibration_category">In-call vibration options</string>
     <string name="incall_vibrate_connect_title">Vibrate on connect</string>
     <string name="incall_vibrate_call_wait_title">Vibrate on call waiting</string>
     <string name="incall_vibrate_disconnect_title">Vibrate on disconnect</string>
@@ -159,7 +169,6 @@
 
     <!-- Burn-in Protection -->
     <string name="unit_x1000ms">x1000 ms</string>
-    <string name="burnin_category">Burn-in Protection</string>
     <string name="burn_in_protection_title">Burn-in Protection</string>
     <string name="burn_in_protection_summary">Shift navabr and statusbar icons to prevent burn-in</string>
     <string name="burn_in_protection_interval_title">Interval of shift</string>
@@ -325,7 +334,6 @@
     <string name="smart_pixels_shift_summary">Prevents burn-in on OLED devices by shifting pixels every so often</string>
 
     <!-- Breathing Notifications -->
-    <string name="breathing_notifications_category">Breathing Notifications</string>
     <string name="sms_breath_title">Breathing SMS</string>
     <string name="sms_breath_summary">Will give your sms notifications a breathing effect in the status bar</string>
     <string name="missed_call_breath_title">Breathing Missed Call</string>

@@ -19,32 +19,37 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/category_powermenu_title" >
 
-    <com.crystal.mine.preferences.SystemSettingSeekBarPreference
-        android:key="transparent_power_menu"
-        android:title="@string/power_menu_transparency"
-        android:max="100"
-        android:min="10"
-        settings:unitsLeft=""
-        settings:unitsRight="%"
-        android:defaultValue="100" />
+    <PreferenceCategory
+        android:title="@string/power_menu_appear_pref_cat_title">
 
-    <com.crystal.mine.preferences.SystemSettingSeekBarPreference
-        android:key="transparent_power_dialog_dim"
-        android:title="@string/power_menu_dialog_dim"
-        android:max="100"
-        android:min="0"
-        settings:unitsLeft=""
-        settings:unitsRight="%"
-        android:defaultValue="50" />
+        <com.crystal.mine.preferences.SystemSettingSeekBarPreference
+            android:key="transparent_power_menu"
+            android:title="@string/power_menu_transparency"
+            android:max="100"
+            android:min="10"
+            settings:unitsLeft=""
+            settings:unitsRight="%"
+            android:defaultValue="100" />
 
-    <ListPreference
-        android:key="power_menu_animations"
-        android:title="@string/power_menu_animation_title"
-        android:dialogTitle="@string/power_menu_animation_dialog_title"
-        android:entries="@array/power_menu_animations_entries"
-        android:entryValues="@array/power_menu_animations_values"
-        android:summary="%s"
-        android:persistent="false" />
+        <com.crystal.mine.preferences.SystemSettingSeekBarPreference
+            android:key="transparent_power_dialog_dim"
+            android:title="@string/power_menu_dialog_dim"
+            android:max="100"
+            android:min="0"
+            settings:unitsLeft=""
+            settings:unitsRight="%"
+            android:defaultValue="50" />
+
+        <ListPreference
+            android:key="power_menu_animations"
+            android:title="@string/power_menu_animation_title"
+            android:dialogTitle="@string/power_menu_animation_dialog_title"
+            android:entries="@array/power_menu_animations_entries"
+            android:entryValues="@array/power_menu_animations_values"
+            android:summary="%s"
+            android:persistent="false" />
+
+    </PreferenceCategory>
 
     <com.crystal.mine.preferences.SystemSettingSwitchPreference
         android:key="lockscreen_power_menu_disabled"

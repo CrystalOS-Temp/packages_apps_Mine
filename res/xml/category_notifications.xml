@@ -46,7 +46,7 @@
 
     <PreferenceCategory
         android:key="incall_vib_options"
-        android:title="@string/incall_vibration_category" >
+        android:title="@string/incall_vib_pref_cat_title" >
 
         <com.crystal.mine.preferences.SystemSettingSwitchPreference
             android:key="vibrate_on_connect"
@@ -66,7 +66,7 @@
     </PreferenceCategory>
 
     <PreferenceCategory
-        android:title="@string/breathing_notifications_category">
+        android:title="@string/breath_notif_pref_cat_title">
 
         <com.crystal.mine.preferences.SystemSettingSwitchPreference
             android:key="sms_breath"

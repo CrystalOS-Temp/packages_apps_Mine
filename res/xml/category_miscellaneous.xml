@@ -45,7 +45,7 @@
 
     <PreferenceCategory
         android:key="burnin_category"
-        android:title="@string/burnin_category">
+        android:title="@string/burnin_pref_cat_title">
 
         <com.crystal.mine.preferences.SystemSettingSwitchPreference
             android:key="burn_in_protection"

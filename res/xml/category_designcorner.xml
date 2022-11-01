@@ -21,7 +21,7 @@
 
     <PreferenceCategory
         android:key="settings_layout_category"
-        android:title="@string/settings_layout_pref_title">
+        android:title="@string/sett_lay_pref_cat_title">
 
         <com.crystal.mine.preferences.SystemSettingListPreference
             android:key="settings_dashboard_style"

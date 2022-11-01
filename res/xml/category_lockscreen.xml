@@ -19,34 +19,44 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/category_lockscreen_title" >
 
-    <com.crystal.mine.preferences.SystemSettingSwitchPreference
-        android:key="lockscreen_battery_info"
-        android:title="@string/lockscreen_charging_info_title"
-        android:summary="@string/lockscreen_charging_info_summary"
-        android:defaultValue="true" />
+    <PreferenceCategory
+        android:title="@string/lock_ui_pref_cat_title">
 
-    <com.crystal.mine.preferences.SystemSettingSwitchPreference
-        android:key="fp_unlock_keystore"
-        android:title="@string/fp_unlock_keystore_title"
-        android:summary="@string/fp_unlock_keystore_summary"
-        android:defaultValue="false" />
+        <com.crystal.mine.preferences.SystemSettingSwitchPreference
+            android:key="lockscreen_battery_info"
+            android:title="@string/lockscreen_charging_info_title"
+            android:summary="@string/lockscreen_charging_info_summary"
+            android:defaultValue="true" />
 
-    <SwitchPreference
-        android:key="fingerprint_success_vib"
-        android:title="@string/fprint_success_vib_title"
-        android:summary="@string/fprint_success_vib_summary"
-        android:persistent="false" />
+        <com.crystal.mine.preferences.SystemSettingSwitchPreference
+            android:key="hide_lockscreen_status_bar"
+            android:title="@string/hide_lockscreen_status_bar_title"
+            android:summary="@string/hide_lockscreen_status_bar_summary"
+            android:defaultValue="false" />
 
-    <SwitchPreference
-        android:key="fingerprint_error_vib"
-        android:title="@string/fprint_error_vib_title"
-        android:summary="@string/fprint_error_vib_summary"
-        android:persistent="true" />
+    </PreferenceCategory>
 
-    <com.crystal.mine.preferences.SystemSettingSwitchPreference
-        android:key="hide_lockscreen_status_bar"
-        android:title="@string/hide_lockscreen_status_bar_title"
-        android:summary="@string/hide_lockscreen_status_bar_summary"
-        android:defaultValue="false" />
+    <PreferenceCategory
+        android:title="@string/lock_fp_pref_cat_title">
+
+        <com.crystal.mine.preferences.SystemSettingSwitchPreference
+            android:key="fp_unlock_keystore"
+            android:title="@string/fp_unlock_keystore_title"
+            android:summary="@string/fp_unlock_keystore_summary"
+            android:defaultValue="false" />
+
+        <SwitchPreference
+            android:key="fingerprint_success_vib"
+            android:title="@string/fprint_success_vib_title"
+            android:summary="@string/fprint_success_vib_summary"
+            android:persistent="false" />
+
+        <SwitchPreference
+            android:key="fingerprint_error_vib"
+            android:title="@string/fprint_error_vib_title"
+            android:summary="@string/fprint_error_vib_summary"
+            android:persistent="true" />
+
+    </PreferenceCategory>
 
 </PreferenceScreen>

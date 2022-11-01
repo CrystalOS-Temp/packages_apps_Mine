@@ -16,6 +16,20 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+    <!-- Preference Category titles -->
+    <string name="live_vol_pref_cat_title">Hangerő Léptetések</string>
+    <string name="sett_lay_pref_cat_title">Beállítások Kezdőoldal Téma</string>
+    <string name="sleep_gest_pref_cat_title">Alvás Gesztusok</string>
+    <string name="lock_ui_pref_cat_title">Zárképernyő Kinézet</string>
+    <string name="lock_fp_pref_cat_title">Zárképernyő Ujjlenyomat</string>
+    <string name="burnin_pref_cat_title">Beégés Védelem</string>
+    <string name="incall_vib_pref_cat_title">Hívásközbeni Rezgés</string>
+    <string name="breath_notif_pref_cat_title">Lélegző Értesítések</string>
+    <string name="power_menu_appear_pref_cat_title">Bekapcsoló Menü Kinézete</string>
+    <string name="qs_bright_pref_cat_title">Gyorsbeállítások Fényerő Csúszka</string>
+    <string name="qs_tile_anim_pref_cat_title">Gyorsbeállítások Csempe Animációk</string>
+    <string name="qs_extra_btns_pref_cat_title">Gyorsbeállítások Extra Gombok</string>
+
     <!-- Color Picker -->
     <string name="dialog_color_picker">Szín Választó</string>
     <string name="press_color_to_apply">Érintse meg az alábbi színt az alkalmazáshoz</string>
@@ -63,9 +77,6 @@
     <string name="category_quicksettings_title">Gyors Beállítások</string>
     <string name="category_statusbar_title">Értesítési sáv</string>
 
-    <!-- Pref category titles -->
-    <string name="settings_layout_pref_title">Beállítások kezelőfelülete</string>
-
     <!-- Fingerprint unlock -->
     <string name="fp_unlock_keystore_title">Közvetlen ujjlenyomatos feloldás</string>
     <string name="fp_unlock_keystore_summary">Eszköz feloldása ujjlenyomattal újraindítás vagy zárolás után</string>
@@ -84,7 +95,6 @@
     <string name="less_boring_heads_up_summary">A beuszó értesítések csak a Tárcsázó és az Üzenetek alkalmazásoktól jelennek meg ha azok nincsenek előtérben</string>
 
     <!-- Incall vibrate options -->
-    <string name="incall_vibration_category">Hívásközbeni rezgés opciók</string>
     <string name="incall_vibrate_connect_title">Rezgés csatlakozáskor</string>
     <string name="incall_vibrate_call_wait_title">Rezgés hívás várakoztatáskor</string>
     <string name="incall_vibrate_disconnect_title">Rezgés szétkapcsoláskor</string>
@@ -159,7 +169,6 @@
 
     <!-- Burn-in Protection -->
     <string name="unit_x1000ms">x1000 ms</string>
-    <string name="burnin_category">Beégés Védelem</string>
     <string name="burn_in_protection_title">Beégés védelem</string>
     <string name="burn_in_protection_summary">Elmozgatja az értesítési és navigációs sáv ikonokat hogy megakadályozza azok beégését</string>
     <string name="burn_in_protection_interval_title">Elmozgatás gyakorisága</string>
@@ -325,7 +334,6 @@
     <string name="smart_pixels_shift_summary">Megakadályozza a képernyő beégést a pixelek néhai elmozgatásával</string>
 
     <!-- Breathing Notifications -->
-    <string name="breathing_notifications_category">Lélegző értesítések</string>
     <string name="sms_breath_title">Lélegző SMS</string>
     <string name="sms_breath_summary">Az SMS értesítések egy lélegző effektet kapnak az értesítési sávon</string>
     <string name="missed_call_breath_title">Lélegző Nem Fogadott Hívások</string>

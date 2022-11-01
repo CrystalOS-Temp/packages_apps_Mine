@@ -21,7 +21,7 @@
 
     <PreferenceCategory
         android:key="quick_settings_brighness_category"
-        android:title="@string/qs_show_brightness_slider_title">
+        android:title="@string/qs_bright_pref_cat_title">
 
         <com.crystal.mine.preferences.SecureSettingListPreference
             android:key="qs_show_brightness_slider"
@@ -64,58 +64,68 @@
         android:summary="@string/quick_settings_vibrate_summary"
         android:defaultValue="false"/>
 
-    <com.crystal.mine.preferences.SystemSettingIntListPreference
-        android:key="anim_tile_style"
-        android:title="@string/qs_tile_animation_style_title"
-        android:entries="@array/qs_tile_animation_style_entries"
-        android:entryValues="@array/qs_tile_animation_style_values"
-        android:summary="%s"
-        android:defaultValue="0" />
+    <PreferenceCategory
+        android:title="@string/qs_tile_anim_pref_cat_title">
 
-    <com.crystal.mine.preferences.SystemSettingIntListPreference
-        android:key="anim_tile_duration"
-        android:title="@string/qs_tile_animation_duration_title"
-        android:entries="@array/qs_tile_animation_duration_entries"
-        android:entryValues="@array/qs_tile_animation_duration_values"
-        android:summary="%s"
-        android:defaultValue="2000" />
+        <com.crystal.mine.preferences.SystemSettingIntListPreference
+            android:key="anim_tile_style"
+            android:title="@string/qs_tile_animation_style_title"
+            android:entries="@array/qs_tile_animation_style_entries"
+            android:entryValues="@array/qs_tile_animation_style_values"
+            android:summary="%s"
+            android:defaultValue="0" />
 
-    <com.crystal.mine.preferences.SystemSettingIntListPreference
-        android:key="anim_tile_interpolator"
-        android:title="@string/qs_tile_animation_interpolator_title"
-        android:entries="@array/qs_tile_animation_interpolator_entries"
-        android:entryValues="@array/qs_tile_animation_interpolator_values"
-        android:summary="%s"
-        android:defaultValue="0" />
+        <com.crystal.mine.preferences.SystemSettingIntListPreference
+            android:key="anim_tile_duration"
+            android:title="@string/qs_tile_animation_duration_title"
+            android:entries="@array/qs_tile_animation_duration_entries"
+            android:entryValues="@array/qs_tile_animation_duration_values"
+            android:summary="%s"
+            android:defaultValue="2000" />
 
-    <com.crystal.mine.preferences.SystemSettingSwitchPreference
-        android:key="qs_footer_show_user"
-        android:title="@string/qs_footer_users_icon_title"
-        android:summary="@string/qs_footer_users_icon_summary"
-        android:defaultValue="true" />
+        <com.crystal.mine.preferences.SystemSettingIntListPreference
+            android:key="anim_tile_interpolator"
+            android:title="@string/qs_tile_animation_interpolator_title"
+            android:entries="@array/qs_tile_animation_interpolator_entries"
+            android:entryValues="@array/qs_tile_animation_interpolator_values"
+            android:summary="%s"
+            android:defaultValue="0" />
 
-    <com.crystal.mine.preferences.SystemSettingSwitchPreference
-        android:key="qs_footer_show_edit"
-        android:title="@string/qs_footer_edit_icon_title"
-        android:summary="@string/qs_footer_edit_icon_summary"
-        android:defaultValue="true" />
+    </PreferenceCategory>
 
-    <com.crystal.mine.preferences.SystemSettingSwitchPreference
-        android:key="qs_footer_show_power_menu"
-        android:title="@string/qs_footer_show_power_menu_title"
-        android:summary="@string/qs_footer_show_power_menu_summary"
-        android:defaultValue="true" />
+    <PreferenceCategory
+        android:title="@string/qs_extra_btns_pref_cat_title">
 
-    <com.crystal.mine.preferences.SystemSettingSwitchPreference
-        android:key="qs_footer_show_services"
-        android:title="@string/qs_footer_services_icon_title"
-        android:summary="@string/qs_footer_services_icon_summary"
-        android:defaultValue="true" />
+        <com.crystal.mine.preferences.SystemSettingSwitchPreference
+            android:key="qs_footer_show_user"
+            android:title="@string/qs_footer_users_icon_title"
+            android:summary="@string/qs_footer_users_icon_summary"
+            android:defaultValue="true" />
 
-    <com.crystal.mine.preferences.SystemSettingSwitchPreference
-        android:key="qs_footer_show_settings"
-        android:title="@string/qs_footer_settings_icon_title"
-        android:summary="@string/qs_footer_settings_icon_summary"
-        android:defaultValue="true" />
+        <com.crystal.mine.preferences.SystemSettingSwitchPreference
+            android:key="qs_footer_show_edit"
+            android:title="@string/qs_footer_edit_icon_title"
+            android:summary="@string/qs_footer_edit_icon_summary"
+            android:defaultValue="true" />
+
+        <com.crystal.mine.preferences.SystemSettingSwitchPreference
+            android:key="qs_footer_show_power_menu"
+            android:title="@string/qs_footer_show_power_menu_title"
+            android:summary="@string/qs_footer_show_power_menu_summary"
+            android:defaultValue="true" />
+
+        <com.crystal.mine.preferences.SystemSettingSwitchPreference
+            android:key="qs_footer_show_services"
+            android:title="@string/qs_footer_services_icon_title"
+            android:summary="@string/qs_footer_services_icon_summary"
+            android:defaultValue="true" />
+
+        <com.crystal.mine.preferences.SystemSettingSwitchPreference
+            android:key="qs_footer_show_settings"
+            android:title="@string/qs_footer_settings_icon_title"
+            android:summary="@string/qs_footer_settings_icon_summary"
+            android:defaultValue="true" />
+
+    </PreferenceCategory>
 
 </PreferenceScreen>
