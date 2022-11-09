@@ -355,4 +355,12 @@
     <string name="qs_show_auto_brightness_title">Automatikus fényerő ikon</string>
     <string name="qs_show_auto_brightness_summary">Mutassa az automatikus fényerő ikont a fényerő csúszka mellett</string>
 
+    <!-- Unlimited google photos storage -->
+    <string name="use_photos_spoof_title">Korlátlan fotók tárhely</string>
+    <string name="use_photos_spoof_summary">Behazudja az eszközt egy Pixel XL-nek a Google Fotók alkalmazás felé hogy elérhetővé váljon a korlátlan tárhelyű mentés</string>
+
+    <!-- Unlock FPS for specific games -->
+    <string name="use_games_spoof_title">Magasabb FPS a játékokban</string>
+    <string name="use_games_spoof_summary">Behazudja az eszközt egy másik modellnek bizonyos játékok felé hogy elérhetővé válljon bennük a magasabb FPS</string>
+
 </resources>
