@@ -363,4 +363,8 @@
     <string name="use_games_spoof_title">Magasabb FPS a játékokban</string>
     <string name="use_games_spoof_summary">Behazudja az eszközt egy másik modellnek bizonyos játékok felé hogy elérhetővé válljon bennük a magasabb FPS</string>
 
+    <!-- System Boost -->
+    <string name="system_boost_title">Rendszergyorsítás</string>
+    <string name="system_boost_summary">Felgyorsítja a rendszer komponenseket a jobb teljesítmény érdekében (megnövekedett akkumulátor használathoz vezethet)</string>
+
 </resources>

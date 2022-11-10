@@ -34,6 +34,7 @@ import androidx.preference.Preference.OnPreferenceChangeListener;
 import com.android.settings.R;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.SettingsPreferenceFragment;
+import com.android.settingslib.development.SystemPropPoker;
 import com.android.settingslib.search.SearchIndexable;
 
 import com.android.internal.logging.nano.MetricsProto;
@@ -50,12 +51,20 @@ public class Miscellaneous extends SettingsPreferenceFragment implements OnPrefe
     private static final String SMART_PIXELS = "smart_pixels";
     private static final String KEY_GAMES_SPOOF = "use_games_spoof";
     private static final String KEY_PHOTOS_SPOOF = "use_photos_spoof";
+    private static final String KEY_SYSTEM_BOOST = "system_boost";
 
     private static final String SYS_GAMES_SPOOF = "persist.sys.pixelprops.games";
     private static final String SYS_PHOTOS_SPOOF = "persist.sys.pixelprops.gphotos";
+    private static final String SYS_SYSTEM_BOOST = "persist.sys.system.boost";
+    private static final String SYS_RENDER_BOOST_THREAD = "persist.sys.perf.topAppRenderThreadBoost.enable";
+    private static final String SYS_COMPACTION = "persist.sys.appcompact.enable_app_compact";
+    private static final String SYS_BSERVICE_LIMIT = "persist.sys.fw.bservice_limit";
+    private static final String SYS_BSERVICE_AGE = "persist.sys.fw.bservice_age";
+    private static final String SYS_BSERVICE = "persist.sys.fw.bservice_enable";
 
     private Preference mSmartPixels;
     private SwitchPreference mGamesSpoof;
+    private SwitchPreference mSystemBoost;
     private SwitchPreference mPhotosSpoof;
 
     @Override
@@ -77,6 +86,10 @@ public class Miscellaneous extends SettingsPreferenceFragment implements OnPrefe
         mPhotosSpoof = (SwitchPreference) prefScreen.findPreference(KEY_PHOTOS_SPOOF);
         mPhotosSpoof.setChecked(SystemProperties.getBoolean(SYS_PHOTOS_SPOOF, true));
         mPhotosSpoof.setOnPreferenceChangeListener(this);
+
+        mSystemBoost = (SwitchPreference) findPreference(KEY_SYSTEM_BOOST);
+        mSystemBoost.setChecked(SystemProperties.getBoolean(SYS_SYSTEM_BOOST, false));
+        mSystemBoost.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -93,6 +106,16 @@ public class Miscellaneous extends SettingsPreferenceFragment implements OnPrefe
         } else if (preference == mPhotosSpoof) {
             boolean value = (Boolean) newValue;
             SystemProperties.set(SYS_PHOTOS_SPOOF, value ? "true" : "false");
+            return true;
+        } else if (preference == mSystemBoost) {
+            boolean value = (Boolean) newValue;
+            SystemProperties.set(SYS_SYSTEM_BOOST, value ? "true" : "false");
+            SystemProperties.set(SYS_RENDER_BOOST_THREAD, value ? "true" : "false");
+            SystemProperties.set(SYS_COMPACTION, value ? "false" : "true");
+            SystemProperties.set(SYS_BSERVICE_LIMIT, value ? "8" : "15");
+            SystemProperties.set(SYS_BSERVICE_AGE, value ? "8000" : "300000");
+            SystemProperties.set(SYS_BSERVICE, value ? "true" : "false");
+            SystemPropPoker.getInstance().poke();
             return true;
         }
         return false;

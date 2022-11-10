@@ -25,6 +25,12 @@
         android:summary="@string/wakeup_when_plugged_unplugged_summary"
         android:defaultValue="false" />
 
+    <!-- System Boost -->
+    <SwitchPreference
+        android:key="system_boost"
+        android:title="@string/system_boost_title"
+        android:summary="@string/system_boost_summary"/>
+
     <!-- Unlock FPS for specific games -->
     <SwitchPreference
         android:key="use_games_spoof"

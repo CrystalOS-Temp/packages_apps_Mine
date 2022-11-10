@@ -363,4 +363,8 @@
     <string name="use_games_spoof_title">Unlock higher FPS in games</string>
     <string name="use_games_spoof_summary">Spoof your device as different model for specific games to unlock higher FPS</string>
 
+    <!-- System Boost -->
+    <string name="system_boost_title">System Boost</string>
+    <string name="system_boost_summary">Boost system components for better performance (may increase power consumption)</string>
+
 </resources>
