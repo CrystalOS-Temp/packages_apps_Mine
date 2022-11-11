@@ -367,4 +367,8 @@
     <string name="system_boost_title">System Boost</string>
     <string name="system_boost_summary">Boost system components for better performance (may increase power consumption)</string>
 
+    <!-- Lockscreen charge temperature unit -->
+    <string name="lockscreen_charge_temp_unit_title">Temperature unit</string>
+    <string name="lockscreen_charge_temp_unit_summary">Enable for Celcius, disable for Fahrenheit</string>
+
 </resources>

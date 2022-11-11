@@ -367,4 +367,8 @@
     <string name="system_boost_title">Rendszergyorsítás</string>
     <string name="system_boost_summary">Felgyorsítja a rendszer komponenseket a jobb teljesítmény érdekében (megnövekedett akkumulátor használathoz vezethet)</string>
 
+    <!-- Lockscreen charge temperature unit -->
+    <string name="lockscreen_charge_temp_unit_title">Hőmérséklet mértékegysége</string>
+    <string name="lockscreen_charge_temp_unit_summary">Bekapcsolva Celsius, kikapcsolva Fahrenheit</string>
+
 </resources>

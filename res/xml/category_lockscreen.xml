@@ -29,6 +29,12 @@
             android:defaultValue="true" />
 
         <com.crystal.mine.preferences.SystemSettingSwitchPreference
+            android:key="lockscreen_charge_temp_unit"
+            android:title="@string/lockscreen_charge_temp_unit_title"
+            android:summary="@string/lockscreen_charge_temp_unit_summary"
+            android:defaultValue="true" />
+
+        <com.crystal.mine.preferences.SystemSettingSwitchPreference
             android:key="hide_lockscreen_status_bar"
             android:title="@string/hide_lockscreen_status_bar_title"
             android:summary="@string/hide_lockscreen_status_bar_summary"
