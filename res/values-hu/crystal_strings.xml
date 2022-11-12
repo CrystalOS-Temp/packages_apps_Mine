@@ -371,4 +371,8 @@
     <string name="lockscreen_charge_temp_unit_title">Hőmérséklet mértékegysége</string>
     <string name="lockscreen_charge_temp_unit_summary">Bekapcsolva Celsius, kikapcsolva Fahrenheit</string>
 
+    <!-- Notification count -->
+    <string name="statusbar_notif_count_title">Értesítés számláló</string>
+    <string name="statusbar_notif_count_summary">Jelenítse meg a függőben lévő értesítések számát az értesítési sávon</string>
+
 </resources>
