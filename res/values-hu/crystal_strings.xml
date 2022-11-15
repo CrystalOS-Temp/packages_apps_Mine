@@ -375,4 +375,8 @@
     <string name="statusbar_notif_count_title">Értesítés számláló</string>
     <string name="statusbar_notif_count_summary">Jelenítse meg a függőben lévő értesítések számát az értesítési sávon</string>
 
+    <!-- Navbar Animation -->
+    <string name="pixel_navbar_anim_title">Pixel animáció</string>
+    <string name="pixel_navbar_anim_summary">Használja a Google Pixel animációt a 3 gombos navigációs sáv gombjaihoz</string>
+
 </resources>

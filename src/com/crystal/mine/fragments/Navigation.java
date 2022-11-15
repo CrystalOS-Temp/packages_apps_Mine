@@ -59,6 +59,12 @@ public class Navigation extends SettingsPreferenceFragment {
         return MetricsProto.MetricsEvent.CRYSTAL;
     }
 
+    public static void reset(Context mContext) {
+        ContentResolver resolver = mContext.getContentResolver();
+        Settings.System.putIntForUser(resolver,
+                Settings.System.PIXEL_NAV_ANIMATION, 1, UserHandle.USER_CURRENT);
+    }
+
     public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
             new BaseSearchIndexProvider() {
                 @Override
