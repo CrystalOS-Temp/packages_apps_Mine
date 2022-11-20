@@ -24,5 +24,9 @@
 
     <dimen name="picker_circle_preview_size">26dp</dimen>
     <dimen name="alert_dialog_padding_material">20dp</dimen>
-    
+
+    <!-- App list preference -->
+    <dimen name="app_list_margin_start">72dp</dimen>
+    <dimen name="app_list_margin_end">16dp</dimen>
+
 </resources>
