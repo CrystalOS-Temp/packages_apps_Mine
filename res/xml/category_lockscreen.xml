@@ -43,7 +43,13 @@
     </PreferenceCategory>
 
     <PreferenceCategory
-        android:title="@string/lock_fp_pref_cat_title">
+        android:title="@string/lock_func_pref_cat_title">
+
+        <ListPreference
+            android:key="torch_power_button_gesture"
+            android:title="@string/torch_power_button_gesture_title"
+            android:entries="@array/torch_power_button_gesture_entries"
+            android:entryValues="@array/torch_power_button_gesture_values" />
 
         <com.crystal.mine.preferences.SystemSettingSwitchPreference
             android:key="fp_unlock_keystore"

@@ -21,7 +21,7 @@
     <string name="sett_lay_pref_cat_title">Settings Homepage Theme</string>
     <string name="sleep_gest_pref_cat_title">Sleep Gestures</string>
     <string name="lock_ui_pref_cat_title">Lockscreen UI</string>
-    <string name="lock_fp_pref_cat_title">Lockscreen Fingerprint</string>
+    <string name="lock_func_pref_cat_title">Lockscreen Functionality</string>
     <string name="burnin_pref_cat_title">Burn-in Protection</string>
     <string name="incall_vib_pref_cat_title">In-Call Vibration</string>
     <string name="breath_notif_pref_cat_title">Breathing Notifications</string>
@@ -378,5 +378,12 @@
     <!-- Navbar Animation -->
     <string name="pixel_navbar_anim_title">Pixel animation</string>
     <string name="pixel_navbar_anim_summary">Use Google Pixel animation for the buttons of the 3-button navigation bar</string>
+
+    <!-- Torch Power button gestures -->
+    <string name="torch_power_button_gesture_title">Toggle torch when screen off</string>
+    <string name="torch_power_button_gesture_none">Disabled</string>
+    <string name="torch_power_button_gesture_dt">Double tap power button (slower single tap response). Disables double tap for camera gesture.</string>
+    <string name="torch_power_button_gesture_dt_toast">Jump to camera gesture is now disabled</string>
+    <string name="torch_power_button_gesture_lp">Long press power button</string>
 
 </resources>

@@ -21,7 +21,7 @@
     <string name="sett_lay_pref_cat_title">Beállítások Kezdőoldal Téma</string>
     <string name="sleep_gest_pref_cat_title">Alvás Gesztusok</string>
     <string name="lock_ui_pref_cat_title">Zárképernyő Kinézet</string>
-    <string name="lock_fp_pref_cat_title">Zárképernyő Ujjlenyomat</string>
+    <string name="lock_func_pref_cat_title">Zárképernyő Funkcionalitás</string>
     <string name="burnin_pref_cat_title">Beégés Védelem</string>
     <string name="incall_vib_pref_cat_title">Hívásközbeni Rezgés</string>
     <string name="breath_notif_pref_cat_title">Lélegző Értesítések</string>
@@ -378,5 +378,12 @@
     <!-- Navbar Animation -->
     <string name="pixel_navbar_anim_title">Pixel animáció</string>
     <string name="pixel_navbar_anim_summary">Használja a Google Pixel animációt a 3 gombos navigációs sáv gombjaihoz</string>
+
+    <!-- Torch Power button gestures -->
+    <string name="torch_power_button_gesture_title">Zseblámpa bekapcsolása kikapcsolt képernyővel</string>
+    <string name="torch_power_button_gesture_none">Letiltva</string>
+    <string name="torch_power_button_gesture_dt">Dupla nyomásra (lassabb egyszeri nyomás reakció). Letiltja a dupla nyomásra kamera gesztust.</string>
+    <string name="torch_power_button_gesture_dt_toast">Az Ugrás a kamerába gesztus letiltásra került</string>
+    <string name="torch_power_button_gesture_lp">Nyomva tartásra</string>
 
 </resources>
