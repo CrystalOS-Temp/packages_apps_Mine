@@ -386,4 +386,8 @@
     <string name="torch_power_button_gesture_dt_toast">Az Ugrás a kamerába gesztus letiltásra került</string>
     <string name="torch_power_button_gesture_lp">Nyomva tartásra</string>
 
+    <!-- Three-fingers-swipe to screenshot -->
+    <string name="three_finger_gesture">3 ujjas képernyőkép</string>
+    <string name="three_finger_gesture_summary">Húzza le 3 ujját a képernyőn hogy képernyőképet készítsen</string>
+
 </resources>
