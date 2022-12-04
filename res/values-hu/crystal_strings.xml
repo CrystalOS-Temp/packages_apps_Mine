@@ -390,4 +390,9 @@
     <string name="three_finger_gesture">3 ujjas képernyőkép</string>
     <string name="three_finger_gesture_summary">Húzza le 3 ujját a képernyőn hogy képernyőképet készítsen</string>
 
+    <!-- Higher quality streams for known streaming apps -->
+    <string name="use_stream_spoof_title">Jobb minőségű streamek</string>
+    <string name="use_stream_spoof_summary">Engedélyezi a jobb minőségű videók lejátszását Amazon Primeon, Disney+on, Hotstaron és Netflixen. (Az eredmény változó lehet)</string>
+    <string name="stream_spoof_toast">Streamelő alkalmazás újraindítása a változások érvényesítéséhez</string>
+
 </resources>

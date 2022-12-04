@@ -29,13 +29,21 @@
     <SwitchPreference
         android:key="system_boost"
         android:title="@string/system_boost_title"
-        android:summary="@string/system_boost_summary"/>
+        android:summary="@string/system_boost_summary" />
 
     <!-- Unlock FPS for specific games -->
     <SwitchPreference
         android:key="use_games_spoof"
         android:title="@string/use_games_spoof_title"
-        android:summary="@string/use_games_spoof_summary" />
+        android:summary="@string/use_games_spoof_summary"
+        android:defaultValue="true" />
+
+    <com.crystal.mine.preferences.SystemSettingSwitchPreference
+        android:key="use_stream_spoof"
+        android:title="@string/use_stream_spoof_title"
+        android:summary="@string/use_stream_spoof_summary"
+        android:defaultValue="true"
+        android:persistent="false" />
 
     <!-- Unlimited google photos storage -->
     <SwitchPreference
